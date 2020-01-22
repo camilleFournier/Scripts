@@ -1,0 +1,39 @@
+//Functions to run inside Chrome Dev Tools' Dev Tools to get average FPS, CPU usage and JavaScript Heap
+
+function averageFps() {
+    let frames = UI.panels.timeline._flameChart._model._frameModel._frames;
+    let duration = frames[frames.length - 1].endTime - frames[0].startTime;
+    let average = frames.length / duration * 1000;
+
+    console.log(frames.length + ' frames rendered in ' + duration + ' ms');
+    console.log(average + ' frames per second');
+}
+
+function avgCPU() {
+    data = UI.panels.timeline._flameChart._mainDataProvider._entryData.filter(e => e.cpuTime);
+    cpuTime = 0;
+    duration = 0;
+    for (var i=0; i<data.length; i++) {
+        cpuTime += data[i].cpuTime;
+        duration += data[i].duration;
+    }
+    console.log(data.length + " samples");
+
+    console.log("CPU time : "+ cpuTime + " ms");
+    console.log("Duration : " + duration + " ms");
+    console.log("Average CPU usage : "+ (cpuTime/duration)*100 + " % CPU core");
+}
+
+function avgJSheap() {
+    data = UI.panels.timeline._flameChart._mainDataProvider._model._inspectedTargetEvents.filter(event => event.name == "UpdateCounters");
+    memory = 0;
+    console.log(data.length + " samples");
+    for (var i=0; i<data.length; i++) {
+        memory+= data[i].args.data.jsHeapSizeUsed;
+    }
+    duration = UI.panels.timeline._flameChart._mainDataProvider._timeSpan;
+    console.log(memory + " used in " + duration + " ms");
+    console.log("Average memory used : " + memory/duration*1000 + " /s");
+}
+
+
