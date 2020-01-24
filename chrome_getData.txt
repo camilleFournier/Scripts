@@ -31,9 +31,7 @@ function avgJSheap() {
     for (var i=0; i<data.length; i++) {
         memory+= data[i].args.data.jsHeapSizeUsed;
     }
-    duration = UI.panels.timeline._flameChart._mainDataProvider._timeSpan;
-    console.log(memory + " used in " + duration + " ms");
-    console.log("Average memory used : " + memory/duration*1000 + " /s");
+    console.log("Average memory used : " + memory/data.length/1000000 + " MB");
 }
 
 

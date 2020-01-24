@@ -20,8 +20,9 @@ runComponent = package + '/' + activity
 
 
 def getData(clock, gfxinfo, cpuinfo, meminfo):
-    time = device.getProperty('clock.realtime')
+    time = device.getProperty('clock.uptime')
     clock.append(time)
+    print(time)
     gfxinfo.append(device.shell("dumpsys gfxinfo " + package + " reset"))
     cpuinfo.append(device.shell("dumpsys cpuinfo "))
     meminfo.append(device.shell("dumpsys meminfo " + package))
@@ -59,7 +60,7 @@ def getCPU(data):
         i+=1
         line = dataLines[i]
     print(line)
-    cpu = re.findall(r'\d+%', line)[0]
+    cpu = re.findall(r'\d+', line)[0]
     return cpu
 
 def getMemory(data):
@@ -74,13 +75,14 @@ def getMemory(data):
     pss = re.findall(r'\d+', line)[0]
     return pss
 
-def doExperiment():
+def doExperiment(isFirst):
     # Runs the component
-    file = open('emulator.txt', 'at')
-    file.write('Clock, Total frames rendered, Janky frames, CPU%, PSS \n')
+    file = open('galaxyS6_70_real.txt', 'at')
+    if (isFirst):
+        file.write('Clock, Total frames rendered, Janky frames, CPU%, PSS \n')
     
     # Number of experiments
-    for loop in range(10):
+    for loop in range(3):
         clock = []
         gfxinfo = []
         cpuinfo = []
@@ -89,22 +91,22 @@ def doExperiment():
         device.startActivity(component=runComponent)
         MonkeyRunner.sleep(10) #wait for it to be properly started
         device.shell("dumpsys gfxinfo " + package + " reset") # Reset to have stats only from stable state (after launching)
-        time = device.getProperty('clock.realtime')
+        time = device.getProperty('clock.uptime')
         print(time)
         file.write(time + "\n")
 
         # Number of entry in one experiment
         for loop in range(10):
-            MonkeyRunner.sleep(310) #wait little more than 5min so cpuinfo is updated
+            MonkeyRunner.sleep(305) #wait little more than 5min so cpuinfo is updated
             getData(clock, gfxinfo, cpuinfo, meminfo)
-        # device.shell("am force-stop " + package)
-        # device.shell("am kill "+ package)
-        device.reboot("None")
+        device.shell("am force-stop " + package)
+        device.shell("am kill "+ package)
+        # device.reboot("None")
         writeData(file, clock, gfxinfo, cpuinfo, meminfo)
 
     file.close()
-
-doExperiment()
+# True if first experience (write column names), false otherwise
+doExperiment(False)
 
 
 
