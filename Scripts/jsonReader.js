@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-var datafile = fs.readFileSync('trace_sw.json');
+var datafile = fs.readFileSync('../Data/trace_pwa.json');
 var datajson = JSON.parse(datafile);
 // var dataframes = datajson.filter(data => data.cat == "disabled-by-default-v8.cpu_profiler");
 
