@@ -568,10 +568,10 @@ export class TimelineData {
      * @return {!TimelineData}
      */
     static forEvent(event) {
-      let data = event[TimelineData._symbol];
+      let data = event['timelineData'];
       if (!data) {
         data = new TimelineData();
-        event[TimelineData._symbol] = data;
+        event['timelineData'] = data;
       }
       return data;
     }

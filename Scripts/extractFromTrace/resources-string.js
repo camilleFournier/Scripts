@@ -42,6 +42,10 @@ export function isAsyncPhase(phase) {
   return isNestableAsyncPhase(phase) || phase === 'S' || phase === 'T' || phase === 'F' || phase === 'p';
 }
 
+export function isFlowPhase(phase) {
+    return phase === 's' || phase === 't' || phase === 'f';
+}
+
 export function isMarkerEvent(event, timelineModel) {
     switch (event.name) {
       case RecordTypes.TimeStamp:
@@ -71,6 +75,16 @@ export function sortedProcesses(tracingModel) {
 export function eventFrameId(event) {
     const data = event.args['data'] || event.args['beginData'];
     return data && data['frame'] || '';
+}
+
+export function nativeGroup(nativeName) {
+    if (nativeName.startsWith('Parse')) {
+        return 'Parse';
+    }
+    if (nativeName.startsWith('Compile') || nativeName.startsWith('Recompile')) {
+        return 'Compile';
+    }
+    return null;
 }
 
 export const MetadataEvent = {

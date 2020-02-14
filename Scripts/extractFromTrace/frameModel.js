@@ -44,9 +44,8 @@ function categoryMapper(event) {
 }
 
 function processCompositorEvents(event) {
-    // console.log('here in processCompositorEvents');
     if (event.args.layerTreeId !== frame_model.layerTreeId) { return; }
-    // console.log('continuing');
+
     const timestamp = event.startTime;
     if (event.name === RecordTypes.BeginFrame) {
         handleBeginFrame(timestamp);
@@ -185,6 +184,7 @@ function addMainThreadTraceEvent(event) {
 
 export function addTraceEvents(events, threadData) {
     let j = 0;
+    let selfTime = 0;
     frame_model.currentProcessMainThread = threadData.length && threadData[0].thread || null;
     for (let i = 0; i < events.length; ++i) {
         while (j + 1 < threadData.length && threadData[j + 1].time <= events[i].startTime) {
@@ -202,11 +202,15 @@ export function addTraceEvents(events, threadData) {
             processCompositorEvents(event);
             if (event.thread === frame_model.currentProcessMainThread) {
                 addMainThreadTraceEvent(event);
+                selfTime+=event.selfTime;
             } else if (frame_model.lastFrame && event.selfTime && !event.isTopLevel()) {
+                console.log(event.thread.name());
                 frame_model.lastFrame._addTimeForCategory(categoryMapper(event), event.selfTime);
+                selfTime+=event.selfTime;
             }
           }
     }
+    console.log(selfTime, ' ms cputime');
     frame_model.currentProcessMainThread = null;
     // console.log(frame_model.frames);
     return frame_model;

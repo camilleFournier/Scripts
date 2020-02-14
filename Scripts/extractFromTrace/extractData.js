@@ -21,7 +21,7 @@ import { setTimelineModel } from './timelineModel.js';
 import { addTraceEvents } from './frameModel.js';
 
 // const fs = require('fs');
-const path = './../../Data/trace_pwa.json';
+const path = './../../Data/testPWA/trace_pwa.json';
 
 const tracing_model = {
     processById: new Map(),
@@ -112,17 +112,39 @@ function loadEvents() {
     for (const frame of frameModel.frames) {
         cpuTime += frame.cpuTime;
     }
+    let selfTime = 0;
+    for (const event of timelineModel.inspectedTargetEvents) {
+        if (event.thread.name() == 'CrRendererMain') {
+            selfTime += event.selfTime || 0;
+        }
+    }
+    // console.log(timelineModel.cpuProfiles[0].gcNode);
+    // console.log(timelineModel.cpuProfiles[0].programNode);
+    // console.log(timelineModel.cpuProfiles[0].idleNode);
 
     const duration = tracing_model.maximumRecordTime - tracing_model.minimumRecordTime;
     console.log('CPU time: ' + cpuTime + 'ms over a period of ' + duration + ' ms');
+    console.log('Sum of main thread selfTime: ' + selfTime + ' ms');
     console.log(cpuTime/duration * 100 + "% CPU Core");
+
+    let samplingTime = timelineModel.cpuProfiles[0].profileEndTime - timelineModel.cpuProfiles[0].profileStartTime;
+    console.log('CPU Profile Model:');
+    console.log( timelineModel.cpuProfiles[0].profileEndTime, ', ', timelineModel.cpuProfiles[0].profileStartTime);
+    console.log('Total sampling time: ', samplingTime, ' ms for ' + timelineModel.cpuProfiles[0].totalHitCount, ' samples');
+    console.log('Total time recorded: ', timelineModel.cpuProfiles[0].root.total, ' ms with ', timelineModel.cpuProfiles[0].idleNode.total, ' ms of idle time');
+    console.log('Result: ', (timelineModel.cpuProfiles[0].root.total - timelineModel.cpuProfiles[0].idleNode.total)/samplingTime*100, '% CPU');
+    
     console.log(frameModel.frames.length + ' frames rendered in '+ duration + ' ms');
     console.log('Average of: ' + frameModel.frames.length/(duration/1000) + ' FPS');
+    
     const JSevents = raw_events.filter(event => event.name === "UpdateCounters");
     const JSused = JSevents.reduce((sum, event) => sum+event.args.data.jsHeapSizeUsed, 0);
     console.log('Average JS Heap used: ' + JSused/JSevents.length/1000000 + ' MB');
+
+
     // writeProcessedData();
-    writeFrames(frameModel);
+    // writeFrames(frameModel);
+    // writeEvents(timelineModel.inspectedTargetEvents);
 
 }
 
@@ -255,6 +277,25 @@ function writeFrames(frameModel) {
     }
     newjson += '{}]'
     fs.writeFileSync('frames.json', newjson); 
+}
+
+function writeEvents(events) {
+    var newjson = '[';
+    for (const event of events) {
+        event.thread = null;
+        if (event.parent && event.parent.children) {
+            event.parent.children = null;
+            
+        }
+        if (event.timelineData && event.timelineData.stackTrace) {
+            event.timelineData.stackTrace = null;
+            event.args.data.stackTrace = null;
+        }
+        newjson += JSON.stringify(event);
+        newjson += ',\n';
+    }
+    newjson += '{}]'
+    fs.writeFileSync('events.json', newjson); 
 }
 
 loadEvents();

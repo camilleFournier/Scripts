@@ -18,7 +18,7 @@ import logging
 import os
 import sys
 
-from cdp import target, page, tracing
+from cdp import target, page, tracing, system_info
 import trio
 from trio_cdp import open_cdp_connection
 
@@ -28,8 +28,8 @@ logging.basicConfig(level=getattr(logging, log_level))
 logger = logging.getLogger('monitor')
 logging.getLogger('trio-websocket').setLevel(logging.WARNING)
 
-uri_pwa = 'ws://localhost:9222/devtools/page/114851EC1B6E303B258D817C1FFAB53B'
-path = 'trace_pwa.json'
+uri_pwa = 'ws://localhost:9222/devtools/page/A83F102B6E5B801AE3A5F3330662C349'
+path = 'trace_notes_pwa.json'
 
 traceConfig = tracing.TraceConfig(
     record_mode='recordContinuously',
@@ -80,9 +80,18 @@ async def generateTrace(session, outfile):
         nursery.start_soon(dataComplete, nursery)
 
         # trace for around 6 seconds
+        startInfo = await session.execute(system_info.get_info())
         await session.execute(tracing.start(buffer_usage_reporting_interval=500, trace_config=traceConfig))
         await trio.sleep(6)
         await session.execute(tracing.end())
+        endInfo = await session.execute(system_info.get_info())
+        async with await trio.Path('info.txt').open('a') as outfile: 
+            await outfile.write('Start: \n')
+            data = ',\n'.join([str(item) for item in startInfo])
+            await outfile.write(data)
+            await outfile.write('End:\n')
+            data = ',\n'.join([str(item) for item in endInfo])
+
 
 async def main():
     # Open connection

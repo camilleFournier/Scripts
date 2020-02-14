@@ -8,7 +8,9 @@ import {
     TrackType,
     isAsyncPhase,
     isNestableAsyncPhase,
+    isFlowPhase,
     isMarkerEvent,
+    nativeGroup,
     sortedProcesses,
     eventFrameId
 } from './resources-string.js';
@@ -338,11 +340,14 @@ function extractCpuProfile(tracingModel, thread) {
     if (cpuProfileEvent && cpuProfileEvent.name === RecordTypes.CpuProfile) {
         const eventData = cpuProfileEvent.args['data'];
         cpuProfile = /** @type {?Protocol.Profiler.Profile} */ (eventData && eventData['cpuProfile']);
+        
     }
     if (!cpuProfile) {
         cpuProfileEvent = events.find(e => e.name === RecordTypes.Profile);
+        
         if (!cpuProfileEvent) { return null; }
         const profileGroup = tracingModel.profileGroups.get(`${cpuProfileEvent.thread.process().id()}:${cpuProfileEvent.id}`) || null;
+        
         if (!profileGroup) { return null; }
         cpuProfile = /** @type {!Protocol.Profiler.Profile} */ ({
             startTime: cpuProfileEvent.args['data']['startTime'],
@@ -372,9 +377,9 @@ function extractCpuProfile(tracingModel, thread) {
         if (!cpuProfile.endTime) {
             cpuProfile.endTime = cpuProfile.timeDeltas.reduce((x, y) => x + y, cpuProfile.startTime);
         }
-    }
+    } 
     try {
-        const jsProfileModel = new CPUProfileDataModel(cpuProfile, target);
+        const jsProfileModel = new CPUProfileDataModel(cpuProfile);
         timeline_model.cpuProfiles.push(jsProfileModel); 
         return jsProfileModel;
     } catch(e) { return null; }
@@ -412,6 +417,167 @@ function generateTracingEventsFromCpuProfile(jsProfileModel, thread) {
         jsEvents.push(jsSampleEvent);
     }
     return jsEvents;
+}
+
+function generateJSFrameEvents(events) {
+    function equalFrames(frame1, frame2) {
+        return frame1.scriptId === frame2.scriptId &&
+               frame1.functionName === frame2.functionName &&
+               frame1.lineNumber === frame2.lineNumber;
+    }
+
+    function isJSInvocationEvent(e) {
+        switch (e.name) {
+            case RecordType.RunMicrotasks:
+            case RecordType.FunctionCall:
+            case RecordType.EvaluateScript:
+            case RecordType.EvaluateModule:
+            case RecordType.EventDispatch:
+            case RecordType.V8Execute:
+            return true;
+        }
+        return false;
+    }
+  
+    const jsFrameEvents = [];
+    const jsFramesStack = [];
+    const lockedJsStackDepth = [];
+    let ordinal = 0;
+    // const showAllEvents = Root.Runtime.experiments.isEnabled('timelineShowAllEvents');
+    // const showRuntimeCallStats = Root.Runtime.experiments.isEnabled('timelineV8RuntimeCallStats');
+    // const showNativeFunctions = self.Common.settings.moduleSetting('showNativeFunctionsInJSProfile').get();
+    const showAllEvents = true;
+    const showRuntimeCallStats = true;
+    const showNativeFunctions = true;
+  
+    function onStartEvent(e) {
+        e.ordinal = ++ordinal;
+        extractStackTrace(e);
+        // For the duration of the event we cannot go beyond the stack associated with it.
+        lockedJsStackDepth.push(jsFramesStack.length);
+    }
+  
+    function onInstantEvent(e, parent) {
+        e.ordinal = ++ordinal;
+        if (parent && isJSInvocationEvent(parent)) {
+            extractStackTrace(e);
+        }
+    }
+
+    function onEndEvent(e) {
+        truncateJSStack(lockedJsStackDepth.pop(), e.endTime);
+    }
+  
+    function truncateJSStack(depth, time) {
+        if (lockedJsStackDepth.length) {
+            const lockedDepth = lockedJsStackDepth[lockedJsStackDepth.length - 1];
+            if (depth < lockedDepth) {
+                console.error(`Child stack is shallower (${depth}) than the parent stack (${lockedDepth}) at ${time}`);
+                depth = lockedDepth;
+            }
+        }
+        if (jsFramesStack.length < depth) {
+            console.error(`Trying to truncate higher than the current stack size at ${time}`);
+            depth = jsFramesStack.length;
+        }
+        for (let k = 0; k < jsFramesStack.length; ++k) {
+            jsFramesStack[k].setEndTime(time);
+        }
+        jsFramesStack.length = depth;
+    }
+  
+    function showNativeName(name) {
+        return showRuntimeCallStats && !!nativeGroup(name);
+    }
+
+    function filterStackFrames(stack) {
+        if (showAllEvents) { return; }
+        let previousNativeFrameName = null;
+        let j = 0;
+        for (let i = 0; i < stack.length; ++i) {
+            const frame = stack[i];
+            const url = frame.url;
+            const isNativeFrame = url && url.startsWith('native ');
+            if (!showNativeFunctions && isNativeFrame) { continue; }
+            const isNativeRuntimeFrame = frame.url === 'native V8Runtime';
+            if (isNativeRuntimeFrame && !showNativeName(frame.functionName)) { continue; }
+            const nativeFrameName =
+                isNativeRuntimeFrame ? nativeGroup(frame.functionName) : null;
+            if (previousNativeFrameName && previousNativeFrameName === nativeFrameName) { continue; }
+            previousNativeFrameName = nativeFrameName;
+            stack[j++] = frame;
+        }
+        stack.length = j;
+      }
+  
+    function extractStackTrace(e) {
+        const recordTypes = RecordType;
+        /** @type {!Array<!Protocol.Runtime.CallFrame>} */
+        const callFrames = e.name === recordTypes.JSSample ? e.args['data']['stackTrace'].slice().reverse() :
+                                                             jsFramesStack.map(frameEvent => frameEvent.args['data']);
+        filterStackFrames(callFrames);
+        const endTime = e.endTime || e.startTime;
+        const minFrames = Math.min(callFrames.length, jsFramesStack.length);
+        let i;
+        for (i = lockedJsStackDepth[lockedJsStackDepth.length - 1] || 0; i < minFrames; ++i) {
+            const newFrame = callFrames[i];
+            const oldFrame = jsFramesStack[i].args['data'];
+            if (!equalFrames(newFrame, oldFrame)) { break; }
+            jsFramesStack[i].setEndTime(Math.max(jsFramesStack[i].endTime, endTime));
+        }
+        truncateJSStack(i, e.startTime);
+        for (; i < callFrames.length; ++i) {
+            const frame = callFrames[i];
+            const jsFrameEvent = new SDK.TracingModel.Event(
+                DevToolsTimelineEventCategory, recordTypes.JSFrame, Phase.Complete,
+                e.startTime, e.thread);
+            jsFrameEvent.ordinal = e.ordinal;
+            jsFrameEvent.addArgs({data: frame});
+            jsFrameEvent.setEndTime(endTime);
+            jsFramesStack.push(jsFrameEvent);
+            jsFrameEvents.push(jsFrameEvent);
+        }
+      }
+  
+        const firstTopLevelEvent = events.find(e => e.isTopLevel());
+        const startTime = firstTopLevelEvent ? firstTopLevelEvent.startTime : 0;
+        forEachEvent(events, onStartEvent, onEndEvent, onInstantEvent, startTime);
+        return jsFrameEvents;
+}
+
+function forEachEvent(events, onStartEvent, onEndEvent, onInstantEvent, startTime, endTime, filter) {
+    startTime = startTime || 0;
+    endTime = endTime || Infinity;
+    const stack = [];
+    // const startEvent = TimelineModelImpl._topLevelEventEndingAfter(events, startTime);
+    //topLevelEventEndingAfter(events, startTime)
+    // let index = events.upperBound(time, (time, event) => time - event.startTime) - 1;
+    let index;
+    events.forEach((e, i) => {
+        if (startTime - e.startTime <= 0) { index = i; }
+    });
+    while (index > 0 && events[index].isTopLevel()) { index--; }
+    const startEvent = Math.max(index, 0);
+
+    for (let i = startEvent; i < events.length; ++i) {
+        const e = events[i];
+        if ((e.endTime || e.startTime) < startTime) { continue; }
+        if (e.startTime >= endTime) { break; }
+        if (isAsyncPhase(e.phase) || isFlowPhase(e.phase)) { continue; }
+        while (stack.length && stack[stack.length-1].endTime <= e.startTime) {
+            onEndEvent(stack.pop());
+        }
+        if (filter && !filter(e)) { continue; }
+        if (e.duration) {
+            onStartEvent(e);
+            stack.push(e);
+        } else {
+            onInstantEvent && onInstantEvent(e, stack[stack.length-1] || null);
+        }
+    }
+    while (stack.length) {
+        onEndEvent(stack.pop());
+    }
 }
 
 function processEvent(event) {

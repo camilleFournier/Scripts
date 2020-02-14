@@ -138,24 +138,24 @@ export class CPUProfileNode extends ProfileNode {
      * @param {?Target} target
      */
     constructor(profile) {
-      super();
-      const isLegacyFormat = false;
+        super();
+        const isLegacyFormat = false;
         // Current format encodes timestamps as deltas. Start/stop times are in microseconds.
         this.profileStartTime = profile.startTime / 1000;
         this.profileEndTime = profile.endTime / 1000;
         this.timestamps = this._convertTimeDeltas(profile);
-      this.samples = profile.samples;
-      this.lines = profile.lines;
-      this.totalHitCount = 0;
-      this.profileHead = this._translateProfileTree(profile.nodes);
-      this.initialize(this.profileHead);
-      this._extractMetaNodes();
-      if (this.samples) {
-        this._buildIdToNodeMap();
-        this._sortSamples();
-        this._normalizeTimestamps();
-        this._fixMissingSamples();
-      }
+        this.samples = profile.samples;
+        this.lines = profile.lines;
+        this.totalHitCount = 0;
+        this.profileHead = this._translateProfileTree(profile.nodes);
+        this.initialize(this.profileHead);
+        this._extractMetaNodes();
+        if (this.samples) {
+            this._buildIdToNodeMap();
+            this._sortSamples();
+            this._normalizeTimestamps();
+            this._fixMissingSamples();
+        }
     }
   
     /**
@@ -233,12 +233,15 @@ export class CPUProfileNode extends ProfileNode {
         const node = nodes[i];
         nodeByIdMap.set(node.id, node);
       }
-  
       buildHitCountFromSamples(nodes, this.samples);
       buildChildrenFromParents(nodes);
       this.totalHitCount = nodes.reduce((acc, node) => acc + node.hitCount, 0);
       const sampleTime = (this.profileEndTime - this.profileStartTime) / this.totalHitCount;
-      const keepNatives = !!self.Common.settings.moduleSetting('showNativeFunctionsInJSProfile').get();
+      console.log('sampleTime : ', sampleTime);
+      console.log(this.profileEndTime, ', ', this.profileStartTime);
+      console.log(this.totalHitCount);
+    //   const keepNatives = !!self.Common.settings.moduleSetting('showNativeFunctionsInJSProfile').get();
+      const keepNatives = true; 
       const root = nodes[0];
       /** @type {!Map<number, number>} */
       const idMap = new Map([[root.id, root.id]]);
@@ -311,19 +314,21 @@ export class CPUProfileNode extends ProfileNode {
         this.timestamps = timestamps;
         return;
       }
-  
       // Convert samples from usec to msec
       for (let i = 0; i < timestamps.length; ++i) {
         timestamps[i] /= 1000;
       }
       if (this.samples.length === timestamps.length) {
+
         // Support for a legacy format where were no timeDeltas.
         // Add an extra timestamp used to calculate the last sample duration.
-        const averageSample = (timestamps.peekLast() - timestamps[0]) / (timestamps.length - 1);
-        this.timestamps.push(timestamps.peekLast() + averageSample);
+        const averageSample = (timestamps[timestamps.length-1] - timestamps[0]) / (timestamps.length - 1);
+        this.timestamps.push(timestamps[timestamps.length-1] + averageSample);
+
       }
       this.profileStartTime = timestamps[0];
-      this.profileEndTime = timestamps.peekLast();
+      this.profileEndTime = timestamps[timestamps.length-1];
+
     }
   
     _buildIdToNodeMap() {
@@ -381,8 +386,9 @@ export class CPUProfileNode extends ProfileNode {
         prevNodeId = nodeId;
         nodeId = nextNodeId;
       }
+ 
       if (count) {
-        self.Common.console.warn(ls`DevTools: CPU profile parser is fixing ${count} missing samples.`);
+        console.warn(`DevTools: CPU profile parser is fixing ${count} missing samples.`);
       }
       /**
        * @param {!ProfileNode} node
