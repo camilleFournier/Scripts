@@ -153,6 +153,7 @@ export function loadEvents(raw_events) {
     let selfTime = 0;
     let frameTime = 0;
     let nbFrames = 0;
+    let nbTotalFrames = 0;
     let GPUProcessPID = tracing_model.processByName.get('GPU Process').id();
     // console.log(frameModel.frames.filter(frame => frame.idle).length);
     for (const frame of frameModel.frames) {
@@ -161,6 +162,7 @@ export function loadEvents(raw_events) {
             frameTime += frame.duration;
             nbFrames++;
         }
+        nbTotalFrames++;
         cpuTime += frame.cpuTime;
         // selfTime += frame.selfTime;
     }
@@ -208,7 +210,8 @@ export function loadEvents(raw_events) {
         nbRequestMainThreadFrame : raw_events.filter(raw => raw.name == 'RequestMainThreadFrame').length,
         nbBeginMainThreadFrame : raw_events.filter(raw => raw.name == 'BeginMainThreadFrame').length,
         nbActivateLayerTree : raw_events.filter(raw => raw.name == 'ActivateLayerTree').length,
-        nbSwapBuffers: raw_events.filter(raw => raw.name == 'GLES2DecoderImpl::DoSwapBuffers').length
+        nbSwapBuffers: raw_events.filter(raw => raw.name == 'GLES2DecoderImpl::DoSwapBuffers').length,
+        nbTotalFrames: nbTotalFrames
     }
 
     // console.log(data);

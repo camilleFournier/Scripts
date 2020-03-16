@@ -105,7 +105,7 @@ function extractTrace(name) {
 // };
 
 const exp = [16, 50, 100, 200, 500];
-const dataRows = ['Exp; Number of frames; Number of BeginFrame; Number of RequestMainThreadFrame; Number of BeginMainThreadFrame; Number of ActivateLayerTree; Number of DrawFrame; nb of SwapBuffers'];
+const dataRows = ['Exp; Number of frames; Total nb of frames; Number of BeginFrame; Number of RequestMainThreadFrame; Number of BeginMainThreadFrame; Number of ActivateLayerTree; Number of DrawFrame; nb of SwapBuffers'];
 // for (let i=0; i<exp.length; i++) {
 //     console.log('Frame every '+exp[i]+'ms');
 //     const name = `pwa_trace_dumpsys/Emulator/hundred_points/pwa_${exp[i]}/pwa_${exp[i]}`;
@@ -114,16 +114,27 @@ const dataRows = ['Exp; Number of frames; Number of BeginFrame; Number of Reques
 //         dataRows.push(`${trace[l].nbFrames}; ${trace[l].nbGPUTasks}; ${trace[l].nbRunTasks}`);
 //     }
 // };
+
+const tap_events = [20, 50, 100, 500, 1000]
+for (let j=0; j<tap_events.length; j++) {
+    for (let i=1; i<=9;i++) {
+        const name = `pwa_auto_input/tap_every_${tap_events[j]}ms/pwa_50_input_trace_${i}.json`;
+        var file = fs.readFileSync(name);
+        var raw_events = JSON.parse(file);
+        const raw = m.loadEvents(raw_events);
+        dataRows.push(`${tap_events[j]}; ${raw.nbFrames}; ${raw.nbTotalFrames}; ${raw.nbBeginFrame}; ${raw.nbRequestMainThreadFrame}; ${raw.nbBeginMainThreadFrame}; ${raw.nbActivateLayerTree}; ${raw.nbDrawFrame}; ${raw.nbSwapBuffers}`);
+    }
+}
 for (let i=1; i<=9;i++) {
-    const name = `pwa_trace/pwa_50_input_trace_${i}.json`;
+    const name = `pwa_auto_input/manual_fast_tap/pwa_50_input_trace_${i}.json`;
     var file = fs.readFileSync(name);
     var raw_events = JSON.parse(file);
     const raw = m.loadEvents(raw_events);
-    dataRows.push(`${i}; ${raw.nbFrames}; ${raw.nbBeginFrame}; ${raw.nbRequestMainThreadFrame}; ${raw.nbBeginMainThreadFrame}; ${raw.nbActivateLayerTree}; ${raw.nbDrawFrame}; ${raw.nbSwapBuffers}`);
+    dataRows.push(`manual; ${raw.nbFrames}; ${raw.nbTotalFrames}; ${raw.nbBeginFrame}; ${raw.nbRequestMainThreadFrame}; ${raw.nbBeginMainThreadFrame}; ${raw.nbActivateLayerTree}; ${raw.nbDrawFrame}; ${raw.nbSwapBuffers}`);
 }
 console.log(dataRows);
 
-fs.writeFileSync('pwa_trace/summary.txt', dataRows.join('\n'));
+fs.writeFileSync('pwa_auto_input/summary.txt', dataRows.join('\n'));
 
 // fs.writeFileSync(`pwa_trace_dumpsys/Emulator/hundred_points/summary.txt`, dataRows.join('\n'));
 

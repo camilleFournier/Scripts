@@ -22,6 +22,8 @@ import sys
 import time
 
 from cdp import target, page, tracing
+import cdp.input
+import cdp.tracing
 import trio
 from trio_cdp import open_cdp_connection
 
@@ -31,8 +33,8 @@ logging.basicConfig(level=getattr(logging, log_level))
 logger = logging.getLogger('monitor')
 logging.getLogger('trio-websocket').setLevel(logging.WARNING)
 
-uri_pwa = 'ws://localhost:9222/devtools/page/042117F8036A904E52A20C06F5EBAE08'
-name = 'pwa_trace\pwa_50_input_trace'
+uri_pwa = 'ws://localhost:9222/devtools/page/C3A9BAFF42907EAD768BFD22A424139A'
+name = 'pwa_auto_input/manual_fast_tap/pwa_50_input_trace'
 # name = 'pwa_touch_trace'
 
 traceConfig = tracing.TraceConfig(
@@ -63,7 +65,7 @@ def findPWA(target):
 async def generateTrace(session, outfile, final_data):
     # handles DataCollected events
     async def collectData():
-        async for event in session.listen(tracing.DataCollected):
+        async for event in session.listen(cdp.tracing.DataCollected):
             logger.info('Data received')
             # Convert data into correct and readable json
             data = ',\n'.join(map(str, event.value))
@@ -75,7 +77,7 @@ async def generateTrace(session, outfile, final_data):
 
     # handles TracingComplete event
     async def dataComplete(nursery):
-        async for event in session.listen(tracing.TracingComplete):
+        async for event in session.listen(cdp.tracing.TracingComplete):
             logger.info('{}: Data completed'.format(trio.current_time()))
             logger.info(event)
             nursery.cancel_scope.cancel()
@@ -84,17 +86,33 @@ async def generateTrace(session, outfile, final_data):
     async def bufferUsage():
         async for event in session.listen(tracing.BufferUsage):
             logger.info('{} events recorded. \n percentFull {:0.1f}% \n value {:0.1f}%'.format(event.eventCount, event.percentFull*100, event.value*100))
+
+    async def simulateTouch():
+        await session.execute(cdp.input.synthesize_tap_gesture(180, 303))
+        await trio.sleep(0.02)
+        await simulateTouch()
     
+    async def tracing():
+        # trace for around 10 seconds
+        await session.execute(cdp.tracing.start(buffer_usage_reporting_interval=500, trace_config=traceConfig))
+        await trio.sleep(10)
+        await session.execute(cdp.tracing.end())
+        print('tracing end')
+
     # run event handlers in parallel 
     async with trio.open_nursery() as nursery:
         nursery.start_soon(collectData)
         nursery.start_soon(dataComplete, nursery)
+        # nursery.start_soon(simulateTouch)
+        nursery.start_soon(tracing)
+        # await session.execute(tracing.start(buffer_usage_reporting_interval=500, trace_config=traceConfig))
+        # await trio.sleep(10)
+        # await session.execute(tracing.end())
+        # print('tracing end')
+    
 
-        # trace for around 10 seconds
-        await session.execute(tracing.start(buffer_usage_reporting_interval=500, trace_config=traceConfig))
-        await trio.sleep(10)
-        await session.execute(tracing.end())
-        print('tracing end')
+
+        
 
 
 async def main(i):
@@ -125,7 +143,7 @@ async def main(i):
             await outfile.write(',\n'.join(final_data))
             await outfile.write("]")
 
-for i in range(1, 10):
+for i in range(1, 2):
     time.sleep(30)
-    trio.run(main, i)
+    trio.run(main, 7)
 
