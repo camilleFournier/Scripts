@@ -143,6 +143,7 @@ export class CPUProfileNode extends ProfileNode {
         // Current format encodes timestamps as deltas. Start/stop times are in microseconds.
         this.profileStartTime = profile.startTime / 1000;
         this.profileEndTime = profile.endTime / 1000;
+        
         this.timestamps = this._convertTimeDeltas(profile);
         this.samples = profile.samples;
         this.lines = profile.lines;
@@ -237,9 +238,6 @@ export class CPUProfileNode extends ProfileNode {
       buildChildrenFromParents(nodes);
       this.totalHitCount = nodes.reduce((acc, node) => acc + node.hitCount, 0);
       const sampleTime = (this.profileEndTime - this.profileStartTime) / this.totalHitCount;
-      console.log('sampleTime : ', sampleTime);
-      console.log(this.profileEndTime, ', ', this.profileStartTime);
-      console.log(this.totalHitCount);
     //   const keepNatives = !!self.Common.settings.moduleSetting('showNativeFunctionsInJSProfile').get();
       const keepNatives = true; 
       const root = nodes[0];

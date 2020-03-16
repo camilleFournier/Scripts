@@ -259,6 +259,9 @@ export class Process extends NamedObject {
      * @return {!Event}
      */
     static fromPayload(payload, thread) {
+        if (!payload.cat) {
+            console.log(payload);
+        }
       const event = new Event(payload.cat, payload.name, /** @type {!Phase} */ (payload.ph), payload.ts / 1000, thread);
       if (payload.args) {
         event.addArgs(payload.args);

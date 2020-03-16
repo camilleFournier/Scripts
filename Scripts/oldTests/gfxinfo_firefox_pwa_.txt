@@ -1,0 +1,1209 @@
+Applications Graphics Acceleration Info:
+Uptime: 20486608 Realtime: 20486608
+
+** Graphics info for pid 3189 [org.mozilla.firefox] **
+
+Stats since: 20371938892212ns
+Total frames rendered: 2
+Janky frames: 2 (100.00%)
+50th percentile: 113ms
+90th percentile: 113ms
+95th percentile: 113ms
+99th percentile: 113ms
+Number Missed Vsync: 1
+Number High input latency: 0
+Number Slow UI thread: 2
+Number Slow bitmap uploads: 0
+Number Slow issue draw commands: 1
+HISTOGRAM: 5ms=0 6ms=0 7ms=0 8ms=0 9ms=0 10ms=0 11ms=0 12ms=0 13ms=0 14ms=0 15ms=0 16ms=0 17ms=0 18ms=0 19ms=0 20ms=0 21ms=0 22ms=0 23ms=0 24ms=0 25ms=0 26ms=0 27ms=0 28ms=0 29ms=0 30ms=0 31ms=0 32ms=0 34ms=0 36ms=0 38ms=0 40ms=0 42ms=0 44ms=0 46ms=0 48ms=0 53ms=0 57ms=0 61ms=0 65ms=0 69ms=0 73ms=0 77ms=0 81ms=0 85ms=0 89ms=0 93ms=0 97ms=0 101ms=0 105ms=0 109ms=0 113ms=2 117ms=0 121ms=0 125ms=0 129ms=0 133ms=0 150ms=0 200ms=0 250ms=0 300ms=0 350ms=0 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache                0 / 92274688    0.0000         0
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                   0 / 16777216    0.0000         0
+  TessellationCache           0 /  1048576    0.0000
+  TextDropShadowCache         0 /  6291456    0.0000         0
+  PatchCache                  0 /   131072    0.0000         0
+  FontRenderer A8           0 /        0
+  FontRenderer RGBA         0 /        0
+  FontRenderer total        0 /        0
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  0 bytes, 0.00 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	org.mozilla.firefox/org.mozilla.gecko.webapps.WebApps$WebApp0/android.view.ViewRootImpl@5b6e21b (visibility=0)
+View hierarchy:
+
+  org.mozilla.firefox/org.mozilla.gecko.webapps.WebApps$WebApp0/android.view.ViewRootImpl@5b6e21b
+  12 views, 14,23 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        12
+Total DisplayList:  14,23 kB
+
+
+** Graphics info for pid 4908 [com.sec.android.app.launcher] **
+
+Stats since: 28193026262ns
+Total frames rendered: 5871
+Janky frames: 3145 (53.57%)
+50th percentile: 17ms
+90th percentile: 23ms
+95th percentile: 34ms
+99th percentile: 109ms
+Number Missed Vsync: 238
+Number High input latency: 19
+Number Slow UI thread: 440
+Number Slow bitmap uploads: 143
+Number Slow issue draw commands: 2710
+HISTOGRAM: 5ms=1215 6ms=725 7ms=290 8ms=114 9ms=76 10ms=49 11ms=53 12ms=38 13ms=30 14ms=43 15ms=49 16ms=51 17ms=305 18ms=1225 19ms=333 20ms=278 21ms=231 22ms=112 23ms=68 24ms=52 25ms=50 26ms=44 27ms=25 28ms=22 29ms=24 30ms=26 31ms=15 32ms=17 34ms=19 36ms=26 38ms=18 40ms=10 42ms=15 44ms=11 46ms=4 48ms=23 53ms=21 57ms=13 61ms=16 65ms=3 69ms=12 73ms=5 77ms=12 81ms=9 85ms=3 89ms=3 93ms=5 97ms=8 101ms=8 105ms=4 109ms=6 113ms=4 117ms=4 121ms=3 125ms=5 129ms=3 133ms=5 150ms=25 200ms=2 250ms=1 300ms=3 350ms=1 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=1 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache           679744 / 92274688   96.5786  40162576
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache           16384 /  2097152   97.1429     16384
+  PathCache                   0 / 16777216   90.2344    189292
+  TessellationCache           0 /  1048576   95.7143
+  TextDropShadowCache   1700448 /  6291456    0.0000   1700448
+  PatchCache               4416 /   131072   99.8978      4992
+  FontRenderer A8     1048576 /  1048576
+    Font CacheTexture    911696 /  1048576   86.9461 (usage ratio)
+  FontRenderer RGBA         0 /        0
+  FontRenderer total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  3449568 bytes, 3.29 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /   215296 / ( 232 X  232)/    GL_RGBA /   51
+#  2 /    33856 / (  92 X   92)/    GL_RGBA /   55
+#  3 /   215296 / ( 232 X  232)/    GL_RGBA /   55
+#  4 /   215296 / ( 232 X  232)/    GL_RGBA /  319
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity/android.view.ViewRootImpl@6570d9c (visibility=8)
+View hierarchy:
+
+  com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity/android.view.ViewRootImpl@6570d9c
+  468 views, 457,03 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        468
+Total DisplayList:  457,03 kB
+
+
+** Graphics info for pid 5794 [com.sec.android.inputmethod] **
+
+Stats since: 299184930182ns
+Total frames rendered: 357
+Janky frames: 181 (50.70%)
+50th percentile: 17ms
+90th percentile: 48ms
+95th percentile: 97ms
+99th percentile: 150ms
+Number Missed Vsync: 28
+Number High input latency: 1
+Number Slow UI thread: 61
+Number Slow bitmap uploads: 107
+Number Slow issue draw commands: 34
+HISTOGRAM: 5ms=27 6ms=9 7ms=8 8ms=10 9ms=8 10ms=6 11ms=11 12ms=12 13ms=21 14ms=19 15ms=26 16ms=19 17ms=23 18ms=25 19ms=20 20ms=15 21ms=6 22ms=5 23ms=6 24ms=8 25ms=5 26ms=5 27ms=3 28ms=2 29ms=4 30ms=1 31ms=1 32ms=6 34ms=2 36ms=3 38ms=2 40ms=2 42ms=0 44ms=1 46ms=0 48ms=2 53ms=1 57ms=2 61ms=2 65ms=2 69ms=2 73ms=3 77ms=0 81ms=1 85ms=1 89ms=1 93ms=1 97ms=2 101ms=0 105ms=0 109ms=0 113ms=0 117ms=0 121ms=0 125ms=1 129ms=1 133ms=1 150ms=10 200ms=1 250ms=2 300ms=0 350ms=0 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache          5893376 / 92274688   87.6077  17413376
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                   0 / 16777216    0.0000         0
+  TessellationCache           0 /  1048576    0.0000
+  TextDropShadowCache         0 /  6291456    0.0000         0
+  PatchCache               1728 /   131072   97.8417      1728
+  FontRenderer A8     1048576 /  1048576
+    Font CacheTexture    671060 /  1048576   63.9973 (usage ratio)
+  FontRenderer RGBA         0 /        0
+  FontRenderer total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  6943680 bytes, 6.62 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /   102400 / ( 160 X  160)/    GL_RGBA /   13
+#  2 /    30976 / (  88 X   88)/    GL_RGBA /   27
+#  3 /  5760000 / (1440 X 1000)/    GL_RGBA /   25
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	InputMethod/android.view.ViewRootImpl@423394f (visibility=8)
+View hierarchy:
+
+  InputMethod/android.view.ViewRootImpl@423394f
+  10 views, 9,77 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        10
+Total DisplayList:  9,77 kB
+
+
+** Graphics info for pid 13338 [com.android.settings] **
+
+Stats since: 23241446593ns
+Total frames rendered: 7208
+Janky frames: 3034 (42.09%)
+50th percentile: 11ms
+90th percentile: 20ms
+95th percentile: 24ms
+99th percentile: 89ms
+Number Missed Vsync: 254
+Number High input latency: 54
+Number Slow UI thread: 433
+Number Slow bitmap uploads: 45
+Number Slow issue draw commands: 2380
+HISTOGRAM: 5ms=974 6ms=756 7ms=858 8ms=535 9ms=264 10ms=170 11ms=127 12ms=104 13ms=68 14ms=104 15ms=89 16ms=139 17ms=1074 18ms=995 19ms=219 20ms=147 21ms=103 22ms=69 23ms=33 24ms=35 25ms=19 26ms=19 27ms=21 28ms=19 29ms=10 30ms=15 31ms=8 32ms=16 34ms=19 36ms=8 38ms=3 40ms=12 42ms=9 44ms=7 46ms=7 48ms=15 53ms=13 57ms=10 61ms=10 65ms=7 69ms=8 73ms=7 77ms=1 81ms=7 85ms=1 89ms=10 93ms=4 97ms=7 101ms=0 105ms=3 109ms=1 113ms=2 117ms=2 121ms=3 125ms=1 129ms=0 133ms=2 150ms=28 200ms=1 250ms=4 300ms=2 350ms=0 400ms=1 450ms=0 500ms=1 550ms=1 600ms=1 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache          4926896 / 92274688   98.4553  12649280
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                   0 / 16777216    0.0000         0
+  TessellationCache           0 /  1048576    0.0000
+  TextDropShadowCache         0 /  6291456    0.0000         0
+  PatchCache               1088 /   131072   99.4350      1088
+  FontRenderer A8     1048576 /  1048576
+    Font CacheTexture    561764 /  1048576   53.5740 (usage ratio)
+  FontRenderer RGBA         0 /        0
+  FontRenderer total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  5976560 bytes, 5.70 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /   147456 / ( 192 X  192)/    GL_RGBA /  127
+#  2 /   147456 / ( 192 X  192)/    GL_RGBA /  121
+#  3 /    36864 / (  96 X   96)/    GL_RGBA /    5
+#  4 /   147456 / ( 192 X  192)/    GL_RGBA /  135
+#  5 /   147456 / ( 192 X  192)/    GL_RGBA /  293
+#  6 /   147456 / ( 192 X  192)/    GL_RGBA /  376
+#  7 /    48640 / (  76 X  160)/    GL_RGBA /  460
+#  8 /    82944 / ( 144 X  144)/    GL_RGBA /  414
+#  9 /   147456 / ( 192 X  192)/    GL_RGBA /  383
+# 10 /   147456 / ( 192 X  192)/    GL_RGBA /  269
+# 11 /   147456 / ( 192 X  192)/    GL_RGBA /  218
+# 12 /   147456 / ( 192 X  192)/    GL_RGBA /  250
+# 13 /   147456 / ( 192 X  192)/    GL_RGBA /  420
+# 14 /   147456 / ( 192 X  192)/    GL_RGBA /  533
+# 15 /   147456 / ( 192 X  192)/    GL_RGBA /  282
+# 16 /   147456 / ( 192 X  192)/    GL_RGBA /  224
+# 17 /   147456 / ( 192 X  192)/    GL_RGBA /  348
+# 18 /   147456 / ( 192 X  192)/    GL_RGBA /  485
+# 19 /     1520 / (  19 X   20)/    GL_RGBA / 1511
+# 20 /    36864 / (  96 X   96)/    GL_RGBA /    6
+# 21 /   147456 / ( 192 X  192)/    GL_RGBA /  480
+# 22 /    46464 / ( 121 X   96)/    GL_RGBA /  787
+# 23 /   147456 / ( 192 X  192)/    GL_RGBA /  539
+# 24 /   102400 / ( 160 X  160)/    GL_RGBA / 1491
+# 25 /   147456 / ( 192 X  192)/    GL_RGBA /  260
+# 26 /  1327104 / ( 576 X  576)/    GL_RGBA /  787
+# 27 /       64 / (   4 X    4)/    GL_RGBA / 1052
+# 28 /   147456 / ( 192 X  192)/    GL_RGBA /  246
+# 29 /   147456 / ( 192 X  192)/    GL_RGBA /  389
+# 30 /   147456 / ( 192 X  192)/    GL_RGBA /  233
+# 31 /   147456 / ( 192 X  192)/    GL_RGBA /  300
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	com.android.settings/com.android.settings.Settings/android.view.ViewRootImpl@1f70981 (visibility=8)
+	com.android.settings/com.android.settings.Settings$ManageApplicationsActivity/android.view.ViewRootImpl@e7f176b (visibility=8)
+View hierarchy:
+
+  com.android.settings/com.android.settings.Settings/android.view.ViewRootImpl@1f70981
+  87 views, 84,96 kB of display lists
+
+  com.android.settings/com.android.settings.Settings$ManageApplicationsActivity/android.view.ViewRootImpl@e7f176b
+  166 views, 162,11 kB of display lists
+
+
+Total ViewRootImpl: 2
+Total Views:        253
+Total DisplayList:  247,07 kB
+
+
+** Graphics info for pid 12935 [com.android.vending] **
+
+Stats since: 18715177257255ns
+Total frames rendered: 771
+Janky frames: 548 (71.08%)
+50th percentile: 17ms
+90th percentile: 28ms
+95th percentile: 42ms
+99th percentile: 150ms
+Number Missed Vsync: 45
+Number High input latency: 1
+Number Slow UI thread: 88
+Number Slow bitmap uploads: 5
+Number Slow issue draw commands: 460
+HISTOGRAM: 5ms=30 6ms=23 7ms=23 8ms=20 9ms=24 10ms=11 11ms=18 12ms=17 13ms=16 14ms=11 15ms=9 16ms=24 17ms=265 18ms=110 19ms=39 20ms=15 21ms=10 22ms=4 23ms=7 24ms=5 25ms=1 26ms=3 27ms=5 28ms=5 29ms=5 30ms=3 31ms=3 32ms=5 34ms=5 36ms=5 38ms=3 40ms=3 42ms=9 44ms=2 46ms=3 48ms=4 53ms=2 57ms=1 61ms=1 65ms=1 69ms=2 73ms=4 77ms=0 81ms=0 85ms=1 89ms=1 93ms=1 97ms=1 101ms=0 105ms=0 109ms=0 113ms=1 117ms=0 121ms=0 125ms=0 129ms=0 133ms=0 150ms=8 200ms=1 250ms=0 300ms=0 350ms=1 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache          1032536 / 92274688   99.3061   3784544
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                   0 / 16777216   85.3947    194128
+  TessellationCache           0 /  1048576   99.4505
+  TextDropShadowCache         0 /  6291456    0.0000         0
+  PatchCache                  0 /   131072    0.0000         0
+  FontRenderer A8     1048576 /  1048576
+    Font CacheTexture    495428 /  1048576   47.2477 (usage ratio)
+  FontRenderer RGBA         0 /        0
+  FontRenderer total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  2081112 bytes, 1.98 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /    37888 / ( 296 X  128)/   GL_ALPHA /   79
+#  2 /    84100 / ( 145 X  145)/    GL_RGBA /  595
+#  3 /   150544 / ( 194 X  194)/    GL_RGBA /  595
+#  4 /    75272 / ( 194 X  194)/     GL_RGB /  596
+#  5 /   150544 / ( 194 X  194)/    GL_RGBA /  596
+#  6 /    36864 / (  96 X   96)/    GL_RGBA /  662
+#  7 /    84100 / ( 145 X  145)/    GL_RGBA /  654
+#  8 /    36864 / (  96 X   96)/    GL_RGBA /  593
+#  9 /    75272 / ( 194 X  194)/     GL_RGB /  650
+# 10 /   150544 / ( 194 X  194)/    GL_RGBA /  650
+# 11 /   150544 / ( 194 X  194)/    GL_RGBA /  651
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	com.android.vending/com.android.vending.AssetBrowserActivity/android.view.ViewRootImpl@d37bcaf (visibility=8)
+View hierarchy:
+
+  com.android.vending/com.android.vending.AssetBrowserActivity/android.view.ViewRootImpl@d37bcaf
+  214 views, 168,02 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        214
+Total DisplayList:  168,02 kB
+
+
+** Graphics info for pid 4871 [com.google.android.googlequicksearchbox:search] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4010 [com.android.bluetooth] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 5076 [flipboard.boxer.app] **
+
+Stats since: 30975859096ns
+Total frames rendered: 0
+Janky frames: 0 (nan%)
+50th percentile: 4950ms
+90th percentile: 4950ms
+95th percentile: 4950ms
+99th percentile: 4950ms
+Number Missed Vsync: 0
+Number High input latency: 0
+Number Slow UI thread: 0
+Number Slow bitmap uploads: 0
+Number Slow issue draw commands: 0
+HISTOGRAM: 5ms=0 6ms=0 7ms=0 8ms=0 9ms=0 10ms=0 11ms=0 12ms=0 13ms=0 14ms=0 15ms=0 16ms=0 17ms=0 18ms=0 19ms=0 20ms=0 21ms=0 22ms=0 23ms=0 24ms=0 25ms=0 26ms=0 27ms=0 28ms=0 29ms=0 30ms=0 31ms=0 32ms=0 34ms=0 36ms=0 38ms=0 40ms=0 42ms=0 44ms=0 46ms=0 48ms=0 53ms=0 57ms=0 61ms=0 65ms=0 69ms=0 73ms=0 77ms=0 81ms=0 85ms=0 89ms=0 93ms=0 97ms=0 101ms=0 105ms=0 109ms=0 113ms=0 117ms=0 121ms=0 125ms=0 129ms=0 133ms=0 150ms=0 200ms=0 250ms=0 300ms=0 350ms=0 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+No caches instance.
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	flipboard.boxer.app/flipboard.boxer.homescreen.HomeScreenActivity/android.view.ViewRootImpl@37ee7ba (visibility=8)
+View hierarchy:
+
+  flipboard.boxer.app/flipboard.boxer.homescreen.HomeScreenActivity/android.view.ViewRootImpl@37ee7ba
+  30 views, 29,30 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        30
+Total DisplayList:  29,30 kB
+
+
+** Graphics info for pid 15453 [com.samsung.oh] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 5091 [com.google.android.gms] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4487 [com.google.android.gms.persistent] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13277 [com.samsung.android.sm.provider] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 8310 [com.samsung.android.lool] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 9248 [com.google.process.gapps] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 11703 [com.samsung.android.SettingsReceiver] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 17888 [com.samsung.android.scloud:contentsync] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 3585 [com.sec.spp.push:RemoteDlcProcess] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 11724 [com.sec.spp.push] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 30621 [com.tmobile.pr.mytmobile] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 19427 [com.sec.android.provider.badge] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 20245 [com.amazon.mShop.android] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 19647 [com.android.defcontainer] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 17919 [com.osp.app.signin] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14522 [com.samsung.android.calendar] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14691 [com.whitepages.nameid.tmobile] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 12909 [com.android.printspooler] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13380 [com.facebook.appmanager] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14611 [com.samsung.android.authfw] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 5442 [android.process.media] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13523 [com.samsung.android.spay] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14505 [com.sec.android.daemonapp] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 12819 [com.android.chrome:webview_service] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14036 [com.sec.android.app.shealth:remote] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14339 [com.samsung.android.app.watchmanager:contentprovider] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14211 [barcode.reader.qrcode.scanner] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14192 [com.wssnps] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 14122 [com.sec.android.widgetapp.samsungapps] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13967 [com.sec.android.app.sbrowser] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13910 [com.trustonic.tuiservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13864 [com.sec.android.app.samsungapps] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 30479 [com.sec.android.app.music:main] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13833 [com.samsung.SMT] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13784 [com.samsung.voiceserviceplatform] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13806 [com.samsung.svoice.sync] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13753 [com.samsung.android.themecenter] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13537 [com.sec.imsservice:CloudMessageService] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13224 [com.samsung.android.sm.devicesecurity] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 5297 [android.process.acore] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 29501 [com.samsung.android.MtpApplication] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 6889 [com.samsung.android.contacts] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 13538 [com.samsung.klmsagent] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 9695 [com.samsung.android.beaconmanager] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 7549 [com.android.managedprovisioning] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 7135 [com.samsung.ucs.agent.boot] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 6990 [com.samsung.android.oneconnect:Core] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 7092 [com.samsung.android.oneconnect:Receiver] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4949 [org.simalliance.openmobileapi.service:remote] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4763 [com.google.android.googlequicksearchbox:interactor] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4834 [system] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4821 [com.samsung.tmowfc.wfccontroller] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4807 [com.samsung.android.providers.context] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4793 [com.android.nfc] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4778 [com.sec.vsim.ericssonnsds.webapp] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4646 [com.google.android.ext.services] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4441 [com.android.phone] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4428 [com.sec.imsservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4416 [com.sec.sve] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4402 [com.sec.vsimservice] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4258 [com.sec.epdg] **
+Profile data in ms:
+
+View hierarchy:
+
+
+Total ViewRootImpl: 0
+Total Views:        0
+Total DisplayList:  0,00 kB
+
+
+** Graphics info for pid 4022 [com.android.systemui] **
+
+Stats since: 20838706467ns
+Total frames rendered: 13348
+Janky frames: 3643 (27.29%)
+50th percentile: 11ms
+90th percentile: 23ms
+95th percentile: 29ms
+99th percentile: 61ms
+Number Missed Vsync: 306
+Number High input latency: 4
+Number Slow UI thread: 1620
+Number Slow bitmap uploads: 48
+Number Slow issue draw commands: 1981
+HISTOGRAM: 5ms=1842 6ms=971 7ms=985 8ms=1075 9ms=909 10ms=778 11ms=691 12ms=594 13ms=545 14ms=483 15ms=423 16ms=431 17ms=414 18ms=425 19ms=295 20ms=251 21ms=292 22ms=386 23ms=261 24ms=162 25ms=153 26ms=90 27ms=105 28ms=81 29ms=74 30ms=61 31ms=49 32ms=82 34ms=70 36ms=52 38ms=44 40ms=35 42ms=19 44ms=20 46ms=7 48ms=32 53ms=11 57ms=14 61ms=11 65ms=5 69ms=9 73ms=6 77ms=10 81ms=6 85ms=7 89ms=8 93ms=4 97ms=4 101ms=3 105ms=5 109ms=2 113ms=2 117ms=2 121ms=2 125ms=4 129ms=1 133ms=1 150ms=26 200ms=8 250ms=5 300ms=2 350ms=2 400ms=0 450ms=1 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache          5993184 / 92274688   99.6959  26036298
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                5002 / 16777216   90.6486     14437
+  TessellationCache       18312 /  1048576   94.8396
+  TextDropShadowCache    226528 /  6291456    0.0000    226528
+  PatchCache                  0 /   131072    0.0000         0
+  FontRenderer A8     1048576 /  1048576
+    Font CacheTexture    757412 /  1048576   72.2324 (usage ratio)
+  FontRenderer RGBA         0 /        0
+  FontRenderer total  1048576 /  1048576
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  7291602 bytes, 6.95 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /    14112 / (  63 X   56)/    GL_RGBA /    9
+#  2 /    14112 / (  63 X   56)/    GL_RGBA /  147
+#  3 /    14112 / (  63 X   56)/    GL_RGBA /  194
+#  4 /  2553984 / ( 864 X 1478)/     GL_RGB /    5
+#  5 /   147456 / ( 192 X  192)/    GL_RGBA /    5
+#  6 /    14112 / (  63 X   56)/    GL_RGBA /  389
+#  7 /   147456 / ( 192 X  192)/    GL_RGBA /   43
+#  8 /  2654208 / ( 864 X 1536)/     GL_RGB /   43
+#  9 /    20736 / (  72 X   72)/    GL_RGBA /  121
+# 10 /    20736 / (  72 X   72)/    GL_RGBA /  121
+# 11 /    20736 / (  72 X   72)/    GL_RGBA /  121
+# 12 /    14112 / (  63 X   56)/    GL_RGBA /  873
+# 13 /    14112 / (  63 X   56)/    GL_RGBA /  896
+# 14 /    15008 / (  67 X   56)/    GL_RGBA /  497
+# 15 /    12544 / (  56 X   56)/    GL_RGBA /  497
+# 16 /    36864 / (  96 X   96)/    GL_RGBA /  497
+# 17 /     9216 / (  96 X   96)/    GL_RGBA /  497
+# 18 /    36864 / (  96 X   96)/    GL_RGBA /  499
+# 19 /    36864 / (  96 X   96)/    GL_RGBA /  499
+# 20 /    82944 / ( 144 X  144)/    GL_RGBA /  325
+# 21 /    28224 / (  84 X   84)/    GL_RGBA /  819
+# 22 /    28224 / (  84 X   84)/    GL_RGBA /  821
+# 23 /    28224 / (  84 X   84)/    GL_RGBA /  880
+# 24 /    28224 / (  84 X   84)/    GL_RGBA /  883
+
+All Textures in PathCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+#  1 /     2501 / (  41 X   61)/   GL_ALPHA /   17
+#  2 /     2501 / (  41 X   61)/   GL_ALPHA /   17
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	StatusBar/android.view.ViewRootImpl@4ee89cb (visibility=0)
+	Bouncer/android.view.ViewRootImpl@10cb8c1 (visibility=4)
+	com.android.systemui/com.android.systemui.recents.RecentsActivity/android.view.ViewRootImpl@df15d4a (visibility=8)
+	DockedStackDivider/android.view.ViewRootImpl@b95bdb4 (visibility=4)
+View hierarchy:
+
+  StatusBar/android.view.ViewRootImpl@4ee89cb
+  1323 views, 1365,36 kB of display lists
+
+  Bouncer/android.view.ViewRootImpl@10cb8c1
+  1 views, 0,98 kB of display lists
+
+  com.android.systemui/com.android.systemui.recents.RecentsActivity/android.view.ViewRootImpl@df15d4a
+  58 views, 56,64 kB of display lists
+
+  DockedStackDivider/android.view.ViewRootImpl@b95bdb4
+  5 views, 4,88 kB of display lists
+
+
+Total ViewRootImpl: 4
+Total Views:        1387
+Total DisplayList:  1427,86 kB
+
+
+** Graphics info for pid 3670 [system] **
+
+Stats since: 20143028967ns
+Total frames rendered: 10
+Janky frames: 7 (70.00%)
+50th percentile: 21ms
+90th percentile: 200ms
+95th percentile: 200ms
+99th percentile: 200ms
+Number Missed Vsync: 3
+Number High input latency: 1
+Number Slow UI thread: 3
+Number Slow bitmap uploads: 0
+Number Slow issue draw commands: 3
+HISTOGRAM: 5ms=0 6ms=0 7ms=0 8ms=2 9ms=0 10ms=0 11ms=0 12ms=0 13ms=0 14ms=0 15ms=0 16ms=1 17ms=0 18ms=0 19ms=1 20ms=1 21ms=1 22ms=0 23ms=0 24ms=0 25ms=0 26ms=1 27ms=0 28ms=0 29ms=0 30ms=0 31ms=0 32ms=0 34ms=0 36ms=0 38ms=0 40ms=0 42ms=0 44ms=0 46ms=1 48ms=0 53ms=0 57ms=0 61ms=0 65ms=0 69ms=0 73ms=0 77ms=0 81ms=0 85ms=0 89ms=0 93ms=0 97ms=0 101ms=0 105ms=0 109ms=0 113ms=1 117ms=0 121ms=0 125ms=0 129ms=0 133ms=0 150ms=0 200ms=1 250ms=0 300ms=0 350ms=0 400ms=0 450ms=0 500ms=0 550ms=0 600ms=0 650ms=0 700ms=0 750ms=0 800ms=0 850ms=0 900ms=0 950ms=0 1000ms=0 1050ms=0 1100ms=0 1150ms=0 1200ms=0 1250ms=0 1300ms=0 1350ms=0 1400ms=0 1450ms=0 1500ms=0 1550ms=0 1600ms=0 1650ms=0 1700ms=0 1750ms=0 1800ms=0 1850ms=0 1900ms=0 1950ms=0 2000ms=0 2050ms=0 2100ms=0 2150ms=0 2200ms=0 2250ms=0 2300ms=0 2350ms=0 2400ms=0 2450ms=0 2500ms=0 2550ms=0 2600ms=0 2650ms=0 2700ms=0 2750ms=0 2800ms=0 2850ms=0 2900ms=0 2950ms=0 3000ms=0 3050ms=0 3100ms=0 3150ms=0 3200ms=0 3250ms=0 3300ms=0 3350ms=0 3400ms=0 3450ms=0 3500ms=0 3550ms=0 3600ms=0 3650ms=0 3700ms=0 3750ms=0 3800ms=0 3850ms=0 3900ms=0 3950ms=0 4000ms=0 4050ms=0 4100ms=0 4150ms=0 4200ms=0 4250ms=0 4300ms=0 4350ms=0 4400ms=0 4450ms=0 4500ms=0 4550ms=0 4600ms=0 4650ms=0 4700ms=0 4750ms=0 4800ms=0 4850ms=0 4900ms=0 4950ms=0
+
+Caches:
+Current memory usage / total memory usage (bytes) / hit ratio (%) / biggest memory usage (bytes):
+  TextureCache                0 / 92274688   90.0000     36864
+  LayerCache                  0 / 60817408    0.0000         0 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  8388608    0.0000         0
+  GradientCache               0 /  2097152    0.0000         0
+  PathCache                   0 / 16777216    0.0000         0
+  TessellationCache           0 /  1048576   95.0000
+  TextDropShadowCache         0 /  6291456    0.0000         0
+  PatchCache                  0 /   131072    0.0000         0
+  FontRenderer A8           0 /        0
+  FontRenderer RGBA         0 /        0
+  FontRenderer total        0 /        0
+Other:
+  FboCache                    0 /        0    0.0000
+Total memory usage:
+  0 bytes, 0.00 MB
+
+All Textures in TexctureCache 
+# No./ memory usage (bytes)/ size (width X height) / image type / hit count:
+
+
+Pipeline=FrameBuilder
+Profile data in ms:
+
+	KeyguardScrim/android.view.ViewRootImpl@712f206 (visibility=8)
+	ContainerKeyguardScrim/android.view.ViewRootImpl@efee0a9 (visibility=8)
+View hierarchy:
+
+  KeyguardScrim/android.view.ViewRootImpl@712f206
+  1 views, 0,98 kB of display lists
+
+  ContainerKeyguardScrim/android.view.ViewRootImpl@efee0a9
+  1 views, 0,98 kB of display lists
+
+
+Total ViewRootImpl: 2
+Total Views:        2
+Total DisplayList:  1,95 kB
+

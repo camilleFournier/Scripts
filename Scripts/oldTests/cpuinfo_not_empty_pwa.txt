@@ -1,0 +1,52 @@
+Load: 2.21 / 2.6 / 3.16
+CPU usage from 583259ms to 562356ms ago (2020-02-18 10:37:39.102 to 2020-02-18 10:38:00.005):
+  5.6% 3670/system_server: 2.9% user + 2.7% kernel / faults: 469 minor 32 major
+  4.8% 1586/mc_fastcall: 0% user + 4.8% kernel
+  1.8% 4019/wpa_supplicant: 0.1% user + 1.7% kernel
+  1.3% 3035/mcDriverDaemon: 0.3% user + 1% kernel
+  0.8% 22288/com.android.chrome: 0.6% user + 0.2% kernel / faults: 111 minor 1 major
+  0.6% 3263/adbd: 0.1% user + 0.5% kernel / faults: 186 minor
+  0.5% 4022/com.android.systemui: 0.2% user + 0.2% kernel / faults: 47 minor
+  0.4% 3135/argosd: 0.2% user + 0.1% kernel
+  0.4% 1463/cfinteractive0: 0% user + 0.4% kernel
+  0.3% 26946/kworker/0:0: 0% user + 0.3% kernel
+  0.3% 3597/kworker/u16:1: 0% user + 0.3% kernel
+  0.3% 5076/flipboard.boxer.app: 0.2% user + 0% kernel / faults: 55 minor
+  0.3% 10502/kworker/1:1: 0% user + 0.3% kernel
+  0.2% 3119/surfaceflinger: 0% user + 0.2% kernel / faults: 16 minor
+  0.2% 30200/com.tmobile.pr.mytmobile: 0.1% user + 0% kernel / faults: 4 minor
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 3037/mc_log: 0% user + 0.2% kernel
+  0.1% 1199/hwrng: 0% user + 0.1% kernel
+  0.1% 3440/com.amazon.mShop.android: 0% user + 0% kernel / faults: 2 minor
+  0.1% 11239/com.android.chrome:sandboxed_process13: 0.1% user + 0% kernel
+  0.1% 3118/servicemanager: 0% user + 0% kernel
+  0.1% 4145/com.google.android.youtube: 0% user + 0% kernel / faults: 5 minor
+  0.1% 4428/com.sec.imsservice: 0% user + 0% kernel
+  0% 1331/kworker/u16:2: 0% user + 0% kernel
+  0% 1885/thread_hotplug: 0% user + 0% kernel
+  0% 2961/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 3124/edmaudit: 0% user + 0% kernel
+  0% 4651/iod: 0% user + 0% kernel
+  0% 5091/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 6990/com.samsung.android.oneconnect:Core: 0% user + 0% kernel / faults: 5 minor
+  0% 11724/com.sec.spp.push: 0% user + 0% kernel / faults: 2 minor
+  0% 22822/kworker/u16:5: 0% user + 0% kernel
+  0% 27234/com.android.chrome:privileged_process0: 0% user + 0% kernel / faults: 7 minor
+  0% 31140/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 1//init: 0% user + 0% kernel
+  0% 19/ksoftirqd/2: 0% user + 0% kernel
+  0% 27/watchdog/4: 0% user + 0% kernel
+  0% 1465/cfinteractive4: 0% user + 0% kernel
+  0% 2952/jbd2/sda17-8: 0% user + 0% kernel
+  0% 3117/lmkd: 0% user + 0% kernel
+  0% 3137/diagexe: 0% user + 0% kernel
+  0% 3139/lhd: 0% user + 0% kernel
+  0% 3156/smdexe: 0% user + 0% kernel
+  0% 4441/com.android.phone: 0% user + 0% kernel / faults: 26 minor 20 major
+  0% 11297/kworker/u17:1: 0% user + 0% kernel
+  0% 24518/kworker/4:2: 0% user + 0% kernel
+  0% 26941/kworker/2:1: 0% user + 0% kernel
+  0% 27089/kworker/3:0: 0% user + 0% kernel
+  0% 31069/com.samsung.voiceserviceplatform: 0% user + 0% kernel
+2.5% TOTAL: 0.8% user + 1.6% kernel + 0% iowait

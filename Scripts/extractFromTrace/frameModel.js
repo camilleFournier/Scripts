@@ -1,7 +1,7 @@
 import { TimelineRecordStyle, TimelineFrame, PendingFrame, Event } from './resources-class.js';
 import { eventStyles, RecordTypes, mainFrameMarkers } from './resources-string.js';
 
-const frame_model = {
+let frame_model = {
     minimumRecordTime: Infinity,
     frames: [],
     frameById: {},
@@ -17,6 +17,26 @@ const frame_model = {
     target: null,
     layerTreeId: null,
     currentTaskTimeByCategory: {},
+}
+
+function reset() {
+    frame_model = {
+        minimumRecordTime: Infinity,
+        frames: [],
+        frameById: {},
+        lastFrame: null,
+        lastLayerTree: null,
+        mainFrameCommitted: false,
+        mainFrameRequested: false,
+        framePendingCommit: null,
+        lastBeginFrame: null,
+        lastNeedsBeginFrame: null,
+        framePendingActivation: null,
+        lastTaskBeginTime: null,
+        target: null,
+        layerTreeId: null,
+        currentTaskTimeByCategory: {},
+    };
 }
 
 function categoryMapper(event) {
@@ -66,7 +86,7 @@ function startFrame(startTime) {
         const frame = frame_model.lastFrame;
         const endTime = startTime;
         // frame_model.lastFrame._setLayerTree(this._lastLayerTree);
-        frame_model.lastFrame._setEndTime(endTime);
+        frame_model.lastFrame._setEndTime(endTime); 
         // if (frame_model.lastLayerTree) {
         //     frame_model.lastLayerTree._setPaints(frame_model.lastFrame._paints);
         // }
@@ -104,8 +124,6 @@ function handleDrawFrame(startTime) {
     }
       // - if it wasn't drawn, it didn't happen!
       // - only show frames that either did not wait for the main thread frame or had one committed.
-    // console.log('mainFrameComitted: '+frame_model.mainFrameCommitted);
-    // console.log('mainFrameRequested: '+frame_model.mainFrameRequested);
     if (frame_model.mainFrameCommitted || !frame_model.mainFrameRequested) {
         if (frame_model.lastNeedsBeginFrame) {
             const idleTimeEnd = frame_model.framePendingActivation ? frame_model.framePendingActivation.triggerTime :
@@ -183,6 +201,7 @@ function addMainThreadTraceEvent(event) {
 }
 
 export function addTraceEvents(events, threadData) {
+    reset();
     let j = 0;
     let selfTime = 0;
     frame_model.currentProcessMainThread = threadData.length && threadData[0].thread || null;
@@ -204,14 +223,11 @@ export function addTraceEvents(events, threadData) {
                 addMainThreadTraceEvent(event);
                 selfTime+=event.selfTime;
             } else if (frame_model.lastFrame && event.selfTime && !event.isTopLevel()) {
-                console.log(event.thread.name());
                 frame_model.lastFrame._addTimeForCategory(categoryMapper(event), event.selfTime);
                 selfTime+=event.selfTime;
             }
           }
     }
-    console.log(selfTime, ' ms cputime');
     frame_model.currentProcessMainThread = null;
-    // console.log(frame_model.frames);
     return frame_model;
 }

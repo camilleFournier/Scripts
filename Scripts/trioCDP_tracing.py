@@ -13,12 +13,15 @@
 # go to localhost:9222/json
 # you will find websocket address for both app and service worker
 
+# To make single CPU work :  changed the file _init_ de trio_cdp (Python38/lib/site-packages/trio_cdp)
+# to not have only flatten connections
 
 import logging
 import os
 import sys
+import time
 
-from cdp import target, page, tracing, system_info
+from cdp import target, page, tracing
 import trio
 from trio_cdp import open_cdp_connection
 
@@ -28,45 +31,53 @@ logging.basicConfig(level=getattr(logging, log_level))
 logger = logging.getLogger('monitor')
 logging.getLogger('trio-websocket').setLevel(logging.WARNING)
 
-uri_pwa = 'ws://localhost:9222/devtools/page/A83F102B6E5B801AE3A5F3330662C349'
-path = 'trace_notes_pwa.json'
+uri_pwa = 'ws://localhost:9222/devtools/page/042117F8036A904E52A20C06F5EBAE08'
+name = 'pwa_trace\pwa_50_input_trace'
+# name = 'pwa_touch_trace'
 
 traceConfig = tracing.TraceConfig(
-    record_mode='recordContinuously',
+    record_mode='recordAsMuchAsPossible',
     enable_sampling=True,
     included_categories= [
         'disabled-by-default-devtools.timeline',
         'disabled-by-default-devtools.timeline.frame',
-        'disabled-by-default-v8',
-        'disabled-by-default-v8.cpu_profiler',
+        # 'toplevel',
+        'gpu',
+        'ipc',
+        # 'disabled-by-default-v8',
+        # 'disabled-by-default-v8.cpu_profiler',
         'devtools.timeline',
         'devtools',
-        'ServiceWorker',
-        "v8.execute",
-        "blink.user_timing"
-        'benchmark']
+        # 'ServiceWorker',
+        # "v8.execute",
+        # "blink.user_timing",
+        # 'benchmark'
+    ]
 )
 
 def findPWA(target):
     return (target.type == 'page')
 
-async def generateTrace(session, outfile):
+
+
+async def generateTrace(session, outfile, final_data):
     # handles DataCollected events
     async def collectData():
         async for event in session.listen(tracing.DataCollected):
             logger.info('Data received')
             # Convert data into correct and readable json
-            data = ',\n'.join([str(item) for item in event.value])
-            data+=',\n'
-            data = data.replace("'", "\"").replace("True", "true").replace("False", "false").replace("class=\"", "class='").replace("\"\"}", "'\"}")
+            data = ',\n'.join(map(str, event.value))
+            # data = data.replace("'", "\"").replace("True", "true").replace("False", "false").replace("class=\"", "class='").replace("\"\"}", "'\"}")
+            data = data.replace("True", "true").replace("False", "false").replace("\"\"}", "'\"}").replace("'", "\"").replace("class=\"", "class='").replace("\"\"", "'\"").replace(":'\"", ":\"\"").replace(": '\"", ":\"\"")
+            final_data.append(data)
             # Write into file
-            await outfile.write(data)
+            # await outfile.write(data)
 
     # handles TracingComplete event
     async def dataComplete(nursery):
         async for event in session.listen(tracing.TracingComplete):
             logger.info('{}: Data completed'.format(trio.current_time()))
-            logger.info(event.data_loss_occurred)
+            logger.info(event)
             nursery.cancel_scope.cancel()
 
     # handles bufferUsage events (that should be sent, but didn't received any in all my tests)
@@ -79,21 +90,14 @@ async def generateTrace(session, outfile):
         nursery.start_soon(collectData)
         nursery.start_soon(dataComplete, nursery)
 
-        # trace for around 6 seconds
-        startInfo = await session.execute(system_info.get_info())
+        # trace for around 10 seconds
         await session.execute(tracing.start(buffer_usage_reporting_interval=500, trace_config=traceConfig))
-        await trio.sleep(6)
+        await trio.sleep(10)
         await session.execute(tracing.end())
-        endInfo = await session.execute(system_info.get_info())
-        async with await trio.Path('info.txt').open('a') as outfile: 
-            await outfile.write('Start: \n')
-            data = ',\n'.join([str(item) for item in startInfo])
-            await outfile.write(data)
-            await outfile.write('End:\n')
-            data = ',\n'.join([str(item) for item in endInfo])
+        print('tracing end')
 
 
-async def main():
+async def main(i):
     # Open connection
     async with open_cdp_connection(uri_pwa) as conn:
         logger.info('Connecting')
@@ -106,13 +110,22 @@ async def main():
         logger.info('Attaching to target id=%s', target_id)
         session = await conn.open_session(target_id)
 
-        outfile_path = trio.Path(path)
-        async with await outfile_path.open('a') as outfile:
-            logger.info('{}: Tracing...'.format(trio.current_time()))
+        final_data = []
+        def addData(data):
+            final_data+=data
+
+        outfile_path = trio.Path(name + '_' + str(i) + '.json')
+        async with await outfile_path.open('a+') as outfile:
+            logger.info('Tracing...')
             # write things to file to be readable as a json
             await outfile.write('[')
-            await generateTrace(session, outfile)
-            await outfile.write("{ }]")
+            # data = '['
+            await generateTrace(session, outfile, final_data)
+            logger.info('Tracing n° {} ended'.format(i))
+            await outfile.write(',\n'.join(final_data))
+            await outfile.write("]")
 
-trio.run(main)
+for i in range(1, 10):
+    time.sleep(30)
+    trio.run(main, i)
 

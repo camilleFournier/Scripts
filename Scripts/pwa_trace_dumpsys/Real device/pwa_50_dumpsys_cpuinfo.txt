@@ -1,0 +1,502 @@
+###################################### Measure 1 at 26903606 ######################################
+Load: 4.12 / 3.74 / 3.78
+CPU usage from 14291ms to 1136ms ago (2020-02-28 16:47:00.807 to 2020-02-28 16:47:13.961):
+  39% 19704/com.android.chrome:privileged_process0: 26% user + 13% kernel / faults: 17 minor 6 major
+  35% 20075/com.android.chrome:sandboxed_process1: 29% user + 6.5% kernel / faults: 802 minor 3 major
+  26% 3668/system_server: 13% user + 13% kernel / faults: 158 minor
+  19% 3120/surfaceflinger: 6.5% user + 13% kernel
+  5.1% 1806/decon0: 0% user + 5.1% kernel
+  2.5% 1506/cfinteractive0: 0% user + 2.5% kernel
+  2% 16418/kworker/0:3: 0% user + 2% kernel
+  1.9% 16965/kworker/u17:0: 0% user + 1.9% kernel
+  1.9% 19598/com.android.chrome: 1.1% user + 0.8% kernel / faults: 41 minor
+  1.3% 4002/wpa_supplicant: 0% user + 1.2% kernel
+  0.9% 15341/kworker/u16:5: 0% user + 0.9% kernel
+  0.6% 16948/kworker/u16:0: 0% user + 0.6% kernel
+  0.4% 9936/adbd: 0.3% user + 0.1% kernel / faults: 163 minor
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 3134/argosd: 0% user + 0.2% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 17602/kworker/1:2: 0% user + 0.2% kernel
+  0.1% 1199/hwrng: 0% user + 0.1% kernel
+  0.1% 17754/kworker/u17:1: 0% user + 0.1% kernel
+  0% 13/migration/1: 0% user + 0% kernel
+  0% 23/migration/3: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 398/kworker/4:2: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 3119/servicemanager: 0% user + 0% kernel
+  0% 3146/lhd: 0% user + 0% kernel
+  0% 3162/smdexe: 0% user + 0% kernel
+  0% 4017/com.android.systemui: 0% user + 0% kernel
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel
+  0% 4624/iod: 0% user + 0% kernel
+  0% 4653/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 6459/com.samsung.android.oneconnect:Core: 0% user + 0% kernel / faults: 4 minor
+  0% 7517/com.sec.android.inputmethod: 0% user + 0% kernel / faults: 2 minor
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 1 minor
+  0% 16227/kworker/2:1: 0% user + 0% kernel
+  0% 17139/kworker/3:2H: 0% user + 0% kernel
+  0% 17653/kworker/3:0: 0% user + 0% kernel
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 1 minor
+  0% 26571/kworker/6:1: 0% user + 0% kernel
+ +0% 17976/kworker/4:2H: 0% user + 0% kernel
+ +0% 17986/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.3% user + 7% kernel + 0% softirq
+
+###################################### Measure 2 at 26974284 ######################################
+Load: 4.4 / 3.96 / 3.85
+CPU usage from 13953ms to 796ms ago (2020-02-28 16:48:11.471 to 2020-02-28 16:48:24.628):
+  38% 19704/com.android.chrome:privileged_process0: 25% user + 12% kernel / faults: 64 minor 9 major
+  34% 20075/com.android.chrome:sandboxed_process1: 25% user + 9.3% kernel / faults: 801 minor 4 major
+  26% 3668/system_server: 14% user + 11% kernel / faults: 105 minor
+  19% 3120/surfaceflinger: 6.6% user + 13% kernel
+  5% 1806/decon0: 0% user + 5% kernel
+  2.7% 1506/cfinteractive0: 0% user + 2.7% kernel
+  2.4% 16736/kworker/0:0: 0% user + 2.4% kernel
+  1.6% 16965/kworker/u17:0: 0% user + 1.6% kernel
+  1.6% 19598/com.android.chrome: 1.4% user + 0.2% kernel / faults: 7 minor
+  1.4% 4002/wpa_supplicant: 0.2% user + 1.2% kernel
+  0.9% 15341/kworker/u16:5: 0% user + 0.9% kernel
+  0.9% 16948/kworker/u16:0: 0% user + 0.9% kernel
+  0.4% 1800/s3c-fb-vsync: 0% user + 0.4% kernel
+  0.4% 5289/android.process.acore: 0.4% user + 0% kernel / faults: 310 minor 2 major
+  0.4% 9936/adbd: 0% user + 0.3% kernel / faults: 163 minor
+  0.3% 3134/argosd: 0.2% user + 0.1% kernel
+  0.3% 4017/com.android.systemui: 0.2% user + 0.1% kernel / faults: 42 minor 2 major
+  0.3% 17754/kworker/u17:1: 0% user + 0.3% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 17602/kworker/1:2: 0% user + 0.2% kernel
+  0.1% 1199/hwrng: 0% user + 0.1% kernel
+  0% 1//init: 0% user + 0% kernel
+  0% 3/ksoftirqd/0: 0% user + 0% kernel
+  0% 44/ksoftirqd/7: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 2951/jbd2/sda17-8: 0% user + 0% kernel
+  0% 3115/healthd: 0% user + 0% kernel
+  0% 3119/servicemanager: 0% user + 0% kernel
+  0% 3136/diagexe: 0% user + 0% kernel
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel
+  0% 4624/iod: 0% user + 0% kernel
+  0% 4653/com.google.android.gms: 0% user + 0% kernel / faults: 7 minor
+  0% 8598/kworker/2:0: 0% user + 0% kernel
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 2 minor
+  0% 12429/com.tmobile.pr.mytmobile: 0% user + 0% kernel / faults: 2 minor
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 25361/kworker/7:0: 0% user + 0% kernel
+ +0% 18150/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.2% user + 7.3% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 3 at 27044524 ######################################
+Load: 3.59 / 3.8 / 3.81
+CPU usage from 13763ms to 647ms ago (2020-02-28 16:49:21.750 to 2020-02-28 16:49:34.867):
+  38% 19704/com.android.chrome:privileged_process0: 26% user + 12% kernel / faults: 36 minor 9 major
+  34% 20075/com.android.chrome:sandboxed_process1: 26% user + 7.7% kernel / faults: 831 minor 7 major
+  27% 3668/system_server: 14% user + 12% kernel / faults: 363 minor 11 major
+  19% 3120/surfaceflinger: 6.4% user + 13% kernel
+  4.8% 1806/decon0: 0% user + 4.8% kernel
+  2.6% 1506/cfinteractive0: 0% user + 2.6% kernel
+  2% 16736/kworker/0:0: 0% user + 2% kernel
+  1.6% 19598/com.android.chrome: 1.1% user + 0.5% kernel / faults: 5 minor
+  1.3% 4002/wpa_supplicant: 0.3% user + 1% kernel / faults: 2 minor
+  1.2% 17794/kworker/u16:2: 0% user + 1.2% kernel
+  1% 18308/kworker/u17:2: 0% user + 1% kernel
+  0.9% 16965/kworker/u17:0: 0% user + 0.9% kernel
+  0.7% 9936/adbd: 0.3% user + 0.4% kernel / faults: 550 minor
+  0.4% 16948/kworker/u16:0: 0% user + 0.4% kernel
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 3134/argosd: 0.2% user + 0% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 1199/hwrng: 0% user + 0.2% kernel
+  0% 4474/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 393 minor 5 major
+  0.1% 17602/kworker/1:2: 0% user + 0.1% kernel
+  0% 1//init: 0% user + 0% kernel
+  0% 7/migration/0: 0% user + 0% kernel
+  0% 14/ksoftirqd/1: 0% user + 0% kernel
+  0% 18/migration/2: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 399/kworker/5:1: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 3124/edmaudit: 0% user + 0% kernel
+  0% 3162/smdexe: 0% user + 0% kernel
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel
+  0% 4427/com.android.phone: 0% user + 0% kernel / faults: 65 minor 9 major
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 2 minor
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 16 minor
+  0% 32580/com.samsung.oh: 0% user + 0% kernel / faults: 13 minor
+ +0% 18348/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.4% user + 6.8% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 4 at 27114065 ######################################
+Load: 3.7 / 3.81 / 3.81
+CPU usage from 13657ms to 612ms ago (2020-02-28 16:50:31.378 to 2020-02-28 16:50:44.423):
+  37% 19704/com.android.chrome:privileged_process0: 26% user + 11% kernel / faults: 51 minor 7 major
+  34% 20075/com.android.chrome:sandboxed_process1: 26% user + 8.2% kernel / faults: 869 minor 3 major
+  26% 3668/system_server: 15% user + 10% kernel / faults: 212 minor 7 major
+  19% 3120/surfaceflinger: 6.1% user + 13% kernel / faults: 4 minor 1 major
+  4.8% 1806/decon0: 0% user + 4.8% kernel
+  3% 1506/cfinteractive0: 0% user + 3% kernel
+  1.9% 16965/kworker/u17:0: 0% user + 1.9% kernel
+  1.8% 19598/com.android.chrome: 1.3% user + 0.5% kernel / faults: 67 minor
+  1.3% 4002/wpa_supplicant: 0% user + 1.3% kernel
+  1.2% 16418/kworker/0:3: 0% user + 1.2% kernel
+  0.9% 16736/kworker/0:0: 0% user + 0.9% kernel
+  0.8% 18480/kworker/u16:4: 0% user + 0.8% kernel
+  0.8% 18481/kworker/u16:6: 0% user + 0.8% kernel
+  0.6% 9936/adbd: 0% user + 0.5% kernel / faults: 443 minor
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 4017/com.android.systemui: 0% user + 0.2% kernel / faults: 14 minor
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 1199/hwrng: 0% user + 0.2% kernel
+  0.2% 3134/argosd: 0.1% user + 0% kernel
+  0.2% 17602/kworker/1:2: 0% user + 0.2% kernel
+  0.1% 3119/servicemanager: 0% user + 0% kernel
+  0.1% 4412/com.sec.imsservice: 0.1% user + 0% kernel
+  0.1% 4852/com.samsung.tmowfc.wfccontroller: 0% user + 0% kernel / faults: 8 minor 5 major
+  0.1% 18350/com.sec.android.app.music:main: 0.1% user + 0% kernel
+  0.1% 23300/com.amazon.mShop.android: 0.1% user + 0% kernel / faults: 3 minor
+  0% 1//init: 0% user + 0% kernel
+  0% 7/migration/0: 0% user + 0% kernel
+  0% 19/ksoftirqd/2: 0% user + 0% kernel
+  0% 23/migration/3: 0% user + 0% kernel
+  0% 24/ksoftirqd/3: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 398/kworker/4:2: 0% user + 0% kernel
+  0% 399/kworker/5:1: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 2961/logd: 0% user + 0% kernel / faults: 8 minor
+  0% 3136/diagexe: 0% user + 0% kernel
+  0% 3162/smdexe: 0% user + 0% kernel
+  0% 4653/com.google.android.gms: 0% user + 0% kernel / faults: 8 minor
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 1 minor
+  0% 17653/kworker/3:0: 0% user + 0% kernel
+  0% 18308/kworker/u17:2: 0% user + 0% kernel
+ +0% 18534/dumpsys: 0% user + 0% kernel
+15% TOTAL: 9.3% user + 6.5% kernel + 0% softirq
+
+###################################### Measure 5 at 27183767 ######################################
+Load: 3.64 / 3.8 / 3.81
+CPU usage from 13644ms to 627ms ago (2020-02-28 16:51:41.095 to 2020-02-28 16:51:54.111):
+  37% 19704/com.android.chrome:privileged_process0: 24% user + 13% kernel / faults: 21 minor 6 major
+  33% 20075/com.android.chrome:sandboxed_process1: 25% user + 7.9% kernel / faults: 815 minor 3 major
+  27% 3668/system_server: 16% user + 10% kernel / faults: 177 minor 5 major
+  18% 3120/surfaceflinger: 5.6% user + 13% kernel / faults: 1 minor
+  4.6% 1806/decon0: 0% user + 4.6% kernel
+  2.6% 1506/cfinteractive0: 0% user + 2.6% kernel
+  1.9% 18308/kworker/u17:2: 0% user + 1.9% kernel
+  1.7% 16418/kworker/0:3: 0% user + 1.7% kernel
+  1.6% 19598/com.android.chrome: 1.3% user + 0.3% kernel / faults: 8 minor
+  1.3% 4002/wpa_supplicant: 0% user + 1.3% kernel
+  1.2% 18481/kworker/u16:6: 0% user + 1.2% kernel
+  0.8% 16736/kworker/0:0: 0% user + 0.8% kernel
+  0.6% 32580/com.samsung.oh: 0.3% user + 0.3% kernel / faults: 96 minor 1 major
+  0.5% 4017/com.android.systemui: 0.2% user + 0.3% kernel / faults: 44 minor
+  0.5% 9936/adbd: 0.4% user + 0% kernel / faults: 166 minor
+  0.4% 18480/kworker/u16:4: 0% user + 0.4% kernel
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 1199/hwrng: 0% user + 0.2% kernel
+  0.2% 3134/argosd: 0.1% user + 0% kernel
+  0.2% 17602/kworker/1:2: 0% user + 0.2% kernel
+  0.1% 1508/cfinteractive4: 0% user + 0.1% kernel
+  0.1% 3119/servicemanager: 0% user + 0% kernel
+  0.1% 4624/iod: 0.1% user + 0% kernel
+  0.1% 12429/com.tmobile.pr.mytmobile: 0.1% user + 0% kernel / faults: 1 minor
+  0% 14/ksoftirqd/1: 0% user + 0% kernel
+  0% 19/ksoftirqd/2: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 2961/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 3037/vold: 0% user + 0% kernel / faults: 39 minor
+  0% 3115/healthd: 0% user + 0% kernel
+  0% 3118/lmkd: 0% user + 0% kernel
+  0% 3162/smdexe: 0% user + 0% kernel
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel
+  0% 4653/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+  0% 5852/android.process.media: 0% user + 0% kernel / faults: 96 minor 27 major
+  0% 6459/com.samsung.android.oneconnect:Core: 0% user + 0% kernel / faults: 1 minor
+  0% 8598/kworker/2:0: 0% user + 0% kernel
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 2 minor
+  0% 18289/com.samsung.voiceserviceplatform: 0% user + 0% kernel / faults: 12 minor 6 major
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 18431/kworker/7:2: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 1 minor
+ +0% 18692/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.5% user + 6.7% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 6 at 27253076 ######################################
+Load: 3.61 / 3.75 / 3.79
+CPU usage from 13560ms to 586ms ago (2020-02-28 16:52:50.449 to 2020-02-28 16:53:03.424):
+  37% 19704/com.android.chrome:privileged_process0: 25% user + 11% kernel / faults: 27 minor 6 major
+  34% 20075/com.android.chrome:sandboxed_process1: 27% user + 6.9% kernel / faults: 825 minor 3 major
+  28% 3668/system_server: 15% user + 13% kernel / faults: 234 minor 1 major
+  19% 3120/surfaceflinger: 5.8% user + 13% kernel
+  5.1% 1806/decon0: 0% user + 5.1% kernel
+  2.9% 1506/cfinteractive0: 0% user + 2.9% kernel
+  2.1% 16418/kworker/0:3: 0% user + 2.1% kernel
+  1.6% 19598/com.android.chrome: 1% user + 0.5% kernel / faults: 8 minor
+  1.3% 4017/com.android.systemui: 1% user + 0.3% kernel / faults: 130 minor 1 major
+  1.3% 18308/kworker/u17:2: 0% user + 1.3% kernel
+  1.2% 4002/wpa_supplicant: 0% user + 1.2% kernel / faults: 1 minor
+  1% 15341/kworker/u16:5: 0% user + 1% kernel
+  0.7% 9936/adbd: 0% user + 0.6% kernel / faults: 350 minor
+  0.6% 16965/kworker/u17:0: 0% user + 0.6% kernel
+  0.6% 16948/kworker/u16:0: 0% user + 0.6% kernel
+  0.4% 1800/s3c-fb-vsync: 0% user + 0.4% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 1199/hwrng: 0% user + 0.2% kernel
+  0.2% 3134/argosd: 0.1% user + 0% kernel
+  0.2% 18775/kworker/1:0: 0% user + 0.2% kernel
+  0.1% 4923/com.sec.android.app.launcher: 0.1% user + 0% kernel / faults: 13 minor
+  0.1% 16121/com.sec.android.daemonapp: 0% user + 0% kernel / faults: 40 minor
+  0.1% 18350/com.sec.android.app.music:main: 0% user + 0.1% kernel
+  0% 1//init: 0% user + 0% kernel / faults: 1 minor
+  0% 24/ksoftirqd/3: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 398/kworker/4:2: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 2961/logd: 0% user + 0% kernel / faults: 1 minor 1 major
+  0% 3115/healthd: 0% user + 0% kernel
+  0% 3119/servicemanager: 0% user + 0% kernel
+  0% 3161/rild: 0% user + 0% kernel / faults: 39 minor 1 major
+  0% 3162/smdexe: 0% user + 0% kernel
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel
+  0% 4624/iod: 0% user + 0% kernel
+  0% 6459/com.samsung.android.oneconnect:Core: 0% user + 0% kernel / faults: 2 minor
+  0% 8598/kworker/2:0: 0% user + 0% kernel
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 3 minor
+  0% 16736/kworker/0:0: 0% user + 0% kernel
+  0% 17653/kworker/3:0: 0% user + 0% kernel
+  0% 18430/kworker/6:0: 0% user + 0% kernel
+  0% 18450/kworker/0:2H: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 3 minor
+ +0% 18851/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.6% user + 7.2% kernel + 0% softirq
+
+###################################### Measure 7 at 27322784 ######################################
+Load: 3.77 / 3.77 / 3.79
+CPU usage from 13655ms to 621ms ago (2020-02-28 16:54:00.112 to 2020-02-28 16:54:13.145):
+  34% 19704/com.android.chrome:privileged_process0: 23% user + 11% kernel / faults: 287 minor 6 major
+  32% 3668/system_server: 17% user + 14% kernel / faults: 4109 minor 4 major
+  31% 20075/com.android.chrome:sandboxed_process1: 25% user + 6.1% kernel / faults: 936 minor 11 major
+  17% 3120/surfaceflinger: 5.9% user + 11% kernel / faults: 124 minor
+  0.2% 1629/mc_fastcall: 0% user + 0.2% kernel
+  4.1% 1806/decon0: 0% user + 4.1% kernel
+  2.5% 1506/cfinteractive0: 0% user + 2.5% kernel
+  2.3% 937/kswapd0: 0% user + 2.3% kernel
+  1.8% 16965/kworker/u17:0: 0% user + 1.8% kernel
+  1.8% 19598/com.android.chrome: 1.3% user + 0.5% kernel / faults: 473 minor 1 major
+  1.3% 4002/wpa_supplicant: 0% user + 1.2% kernel / faults: 35 minor
+  1.3% 4474/com.google.android.gms.persistent: 0.6% user + 0.6% kernel / faults: 1502 minor 52 major
+  1.3% 19000/kworker/u16:9: 0% user + 1.3% kernel
+  1.2% 18926/com.google.android.apps.maps: 1% user + 0.1% kernel / faults: 553 minor
+  1.1% 16736/kworker/0:0: 0% user + 1.1% kernel
+  0% 3036/mcDriverDaemon: 0% user + 0% kernel / faults: 36 minor
+  0.9% 4653/com.google.android.gms: 0.7% user + 0.2% kernel / faults: 1481 minor 213 major
+  0.9% 16418/kworker/0:3: 0% user + 0.9% kernel
+  0.6% 9936/adbd: 0.3% user + 0.2% kernel / faults: 374 minor
+  0.5% 19072/com.google.android.apps.walletnfcrel: 0.5% user + 0% kernel / faults: 1559 minor
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 4427/com.android.phone: 0.3% user + 0% kernel / faults: 573 minor 36 major
+  0.3% 1199/hwrng: 0% user + 0.3% kernel
+  0.3% 3119/servicemanager: 0.2% user + 0% kernel / faults: 56 minor
+  0% 3170/netd: 0% user + 0% kernel / faults: 228 minor
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 2961/logd: 0.2% user + 0% kernel / faults: 285 minor 1 major
+  0% 3038/mc_log: 0% user + 0% kernel
+  0.2% 4637/zygote64: 0% user + 0.1% kernel / faults: 233 minor
+  0.2% 18775/kworker/1:0: 0% user + 0.2% kernel
+  0.2% 18999/kworker/u16:8: 0% user + 0.2% kernel
+  0.1% 1508/cfinteractive4: 0% user + 0.1% kernel
+  0.1% 3134/argosd: 0% user + 0% kernel / faults: 19 minor
+  0% 1//init: 0% user + 0% kernel / faults: 65 minor
+  0% 2/kthreadd: 0% user + 0% kernel
+  0% 3/ksoftirqd/0: 0% user + 0% kernel
+  0% 7/migration/0: 0% user + 0% kernel
+  0% 12/watchdog/1: 0% user + 0% kernel
+  0% 18/migration/2: 0% user + 0% kernel
+  0% 24/ksoftirqd/3: 0% user + 0% kernel
+  0% 32/watchdog/5: 0% user + 0% kernel
+  0% 34/ksoftirqd/5: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 2951/jbd2/sda17-8: 0% user + 0% kernel
+  0% 3118/lmkd: 0% user + 0% kernel / faults: 12 minor
+  0% 3124/edmaudit: 0% user + 0% kernel
+  0% 3136/diagexe: 0% user + 0% kernel
+  0% 3162/smdexe: 0% user + 0% kernel / faults: 6 minor
+  0% 4017/com.android.systemui: 0% user + 0% kernel / faults: 10 minor
+  0% 4412/com.sec.imsservice: 0% user + 0% kernel / faults: 29 minor
+  0% 4624/iod: 0% user + 0% kernel / faults: 26 minor
+  0% 4824/com.android.nfc: 0% user + 0% kernel / faults: 86 minor
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 100 minor
+  0% 15633/kworker/6:0H: 0% user + 0% kernel
+  0% 17355/com.google.process.gapps: 0% user + 0% kernel / faults: 3 minor
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel / faults: 20 minor
+  0% 18431/kworker/7:2: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 31 minor
+  0% 30517/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel / faults: 211 minor 2 major
+ +0% 19150/kworker/3:1H: 0% user + 0% kernel
+ +0% 19152/com.whitepages.nameid.tmobile: 0% user + 0% kernel
+ +0% 19238/dumpsys: 0% user + 0% kernel
+19% TOTAL: 10% user + 8.4% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 8 at 27392178 ######################################
+Load: 3.7 / 3.77 / 3.79
+CPU usage from 13599ms to 594ms ago (2020-02-28 16:55:09.522 to 2020-02-28 16:55:22.526):
+  38% 19704/com.android.chrome:privileged_process0: 26% user + 12% kernel / faults: 87 minor 7 major
+  34% 20075/com.android.chrome:sandboxed_process1: 27% user + 7% kernel / faults: 834 minor 6 major
+  28% 3668/system_server: 15% user + 12% kernel / faults: 270 minor 1 major
+  19% 3120/surfaceflinger: 5.3% user + 14% kernel
+  5.2% 1806/decon0: 0% user + 5.2% kernel
+  2.8% 1506/cfinteractive0: 0% user + 2.8% kernel
+  1.9% 16736/kworker/0:0: 0% user + 1.9% kernel
+  1.8% 19598/com.android.chrome: 1.3% user + 0.4% kernel / faults: 66 minor 1 major
+  1.6% 16965/kworker/u17:0: 0% user + 1.6% kernel
+  1.3% 4002/wpa_supplicant: 0% user + 1.3% kernel
+  1.2% 4017/com.android.systemui: 0.6% user + 0.5% kernel / faults: 189 minor 12 major
+  0.9% 19000/kworker/u16:9: 0% user + 0.9% kernel
+  0.6% 16948/kworker/u16:0: 0% user + 0.6% kernel
+  0.6% 32580/com.samsung.oh: 0.4% user + 0.2% kernel / faults: 167 minor 9 major
+  0.6% 5289/android.process.acore: 0.5% user + 0% kernel / faults: 1354 minor 36 major
+  0.4% 9936/adbd: 0.1% user + 0.3% kernel / faults: 156 minor
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 4474/com.google.android.gms.persistent: 0.3% user + 0% kernel / faults: 645 minor 6 major
+  0.3% 17754/kworker/u17:1: 0% user + 0.3% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 2961/logd: 0.2% user + 0% kernel / faults: 82 minor 4 major
+  0.2% 3134/argosd: 0% user + 0.1% kernel
+  0.1% 1199/hwrng: 0% user + 0.1% kernel
+  0.1% 3115/healthd: 0% user + 0.1% kernel
+  0.1% 3119/servicemanager: 0% user + 0.1% kernel / faults: 1 minor
+  0% 4852/com.samsung.tmowfc.wfccontroller: 0% user + 0% kernel / faults: 580 minor 4 major
+  0.1% 11044/com.sec.spp.push: 0.1% user + 0% kernel / faults: 1 minor
+  0.1% 18350/com.sec.android.app.music:main: 0.1% user + 0% kernel
+  0.1% 18775/kworker/1:0: 0% user + 0.1% kernel
+  0.1% 23300/com.amazon.mShop.android: 0% user + 0.1% kernel / faults: 106 minor 1 major
+  0% 30517/com.google.android.googlequicksearchbox:search: 0% user + 0% kernel / faults: 355 minor 4 major
+  0% 1//init: 0% user + 0% kernel
+  0% 3/ksoftirqd/0: 0% user + 0% kernel
+  0% 18/migration/2: 0% user + 0% kernel
+  0% 19/ksoftirqd/2: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 398/kworker/4:2: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 2951/jbd2/sda17-8: 0% user + 0% kernel
+  0% 3118/lmkd: 0% user + 0% kernel
+  0% 4624/iod: 0% user + 0% kernel
+  0% 4653/com.google.android.gms: 0% user + 0% kernel / faults: 55 minor
+  0% 4824/com.android.nfc: 0% user + 0% kernel / faults: 212 minor 1 major
+  0% 6459/com.samsung.android.oneconnect:Core: 0% user + 0% kernel / faults: 118 minor
+  0% 7517/com.sec.android.inputmethod: 0% user + 0% kernel / faults: 25 minor
+  0% 16267/kworker/1:0H: 0% user + 0% kernel
+  0% 17653/kworker/3:0: 0% user + 0% kernel
+  0% 18917/kworker/2:1: 0% user + 0% kernel
+  0% 19072/com.google.android.apps.walletnfcrel: 0% user + 0% kernel
+ +0% 19398/dumpsys: 0% user + 0% kernel
+16% TOTAL: 9.5% user + 7.3% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 9 at 27461475 ######################################
+Load: 3.75 / 3.77 / 3.78
+CPU usage from 13640ms to 646ms ago (2020-02-28 16:56:18.836 to 2020-02-28 16:56:31.830):
+  40% 19704/com.android.chrome:privileged_process0: 26% user + 13% kernel / faults: 62 minor 6 major
+  36% 20075/com.android.chrome:sandboxed_process1: 28% user + 8% kernel / faults: 840 minor 9 major
+  27% 3668/system_server: 15% user + 11% kernel / faults: 256 minor
+  20% 3120/surfaceflinger: 7.3% user + 13% kernel
+  5.1% 1806/decon0: 0% user + 5.1% kernel
+  2.5% 1506/cfinteractive0: 0% user + 2.5% kernel
+  2.5% 16418/kworker/0:3: 0% user + 2.5% kernel
+  1.6% 19598/com.android.chrome: 1% user + 0.6% kernel / faults: 15 minor 1 major
+  1.4% 16965/kworker/u17:0: 0% user + 1.4% kernel
+  1.3% 4002/wpa_supplicant: 0% user + 1.3% kernel / faults: 2 minor
+  1% 16948/kworker/u16:0: 0% user + 1% kernel
+  0.1% 32580/com.samsung.oh: 0.1% user + 0% kernel / faults: 871 minor 4 major
+  0.6% 17754/kworker/u17:1: 0% user + 0.6% kernel
+  0.6% 18999/kworker/u16:8: 0% user + 0.6% kernel
+  0.4% 1800/s3c-fb-vsync: 0% user + 0.4% kernel
+  0.4% 4017/com.android.systemui: 0.3% user + 0.1% kernel / faults: 74 minor 3 major
+  0.3% 9936/adbd: 0% user + 0.3% kernel / faults: 341 minor
+  0.3% 19072/com.google.android.apps.walletnfcrel: 0.3% user + 0% kernel / faults: 113 minor
+  0.3% 1199/hwrng: 0% user + 0.3% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 3134/argosd: 0% user + 0.1% kernel
+  0.2% 18775/kworker/1:0: 0% user + 0.2% kernel
+  0% 3115/healthd: 0% user + 0% kernel
+  0.1% 4412/com.sec.imsservice: 0% user + 0% kernel / faults: 5 minor 2 major
+  0.1% 4624/iod: 0% user + 0% kernel
+  0.1% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 9 minor 1 major
+  0% 13/migration/1: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 1508/cfinteractive4: 0% user + 0% kernel
+  0% 3118/lmkd: 0% user + 0% kernel
+  0% 3119/servicemanager: 0% user + 0% kernel
+  0% 3124/edmaudit: 0% user + 0% kernel
+  0% 3136/diagexe: 0% user + 0% kernel
+  0% 3146/lhd: 0% user + 0% kernel
+  0% 4427/com.android.phone: 0% user + 0% kernel / faults: 102 minor 6 major
+  0% 7517/com.sec.android.inputmethod: 0% user + 0% kernel / faults: 28 minor
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 1 minor
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 18431/kworker/7:2: 0% user + 0% kernel
+  0% 18917/kworker/2:1: 0% user + 0% kernel
+  0% 19000/kworker/u16:9: 0% user + 0% kernel
+ +0% 19548/kworker/2:1H: 0% user + 0% kernel
+ +0% 19551/dumpsys: 0% user + 0% kernel
+17% TOTAL: 10% user + 6.9% kernel + 0% iowait + 0% softirq
+
+###################################### Measure 10 at 27531293 ######################################
+Load: 3.8 / 3.77 / 3.78
+CPU usage from 13623ms to 625ms ago (2020-02-28 16:57:28.641 to 2020-02-28 16:57:41.638):
+  38% 19704/com.android.chrome:privileged_process0: 26% user + 12% kernel / faults: 21 minor 12 major
+  34% 20075/com.android.chrome:sandboxed_process1: 27% user + 7.6% kernel / faults: 838 minor 15 major
+  26% 3668/system_server: 13% user + 12% kernel / faults: 156 minor
+  20% 3120/surfaceflinger: 5.3% user + 14% kernel
+  4.8% 1806/decon0: 0% user + 4.8% kernel
+  2.4% 1506/cfinteractive0: 0% user + 2.4% kernel
+  1.7% 16418/kworker/0:3: 0% user + 1.7% kernel
+  1.6% 19598/com.android.chrome: 0.9% user + 0.7% kernel / faults: 10 minor 1 major
+  1.5% 4002/wpa_supplicant: 0% user + 1.5% kernel
+  1.2% 16948/kworker/u16:0: 0% user + 1.2% kernel
+  1.2% 17754/kworker/u17:1: 0% user + 1.2% kernel
+  0.8% 16965/kworker/u17:0: 0% user + 0.8% kernel
+  0.7% 16736/kworker/0:0: 0% user + 0.7% kernel
+  0.6% 4017/com.android.systemui: 0.4% user + 0.1% kernel / faults: 73 minor 5 major
+  0.5% 32580/com.samsung.oh: 0.4% user + 0% kernel / faults: 72 minor
+  0.4% 9936/adbd: 0% user + 0.3% kernel / faults: 343 minor
+  0.3% 1800/s3c-fb-vsync: 0% user + 0.3% kernel
+  0.3% 18999/kworker/u16:8: 0% user + 0.3% kernel
+  0.2% 8/rcu_preempt: 0% user + 0.2% kernel
+  0.2% 3134/argosd: 0% user + 0.1% kernel
+  0.1% 1199/hwrng: 0% user + 0.1% kernel
+  0.1% 4412/com.sec.imsservice: 0.1% user + 0% kernel / faults: 1 major
+  0.1% 18775/kworker/1:0: 0% user + 0.1% kernel
+  0% 1//init: 0% user + 0% kernel
+  0% 7/migration/0: 0% user + 0% kernel
+  0% 19/ksoftirqd/2: 0% user + 0% kernel
+  0% 50/kworker/u16:1: 0% user + 0% kernel
+  0% 1886/thread_hotplug: 0% user + 0% kernel
+  0% 2961/logd: 0% user + 0% kernel / faults: 45 minor
+  0% 3115/healthd: 0% user + 0% kernel
+  0% 3118/lmkd: 0% user + 0% kernel
+  0% 3119/servicemanager: 0% user + 0% kernel
+  0% 4003/com.android.bluetooth: 0% user + 0% kernel / faults: 41 minor 8 major
+  0% 4624/iod: 0% user + 0% kernel
+  0% 4824/com.android.nfc: 0% user + 0% kernel / faults: 22 minor 3 major
+  0% 11044/com.sec.spp.push: 0% user + 0% kernel / faults: 2 minor
+  0% 12429/com.tmobile.pr.mytmobile: 0% user + 0% kernel / faults: 1 minor
+  0% 18350/com.sec.android.app.music:main: 0% user + 0% kernel
+  0% 18917/kworker/2:1: 0% user + 0% kernel
+  0% 19072/com.google.android.apps.walletnfcrel: 0% user + 0% kernel
+  0% 19462/kworker/6:1: 0% user + 0% kernel
+  0% 19530/kworker/3:2: 0% user + 0% kernel
+  0% 23300/com.amazon.mShop.android: 0% user + 0% kernel / faults: 4 minor
+ +0% 19777/dumpsys: 0% user + 0% kernel
+ +0% 19784/kworker/7:0H: 0% user + 0% kernel
+16% TOTAL: 9.2% user + 7.1% kernel + 0% iowait + 0% irq + 0% softirq
+

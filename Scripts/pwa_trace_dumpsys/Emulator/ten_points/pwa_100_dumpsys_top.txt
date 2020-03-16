@@ -1,0 +1,1390 @@
+###################################### Measure 1 at 20314722 ######################################
+User 50%, System 50%, IOW 0%, IRQ 0%
+User 3 + Nice 0 + Sys 3 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 6
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24188 root     20   0  33% R     1   6268K   2228K  fg top
+  247 root     20   0  16% S    24 148536K  36464K  fg /system/bin/local_opengl
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1372K  fg /sbin/adbd
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2153752K  18524K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339684K 188860K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895400K  97352K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025084K 208692K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004832K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905188K 112100K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870372K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136696K 194616K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881864K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872180K  72480K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871276K  74788K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901384K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880200K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967428K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204656K  77392K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868484K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869508K  73620K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873428K  77736K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868288K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902104K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    34 1080612K 207656K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1074376K 170636K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980416K 128336K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946812K 127704K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+
+###################################### Measure 2 at 20375619 ######################################
+User 25%, System 50%, IOW 0%, IRQ 25%
+User 1 + Nice 0 + Sys 2 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 1 = 4
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+  250 root     20   0  25% S     7  13864K   2568K  fg /system/bin/batteryd
+  247 root     20   0  25% S    24 148536K  36464K  fg /system/bin/local_opengl
+24273 root     20   0  25% R     1   6268K   2272K  fg top
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1360K  fg /sbin/adbd
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2159872K  18812K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339984K 189684K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895420K  97352K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025104K 208692K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004852K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905208K 112120K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870392K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136716K 194616K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881884K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872200K  72480K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871296K  74788K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901404K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880220K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967448K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204676K  77392K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868504K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869528K  73620K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873448K  78300K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868308K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902124K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    34 1080632K 207656K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1076444K 170880K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980436K 128348K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946832K 127704K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+
+###################################### Measure 3 at 20435977 ######################################
+User 16%, System 66%, IOW 0%, IRQ 16%
+User 1 + Nice 0 + Sys 4 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 1 = 6
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+    3 root     20   0  16% S     1      0K      0K  fg ksoftirqd/0
+  568 system   12  -8  16% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1304K  fg /sbin/adbd
+  247 root     20   0   0% S    24 148536K  36464K  fg /system/bin/local_opengl
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2165992K  18836K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1340324K 191016K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895440K  97352K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025124K 208756K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004872K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905228K 112120K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870412K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136736K 194616K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881904K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872220K  72480K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871316K  74788K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901424K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880240K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967468K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204696K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868524K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869548K  73620K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873468K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868328K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902144K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    34 1080652K 207656K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1076464K 171512K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980456K 128192K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946852K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+24366 root     20   0   0% R     1   6268K   2268K  fg top
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+
+###################################### Measure 4 at 20496364 ######################################
+User 26%, System 53%, IOW 0%, IRQ 20%
+User 4 + Nice 0 + Sys 8 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 3 = 15
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24457 root     20   0  20% R     1   6268K   2300K  fg top
+19671 u0_a77   20   0  13% S    18 981500K 128312K  fg com.android.chrome:privileged_process0
+    3 root     20   0   6% S     1      0K      0K  fg ksoftirqd/0
+  120 root     20   0   6% S     8  18084K   1280K  fg /sbin/adbd
+19644 u0_i16   20   0   6% S    22 1077764K 170060K  fg com.android.chrome:sandboxed_process0
+  247 root     20   0   6% S    24 148536K  36464K  fg /system/bin/local_opengl
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2172112K  18860K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339724K 189224K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895460K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025144K 208756K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004892K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905248K 112384K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870432K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136756K 194616K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881924K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872240K  72480K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871336K  74788K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901444K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880260K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967488K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204716K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868544K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869568K  73620K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873488K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868348K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902164K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079640K 207644K  fg com.android.chrome
+20764 u0_a66   20   0   0% S    16 946872K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+
+###################################### Measure 5 at 20557145 ######################################
+User 25%, System 75%, IOW 0%, IRQ 0%
+User 1 + Nice 0 + Sys 3 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 4
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24544 root     20   0  50% R     1   6268K   2336K  fg top
+  247 root     20   0  25% S    24 148536K  36464K  fg /system/bin/local_opengl
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1212K  fg /sbin/adbd
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2178232K  18884K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1340024K 189332K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895480K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025164K 209020K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004912K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905268K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870452K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136776K 194616K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881944K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872260K  72480K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871356K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901464K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880280K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967508K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204736K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868564K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869588K  73620K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873508K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868368K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902184K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079660K 207644K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1076760K 169640K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980496K 128288K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946892K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+
+###################################### Measure 6 at 20617631 ######################################
+User 50%, System 50%, IOW 0%, IRQ 0%
+User 1 + Nice 0 + Sys 1 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 2
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24639 root     20   0 100% R     1   6268K   2248K  fg top
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1252K  fg /sbin/adbd
+  247 root     20   0   0% S    24 148536K  36464K  fg /system/bin/local_opengl
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2186392K  18916K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1340364K 190748K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895500K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025184K 209236K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004932K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905288K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870472K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136796K 194828K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881964K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872280K  72660K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871376K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901484K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880300K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967528K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204756K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868584K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869608K  73800K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873528K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868388K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902204K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079680K 207644K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1077036K 169436K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980516K 128132K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946912K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+
+###################################### Measure 7 at 20678137 ######################################
+User 50%, System 50%, IOW 0%, IRQ 0%
+User 3 + Nice 0 + Sys 3 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 6
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+  120 root     20   0  16% S     9  19116K   1356K  fg /sbin/adbd
+24728 root     20   0  16% R     1   6268K   2180K  fg top
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  247 root     20   0   0% S    24 148536K  36464K  fg /system/bin/local_opengl
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2192512K  18940K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339804K 188832K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895520K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025204K 209452K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004952K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905308K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870492K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136816K 195056K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 881984K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872300K  72660K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871396K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901504K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880320K  94352K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967548K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204776K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868604K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869628K  73800K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873548K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868408K  69376K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902224K  96844K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079700K 207644K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1079104K 169696K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0   0% S    18 980536K 128288K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946932K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+
+###################################### Measure 8 at 20738527 ######################################
+User 50%, System 50%, IOW 0%, IRQ 0%
+User 4 + Nice 0 + Sys 4 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 8
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24817 root     20   0  50% R     1   6268K   2212K  fg top
+19644 u0_i16   20   0  12% S    22 1079380K 170256K  fg com.android.chrome:sandboxed_process0
+19671 u0_a77   20   0  12% S    18 980556K 128180K  fg com.android.chrome:privileged_process0
+  568 system   12  -8  12% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  247 root     20   0  12% S    24 148536K  36464K  fg /system/bin/local_opengl
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1312K  fg /sbin/adbd
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2198632K  18964K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1340124K 189548K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895540K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025224K 209452K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004972K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905328K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870512K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136836K 195056K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 882004K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872320K  72660K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871416K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901524K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880340K  94564K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967568K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204796K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868624K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869648K  73800K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873568K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868428K  69572K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902244K  97020K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079720K 207712K  fg com.android.chrome
+20764 u0_a66   20   0   0% S    16 946952K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+
+###################################### Measure 9 at 20799267 ######################################
+User 25%, System 75%, IOW 0%, IRQ 0%
+User 1 + Nice 0 + Sys 3 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 4
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24910 root     20   0  75% R     1   6268K   2224K  fg top
+19671 u0_a77   20   0  25% S    18 980576K 128288K  fg com.android.chrome:privileged_process0
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1216K  fg /sbin/adbd
+  247 root     20   0   0% S    24 148536K  36464K  fg /system/bin/local_opengl
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2204752K  18988K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339544K 189304K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895560K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025244K 209716K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1004992K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905348K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870532K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136856K 195056K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 882024K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872340K  72660K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871436K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901544K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880360K  94564K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967588K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204816K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868644K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869668K  73980K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873588K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868448K  69572K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902264K  97020K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079740K 207892K  fg com.android.chrome
+19644 u0_i16   20   0   0% S    22 1079400K 170520K  fg com.android.chrome:sandboxed_process0
+20764 u0_a66   20   0   0% S    16 946972K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+
+###################################### Measure 10 at 20859641 ######################################
+User 66%, System 33%, IOW 0%, IRQ 0%
+User 2 + Nice 0 + Sys 1 + Idle 0 + IOW 0 + IRQ 0 + SIRQ 0 = 3
+
+  PID USER     PR  NI CPU% S  #THR     VSS     RSS PCY Name
+24995 root     20   0 100% R     1   6268K   2160K  fg top
+19644 u0_i16   20   0  33% S    22 1079420K 170612K  fg com.android.chrome:sandboxed_process0
+    3 root     20   0   0% S     1      0K      0K  fg ksoftirqd/0
+    5 root      0 -20   0% S     1      0K      0K  fg kworker/0:0H
+    7 root     20   0   0% S     1      0K      0K  fg rcu_preempt
+    8 root     20   0   0% S     1      0K      0K  fg rcu_sched
+    9 root     20   0   0% S     1      0K      0K  fg rcu_bh
+   10 root     RT   0   0% S     1      0K      0K unk migration/0
+   11 root      0 -20   0% S     1      0K      0K  fg perf
+   12 root      0 -20   0% S     1      0K      0K  fg writeback
+   13 root     25   5   0% S     1      0K      0K  fg ksmd
+   14 root      0 -20   0% S     1      0K      0K  fg crypto
+   16 root      0 -20   0% S     1      0K      0K  fg kintegrityd
+   17 root      0 -20   0% S     1      0K      0K  fg bioset
+   18 root      0 -20   0% S     1      0K      0K  fg kblockd
+   19 root      0 -20   0% S     1      0K      0K  fg ata_sff
+   20 root     20   0   0% S     1      0K      0K  fg kswapd0
+   21 root      0 -20   0% S     1      0K      0K  fg vmstat
+   22 root     20   0   0% S     1      0K      0K  fg fsnotify_mark
+   40 root      0 -20   0% S     1      0K      0K  fg kthrotld
+   41 root      0 -20   0% S     1      0K      0K  fg acpi_thermal_pm
+   43 root      0 -20   0% S     1      0K      0K  fg bioset
+   44 root      0 -20   0% S     1      0K      0K  fg bioset
+   45 root      0 -20   0% S     1      0K      0K  fg bioset
+   46 root      0 -20   0% S     1      0K      0K  fg bioset
+   47 root      0 -20   0% S     1      0K      0K  fg bioset
+   48 root      0 -20   0% S     1      0K      0K  fg bioset
+   49 root      0 -20   0% S     1      0K      0K  fg bioset
+   50 root      0 -20   0% S     1      0K      0K  fg bioset
+   51 root      0 -20   0% S     1      0K      0K  fg bioset
+   52 root      0 -20   0% S     1      0K      0K  fg bioset
+   53 root      0 -20   0% S     1      0K      0K  fg bioset
+   54 root      0 -20   0% S     1      0K      0K  fg bioset
+   55 root      0 -20   0% S     1      0K      0K  fg bioset
+   56 root      0 -20   0% S     1      0K      0K  fg bioset
+   57 root      0 -20   0% S     1      0K      0K  fg bioset
+   58 root      0 -20   0% S     1      0K      0K  fg bioset
+   59 root      0 -20   0% S     1      0K      0K  fg bioset
+   60 root      0 -20   0% S     1      0K      0K  fg bioset
+   61 root      0 -20   0% S     1      0K      0K  fg bioset
+   62 root      0 -20   0% S     1      0K      0K  fg bioset
+   63 root      0 -20   0% S     1      0K      0K  fg bioset
+   64 root      0 -20   0% S     1      0K      0K  fg bioset
+   65 root      0 -20   0% S     1      0K      0K  fg bioset
+   66 root      0 -20   0% S     1      0K      0K  fg bioset
+   67 root     20   0   0% S     1      0K      0K  fg scsi_eh_0
+   68 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_0
+   69 root     20   0   0% S     1      0K      0K  fg scsi_eh_1
+   70 root      0 -20   0% S     1      0K      0K  fg scsi_tmf_1
+   72 root      0 -20   0% S     1      0K      0K  fg dm_bufio_cache
+    1 root     20   0   0% S     1   7660K   1816K  fg /init
+   74 root      0 -20   0% S     1      0K      0K  fg bioset
+   75 root      0 -20   0% S     1      0K      0K  fg bioset
+   77 root      0 -20   0% S     1      0K      0K  fg kworker/0:1H
+   78 root      0 -20   0% S     1      0K      0K  fg ipv6_addrconf
+   79 root      0 -20   0% S     1      0K      0K  fg deferwq
+   80 root     20   0   0% S     1   3500K   1480K  fg /sbin/ueventd
+   84 root     20   0   0% S     1      0K      0K  fg jbd2/sda6-8
+   85 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   89 root     20   0   0% S     1      0K      0K  fg jbd2/sdb1-8
+   90 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   95 root     20   0   0% S     1      0K      0K  fg jbd2/sdb3-8
+   96 root      0 -20   0% S     1      0K      0K  fg ext4-rsv-conver
+   97 logd     30  10   0% S     8  15576K   5180K  bg /system/bin/logd
+   98 root      0 -20   0% S     1      0K      0K  fg iprt-VBoxWQueue
+   99 root     20   0   0% S     1   6964K   2504K  fg /system/bin/debuggerd
+  100 root     20   0   0% S     4  13544K   5616K  fg /system/bin/vold
+  106 root     20   0   0% S     1      0K      0K  fg kauditd
+  107 root     20   0   0% S     1   6708K    476K  fg debuggerd:signaller
+  117 root     20   0   0% S     3  23572K   3644K  fg /system/bin/redis
+  118 system   20   0   0% S     1   9188K   4168K  fg /system/bin/gatekeeperd
+  119 root     20   0   0% S     1   5460K   2020K  fg /system/xbin/perfprofd
+  120 root     20   0   0% S     8  18084K   1216K  fg /sbin/adbd
+  247 root     20   0   0% S    24 148536K  36464K  fg /system/bin/local_opengl
+  248 root     20   0   0% S     1   8284K   1776K  fg /system/bin/local_camera
+  249 root     20   0   0% S     1   8280K   1812K  fg /system/bin/local_camera
+  250 root     20   0   0% S     7  13864K   2568K  fg /system/bin/batteryd
+  251 root     20   0   0% S     1   5144K   1932K  fg /system/bin/diskiod
+  252 radio    20   0   0% S     1   4628K   1712K  fg /system/bin/logwrapper
+  253 root     -2   0   0% S     1   5748K   2896K unk /system/bin/lmkd
+  254 root     20   0   0% S     4   8500K   1984K  fg /system/bin/network_profile
+  255 system   20   0   0% S     1   6180K   2204K  fg /system/bin/servicemanager
+  256 root     20   0   0% S     1   5144K   1960K  fg /system/bin/settingsd
+  257 root     20   0   0% S     1   6424K   1972K  fg /system/bin/vinput
+  258 root     20   0   0% S     1   2572K    444K  fg /system/xbin/su
+  259 root     20   0   0% S     5 1123936K 127296K  fg zygote
+  260 audioser 20   0   0% S     8  32620K   9600K  fg /system/bin/audioserver
+  261 camerase 20   0   0% S     3  70548K  24144K  fg /system/bin/cameraserver
+  262 drm      20   0   0% S     2  17476K   7168K  fg /system/bin/drmserver
+  263 root     20   0   0% S     1   6712K   3044K  fg /system/bin/installd
+  264 keystore 20   0   0% S     1   9500K   5472K  fg /system/bin/keystore
+  265 mediacod 20   0   0% S     4  23264K   8548K  fg media.codec
+  266 media    20   0   0% S     2  21972K   8464K  fg /system/bin/mediadrmserver
+  267 mediaex  20   0   0% S     4  70528K  17812K  fg media.extractor
+  268 media    20   0   0% S     4  68120K  13392K  fg /system/bin/mediaserver
+  269 root     20   0   0% S    11  21008K   4684K  fg /system/bin/netd
+  270 radio    20   0   0% S     4  10780K   3760K  fg /system/bin/rild
+  273 radio    20   0   0% S     3 2210872K  19012K  fg /system/bin/genybaseband
+  277 root     20   0   0% S     1   3400K    852K  fg /sbin/healthd
+  534 system   20   0   0% S    88 1339844K 189272K  fg system_server
+  561 root     20   0   0% S     1   5824K   2688K  fg logcat
+  564 root     20   0   0% S     1   4884K   1660K  fg /system/bin/sh
+  568 system   12  -8   0% S    13  87344K   6080K  fg /system/bin/surfaceflinger
+  649 wifi     20   0   0% S     1  10032K   6216K  fg /system/bin/wpa_supplicant
+  651 u0_a48   20   0   0% S    14 895580K  97752K  bg com.android.inputmethod.latin
+  656 media_rw 20   0   0% S     4   8992K   3292K  fg /system/bin/sdcard
+  657 u0_a23   20   0   0% S    28 1025264K 209716K  fg com.android.systemui
+  795 u0_a66   20   0   0% S    48 1005012K 196568K  fg com.google.android.gms.persistent
+  814 radio    20   0   0% S    27 905368K 112404K  fg com.android.phone
+ 1143 u0_a72   20   0   0% S    11 870552K  76784K  fg com.google.android.ext.services
+ 1164 u0_a66   20   0   0% S    52 1136876K 195056K  fg com.google.android.gms
+ 1183 u0_a66   20   0   0% S    17 882044K  86340K  bg com.google.process.gapps
+ 1210 system   20   0   0% S    12 872360K  72660K  fg com.genymotion.systempatcher
+ 1215 system   20   0   0% S    11 871456K  74956K  fg com.genymotion.genyd
+ 1256 u0_a14   20   0   0% S    15 901564K 114864K  bg com.android.launcher3
+ 1542 u0_a1    20   0   0% S    14 880380K  94564K  bg android.process.acore
+18789 u0_a64   20   0   0% S    49 967608K 143996K  bg com.android.vending
+18984 u0_a45   20   0   0% S    10 1204836K  78188K  bg com.android.gallery3d
+19031 u0_a16   20   0   0% S    10 868664K  71564K  bg com.android.musicfx
+19060 system   20   0   0% S    10 869688K  73980K  bg com.genymotion.superuser
+19500 u0_a69   20   0   0% S    13 873608K  78508K  bg com.google.android.partnersetup
+19541 u0_a54   20   0   0% S    10 868468K  69572K  bg com.svox.pico
+19579 u0_a78   20   0   0% S    13 902284K  97020K  fg org.chromium.webapk.a44c9cab055c42d1b
+19605 u0_a77   16  -4   0% S    33 1079760K 207892K  fg com.android.chrome
+19671 u0_a77   20   0   0% S    18 980596K 128252K  fg com.android.chrome:privileged_process0
+20764 u0_a66   20   0   0% S    16 946992K 127904K  bg com.google.android.gms.unstable
+20831 root     20   0   0% S     1      0K      0K  fg kworker/0:0
+21707 root     20   0   0% S     1      0K      0K  fg kworker/0:1
+22476 root     20   0   0% S     1      0K      0K  fg kworker/u2:1
+23874 root     20   0   0% S     1      0K      0K  fg kworker/u2:2
+24112 root     20   0   0% S    10 951936K  78400K  fg com.android.commands.monkey
+   73 root      0 -20   0% S     1      0K      0K  fg binder
+    2 root     20   0   0% S     1      0K      0K  fg kthreadd
+

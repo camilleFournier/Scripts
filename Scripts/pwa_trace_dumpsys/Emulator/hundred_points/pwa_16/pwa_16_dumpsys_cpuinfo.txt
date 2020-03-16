@@ -1,0 +1,2715 @@
+###################################### Measure 1 at 14538731 ######################################
+Load: 4.42 / 2.84 / 1.37
+CPU usage from 61829ms to 7656ms ago (2020-03-06 06:52:19.525 to 2020-03-06 06:53:13.698):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.1% kernel / faults: 59363 minor
+  17% 8334/com.android.chrome:privileged_process0: 10% user + 7.4% kernel / faults: 1869 minor
+  17% 247/local_opengl: 0.4% user + 16% kernel
+  9.6% 533/system_server: 6% user + 3.6% kernel / faults: 987 minor
+  7.2% 567/surfaceflinger: 3.8% user + 3.3% kernel
+  0.6% 7382/com.android.vending: 0.4% user + 0.1% kernel / faults: 2711 minor
+  0.8% 1310/com.google.android.gms: 0.5% user + 0.2% kernel / faults: 860 minor
+  0.4% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 878 minor
+  0.9% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 89 minor
+  0.8% 120/adbd: 0% user + 0.7% kernel / faults: 1831 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.1% 1075/com.google.process.gapps: 0.1% user + 0% kernel / faults: 1186 minor
+  0.1% 7361/android.process.acore: 0.1% user + 0% kernel / faults: 659 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 2 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 9 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 259/zygote: 0% user + 0% kernel / faults: 261 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 5 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 85 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 8809/com.google.process.gapps: 0% user + 0% kernel
+ +0% 8860/com.google.android.gms.unstable: 0% user + 0% kernel
+99% TOTAL: 55% user + 33% kernel + 11% softirq
+
+###################################### Measure 2 at 14614717 ######################################
+Load: 4.08 / 3.1 / 1.59
+CPU usage from 60699ms to 7345ms ago (2020-03-06 06:53:36.629 to 2020-03-06 06:54:29.983):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.1% kernel / faults: 60115 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.4% kernel / faults: 1439 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  7.8% 533/system_server: 4.8% user + 2.9% kernel / faults: 336 minor
+  7.7% 567/surfaceflinger: 4.2% user + 3.5% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 57 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1593 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 2 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 8 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 9 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 11% softirq
+
+###################################### Measure 3 at 14690677 ######################################
+Load: 3.67 / 3.21 / 1.75
+CPU usage from 60721ms to 7158ms ago (2020-03-06 06:54:52.416 to 2020-03-06 06:55:45.979):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.3% kernel / faults: 49720 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1604 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8.1% 567/surfaceflinger: 4.2% user + 3.8% kernel
+  7.8% 533/system_server: 4.8% user + 3% kernel / faults: 424 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 31 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1404 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 4 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 10 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 9112/sh: 0% user + 0% kernel
+ +0% 9115/dumpsys: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 4 at 14766524 ######################################
+Load: 3.45 / 3.21 / 1.87
+CPU usage from 60335ms to 6816ms ago (2020-03-06 06:56:08.641 to 2020-03-06 06:57:02.161):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 49845 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1780 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  8.1% 567/surfaceflinger: 4.4% user + 3.7% kernel
+  7.6% 533/system_server: 4.8% user + 2.8% kernel / faults: 267 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 83 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1589 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 3 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 71 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 15 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 5 at 14842611 ######################################
+Load: 3.96 / 3.47 / 2.06
+CPU usage from 60334ms to 7352ms ago (2020-03-06 06:57:24.844 to 2020-03-06 06:58:17.827):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 57540 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1616 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  7.8% 533/system_server: 4.8% user + 3% kernel / faults: 472 minor
+  7.8% 567/surfaceflinger: 4% user + 3.7% kernel
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 158 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1353 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 8 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 76 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 9285/sh: 0% user + 0% kernel
+ +0% 9290/ps: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 6 at 14918502 ######################################
+Load: 4.08 / 3.63 / 2.23
+CPU usage from 59926ms to 7576ms ago (2020-03-06 06:58:41.057 to 2020-03-06 06:59:33.407):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 54733 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1500 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.9% 567/surfaceflinger: 4.1% user + 3.8% kernel
+  7.3% 533/system_server: 4.6% user + 2.7% kernel / faults: 151 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 143 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1317 minor
+  0.5% 3/ksoftirqd/0: 0% user + 0.5% kernel
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 12 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 5 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+97% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 7 at 14994273 ######################################
+Load: 4.26 / 3.77 / 2.39
+CPU usage from 60452ms to 8129ms ago (2020-03-06 06:59:56.517 to 2020-03-06 07:00:48.840):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 7.9% kernel / faults: 65081 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.7% kernel / faults: 1654 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 533/system_server: 5.3% user + 3.2% kernel / faults: 1041 minor
+  7.4% 567/surfaceflinger: 3.8% user + 3.5% kernel
+  0.3% 790/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 1706 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 84 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1647 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 10 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 269/netd: 0% user + 0% kernel / faults: 65 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 3 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 9405/com.android.deskclock: 0% user + 0% kernel
+98% TOTAL: 53% user + 33% kernel + 0% iowait + 11% softirq
+
+###################################### Measure 8 at 15070304 ######################################
+Load: 4.74 / 4.1 / 2.63
+CPU usage from 60898ms to 6076ms ago (2020-03-06 07:01:11.868 to 2020-03-06 07:02:06.690):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 7.7% kernel / faults: 63020 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.7% kernel / faults: 1666 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  8.4% 533/system_server: 5% user + 3.4% kernel / faults: 301 minor
+  7.5% 567/surfaceflinger: 3.8% user + 3.6% kernel
+  2.9% 790/com.google.android.gms.persistent: 2.1% user + 0.7% kernel / faults: 1466 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 35 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1670 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 1310/com.google.android.gms: 0.1% user + 0% kernel / faults: 158 minor
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 14 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 135 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 259/zygote: 0% user + 0% kernel / faults: 267 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 9 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 1 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 9530/com.google.android.gms.ui: 0% user + 0% kernel
+99% TOTAL: 54% user + 33% kernel + 11% softirq
+
+###################################### Measure 9 at 15146002 ######################################
+Load: 3.82 / 3.96 / 2.69
+CPU usage from 59775ms to 5994ms ago (2020-03-06 07:02:28.725 to 2020-03-06 07:03:22.506):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.1% kernel / faults: 57956 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1606 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8% 533/system_server: 4.8% user + 3.1% kernel / faults: 384 minor
+  7.8% 567/surfaceflinger: 4.1% user + 3.6% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 86 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1624 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 15 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 7 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 5 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 4 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 10 at 15221976 ######################################
+Load: 4.34 / 4.05 / 2.82
+CPU usage from 64059ms to 5415ms ago (2020-03-06 07:03:40.431 to 2020-03-06 07:04:39.076):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.7% kernel / faults: 56629 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1538 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  10% 533/system_server: 6.4% user + 3.7% kernel / faults: 307 minor
+  7.7% 567/surfaceflinger: 4.4% user + 3.2% kernel
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 88 minor
+  0.6% 120/adbd: 0.1% user + 0.5% kernel / faults: 1704 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 15 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 2 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 30 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 9812/sh: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 11 at 15298062 ######################################
+Load: 4.11 / 4.11 / 2.94
+CPU usage from 59208ms to 7592ms ago (2020-03-06 07:05:01.333 to 2020-03-06 07:05:52.949):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.4% kernel / faults: 56718 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.5% kernel / faults: 1583 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8% 533/system_server: 5.1% user + 2.9% kernel / faults: 321 minor
+  7.5% 567/surfaceflinger: 3.8% user + 3.7% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 50 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1308 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 1 minor
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 2 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 11% softirq
+
+###################################### Measure 12 at 15373885 ######################################
+Load: 3.62 / 3.93 / 2.98
+CPU usage from 38536ms to 6258ms ago (2020-03-06 07:06:37.881 to 2020-03-06 07:07:10.160):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.3% kernel / faults: 33145 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.1% kernel / faults: 1047 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  9.4% 533/system_server: 5.7% user + 3.6% kernel / faults: 165 minor
+  7.6% 567/surfaceflinger: 3.8% user + 3.8% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 20 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1034 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 6 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 16 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 11% softirq
+
+###################################### Measure 13 at 15449658 ######################################
+Load: 3.79 / 3.91 / 3.04
+CPU usage from 59614ms to 6653ms ago (2020-03-06 07:07:32.628 to 2020-03-06 07:08:25.588):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.8% kernel / faults: 57588 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.3% kernel / faults: 1643 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8.2% 533/system_server: 5.2% user + 3% kernel / faults: 322 minor
+  7.5% 567/surfaceflinger: 3.7% user + 3.7% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.1% kernel / faults: 41 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1550 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 12 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 2 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 1 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 14 at 15525424 ######################################
+Load: 3.25 / 3.78 / 3.07
+CPU usage from 59486ms to 6158ms ago (2020-03-06 07:08:48.390 to 2020-03-06 07:09:41.718):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 53445 minor
+  19% 247/local_opengl: 0.6% user + 18% kernel
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.5% kernel / faults: 1602 minor
+  8% 567/surfaceflinger: 4.1% user + 3.9% kernel
+  8% 533/system_server: 4.9% user + 3% kernel / faults: 249 minor
+  1.3% 8274/com.android.chrome: 1% user + 0.2% kernel / faults: 156 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1374 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 5 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 15 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 7 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 2 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 15 at 15601132 ######################################
+Load: 3.42 / 3.72 / 3.1
+CPU usage from 59647ms to 5941ms ago (2020-03-06 07:10:03.967 to 2020-03-06 07:10:57.672):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 50640 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.8% kernel / faults: 1636 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8% 533/system_server: 5% user + 3% kernel / faults: 283 minor
+  7.9% 567/surfaceflinger: 4.2% user + 3.7% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 80 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1615 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 44 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 16 at 15676951 ######################################
+Load: 3.62 / 3.72 / 3.15
+CPU usage from 59140ms to 6813ms ago (2020-03-06 07:11:20.293 to 2020-03-06 07:12:12.619):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.5% kernel / faults: 50752 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1553 minor
+  18% 247/local_opengl: 0.6% user + 18% kernel
+  7.9% 533/system_server: 5% user + 2.9% kernel / faults: 255 minor
+  7.9% 567/surfaceflinger: 4.1% user + 3.7% kernel
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 31 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1275 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 13 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 5750/kworker/u2:0: 0% user + 0% kernel
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 17 at 15752779 ######################################
+Load: 3.29 / 3.61 / 3.16
+CPU usage from 59010ms to 5857ms ago (2020-03-06 07:12:36.323 to 2020-03-06 07:13:29.476):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 51635 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1454 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8.1% 533/system_server: 5.1% user + 3% kernel / faults: 247 minor
+  7.6% 567/surfaceflinger: 3.9% user + 3.7% kernel
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 148 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1587 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 6 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 18 at 15828605 ######################################
+Load: 3.55 / 3.64 / 3.21
+CPU usage from 63969ms to 6178ms ago (2020-03-06 07:13:47.179 to 2020-03-06 07:14:44.963):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.2% kernel / faults: 60242 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.9% kernel / faults: 1840 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  9.9% 533/system_server: 6.1% user + 3.8% kernel / faults: 339 minor
+  7.6% 567/surfaceflinger: 3.8% user + 3.7% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 202 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1547 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 14 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 3 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 11% softirq
+
+###################################### Measure 19 at 15904420 ######################################
+Load: 4.24 / 3.79 / 3.29
+CPU usage from 59354ms to 5752ms ago (2020-03-06 07:15:07.523 to 2020-03-06 07:16:01.125):
+  36% 8462/com.android.chrome:sandboxed_process1: 29% user + 7.8% kernel / faults: 64553 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.8% kernel / faults: 1531 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.9% 533/system_server: 5.5% user + 3.3% kernel / faults: 1177 minor
+  7.3% 567/surfaceflinger: 3.8% user + 3.5% kernel
+  0.5% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 2206 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 27 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1604 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.1% 1310/com.google.android.gms: 0.1% user + 0% kernel / faults: 193 minor 1 major
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 21 minor
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 250 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 6 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 60 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+99% TOTAL: 54% user + 33% kernel + 11% softirq
+
+###################################### Measure 20 at 15980287 ######################################
+Load: 3.78 / 3.75 / 3.31
+CPU usage from 59301ms to 6329ms ago (2020-03-06 07:16:23.454 to 2020-03-06 07:17:16.427):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 55606 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.8% kernel / faults: 1623 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  8.3% 533/system_server: 5.1% user + 3.1% kernel / faults: 383 minor
+  7.6% 567/surfaceflinger: 3.9% user + 3.6% kernel
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 82 minor
+  1% 790/com.google.android.gms.persistent: 0.8% user + 0.1% kernel / faults: 401 minor
+  0.6% 120/adbd: 0.1% user + 0.5% kernel / faults: 1666 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 1 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+98% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 21 at 16056002 ######################################
+Load: 3.57 / 3.73 / 3.35
+CPU usage from 58767ms to 6100ms ago (2020-03-06 07:17:39.795 to 2020-03-06 07:18:32.462):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.2% kernel / faults: 51325 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1576 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8% 533/system_server: 5.2% user + 2.7% kernel / faults: 172 minor
+  7.9% 567/surfaceflinger: 4.2% user + 3.7% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 32 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1322 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 8120/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 1 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8549/kworker/0:1: 0% user + 0% kernel
+ +0% 10766/sh: 0% user + 0% kernel
+97% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 22 at 16131839 ######################################
+Load: 3.73 / 3.78 / 3.4
+CPU usage from 59070ms to 8656ms ago (2020-03-06 07:18:55.304 to 2020-03-06 07:19:45.718):
+  38% 8462/com.android.chrome:sandboxed_process1: 30% user + 8.4% kernel / faults: 58098 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.2% kernel / faults: 1497 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 533/system_server: 4.7% user + 3% kernel / faults: 265 minor
+  7.5% 567/surfaceflinger: 3.8% user + 3.6% kernel
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 33 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1523 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 15 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 3 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 1 minor
+ +0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 23 at 16207698 ######################################
+Load: 3.46 / 3.75 / 3.42
+CPU usage from 62042ms to 8847ms ago (2020-03-06 07:20:08.210 to 2020-03-06 07:21:01.405):
+  38% 8462/com.android.chrome:sandboxed_process1: 30% user + 8.8% kernel / faults: 66561 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1423 minor
+  19% 247/local_opengl: 0.6% user + 18% kernel
+  7.6% 567/surfaceflinger: 3.7% user + 3.8% kernel
+  7% 533/system_server: 4.4% user + 2.5% kernel / faults: 271 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 81 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1498 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 24 at 16283551 ######################################
+Load: 3.82 / 3.8 / 3.47
+CPU usage from 48198ms to 8946ms ago (2020-03-06 07:21:37.896 to 2020-03-06 07:22:17.149):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 45898 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.5% kernel / faults: 1244 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  7.7% 567/surfaceflinger: 3.9% user + 3.7% kernel
+  7% 533/system_server: 4.3% user + 2.6% kernel / faults: 115 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.3% kernel / faults: 134 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 987 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 25 at 16359388 ######################################
+Load: 3.53 / 3.75 / 3.47
+CPU usage from 62817ms to 8604ms ago (2020-03-06 07:22:39.081 to 2020-03-06 07:23:33.305) with 99% awake:
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.5% kernel / faults: 53672 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1471 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.2% user + 3.6% kernel
+  7.3% 533/system_server: 4.5% user + 2.7% kernel / faults: 353 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 36 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1344 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 13 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 12 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 7 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 26 at 16435187 ######################################
+Load: 4.01 / 3.89 / 3.55
+CPU usage from 62073ms to 9071ms ago (2020-03-06 07:23:55.704 to 2020-03-06 07:24:48.684):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 64086 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.3% kernel / faults: 1512 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  7.5% 533/system_server: 4.6% user + 2.9% kernel / faults: 374 minor
+  7.4% 567/surfaceflinger: 3.9% user + 3.4% kernel
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 90 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1578 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 1310/com.google.android.gms: 0.3% user + 0.1% kernel / faults: 551 minor 3 major
+  0.4% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 298 minor
+  0.3% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 360 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 67 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 11% softirq
+
+###################################### Measure 27 at 16510963 ######################################
+Load: 3.41 / 3.73 / 3.52
+CPU usage from 62176ms to 8511ms ago (2020-03-06 07:25:11.287 to 2020-03-06 07:26:04.952):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.9% kernel / faults: 63231 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1326 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  7.5% 567/surfaceflinger: 4% user + 3.5% kernel
+  7% 533/system_server: 4.3% user + 2.7% kernel / faults: 164 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 30 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1524 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 28 at 16586779 ######################################
+Load: 3.4 / 3.65 / 3.51
+CPU usage from 62685ms to 8690ms ago (2020-03-06 07:26:26.632 to 2020-03-06 07:27:20.627):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.6% kernel / faults: 58515 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.7% kernel / faults: 1650 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  7.8% 533/system_server: 4.6% user + 3.1% kernel / faults: 365 minor
+  7.6% 567/surfaceflinger: 4% user + 3.5% kernel
+  0.5% 790/com.google.android.gms.persistent: 0.4% user + 0.1% kernel / faults: 985 minor
+  1.2% 8274/com.android.chrome: 1% user + 0.2% kernel / faults: 200 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1356 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 78 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 100/vold: 0% user + 0% kernel / faults: 40 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+98% TOTAL: 52% user + 34% kernel + 12% softirq
+
+###################################### Measure 29 at 16662573 ######################################
+Load: 4.09 / 3.81 / 3.57
+CPU usage from 61382ms to 8945ms ago (2020-03-06 07:27:43.695 to 2020-03-06 07:28:36.132):
+  38% 8462/com.android.chrome:sandboxed_process1: 30% user + 8.7% kernel / faults: 58292 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1186 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.1% user + 3.7% kernel
+  7.2% 533/system_server: 4.6% user + 2.5% kernel / faults: 186 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 87 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1296 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 11% softirq
+
+###################################### Measure 30 at 16738317 ######################################
+Load: 3.99 / 3.86 / 3.61
+CPU usage from 62104ms to 7664ms ago (2020-03-06 07:28:58.700 to 2020-03-06 07:29:53.140):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 54497 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1787 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.9% 567/surfaceflinger: 4% user + 3.8% kernel
+  7.5% 533/system_server: 4.7% user + 2.8% kernel / faults: 203 minor
+  0.4% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 849 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 33 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1458 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+98% TOTAL: 52% user + 33% kernel + 12% softirq
+
+###################################### Measure 31 at 16814117 ######################################
+Load: 4.25 / 3.99 / 3.68
+CPU usage from 62400ms to 8243ms ago (2020-03-06 07:30:14.217 to 2020-03-06 07:31:08.374):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 58394 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1322 minor
+  18% 247/local_opengl: 0.6% user + 18% kernel
+  7.7% 567/surfaceflinger: 4% user + 3.7% kernel
+  7.6% 533/system_server: 4.5% user + 3% kernel / faults: 559 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 82 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1454 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 32 at 16889986 ######################################
+Load: 3.8 / 3.91 / 3.68
+CPU usage from 62067ms to 8480ms ago (2020-03-06 07:31:30.435 to 2020-03-06 07:32:24.022):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.6% kernel / faults: 61703 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.3% kernel / faults: 1665 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.6% 567/surfaceflinger: 3.9% user + 3.6% kernel
+  7.4% 533/system_server: 4.5% user + 2.8% kernel / faults: 293 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 36 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1548 minor
+  0.5% 3/ksoftirqd/0: 0% user + 0.5% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 15 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 33 at 16965848 ######################################
+Load: 3.58 / 3.84 / 3.67
+CPU usage from 62555ms to 7604ms ago (2020-03-06 07:32:45.802 to 2020-03-06 07:33:40.753) with 99% awake:
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.7% kernel / faults: 54519 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1632 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.2% user + 3.6% kernel
+  7.6% 533/system_server: 4.8% user + 2.8% kernel / faults: 464 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 39 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1544 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 7382/com.android.vending: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 34 at 17041687 ######################################
+Load: 3.89 / 3.85 / 3.69
+CPU usage from 61915ms to 9330ms ago (2020-03-06 07:34:02.250 to 2020-03-06 07:34:54.835):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.9% kernel / faults: 52342 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1754 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.7% 567/surfaceflinger: 3.7% user + 4% kernel
+  7.2% 533/system_server: 4.5% user + 2.6% kernel / faults: 170 minor
+  1.2% 8274/com.android.chrome: 1% user + 0.2% kernel / faults: 83 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0.1% user + 0.4% kernel / faults: 1512 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 35 at 17117426 ######################################
+Load: 3.34 / 3.72 / 3.66
+CPU usage from 61246ms to 8235ms ago (2020-03-06 07:35:18.622 to 2020-03-06 07:36:11.634):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.9% kernel / faults: 53547 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.8% kernel / faults: 1803 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.1% user + 3.6% kernel
+  7.3% 533/system_server: 4.4% user + 2.9% kernel / faults: 438 minor
+  1.3% 8274/com.android.chrome: 0.9% user + 0.3% kernel / faults: 151 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1496 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 3 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 36 at 17193103 ######################################
+Load: 3.08 / 3.56 / 3.61
+CPU usage from 62083ms to 8582ms ago (2020-03-06 07:36:33.477 to 2020-03-06 07:37:26.978):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.8% kernel / faults: 52400 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1237 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.1% user + 3.6% kernel
+  7.5% 533/system_server: 4.2% user + 3.2% kernel / faults: 173 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 201 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1546 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 665/com.android.systemui: 0.1% user + 0% kernel / faults: 23 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 13 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 37 at 17268866 ######################################
+Load: 3.07 / 3.48 / 3.58
+CPU usage from 62671ms to 9052ms ago (2020-03-06 07:37:48.716 to 2020-03-06 07:38:42.334):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.4% kernel / faults: 50859 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1687 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.1% user + 3.7% kernel
+  7.3% 533/system_server: 4.4% user + 2.9% kernel / faults: 327 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 87 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1572 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 38 at 17344685 ######################################
+Load: 3.65 / 3.53 / 3.58
+CPU usage from 61975ms to 8120ms ago (2020-03-06 07:39:05.319 to 2020-03-06 07:39:59.174):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.9% kernel / faults: 60345 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.4% kernel / faults: 1293 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 3.6% user + 4.1% kernel
+  7.1% 533/system_server: 4.5% user + 2.6% kernel / faults: 269 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 31 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1502 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 10 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 1 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 39 at 17420660 ######################################
+Load: 3.75 / 3.56 / 3.59
+CPU usage from 62569ms to 8357ms ago (2020-03-06 07:40:20.552 to 2020-03-06 07:41:14.763):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 49541 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.9% kernel / faults: 1815 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  7.9% 567/surfaceflinger: 4% user + 3.9% kernel
+  7.4% 533/system_server: 4.4% user + 2.9% kernel / faults: 286 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 101 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1439 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 5 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 40 at 17496492 ######################################
+Load: 2.76 / 3.34 / 3.51
+CPU usage from 62369ms to 8400ms ago (2020-03-06 07:41:36.653 to 2020-03-06 07:42:30.622):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.7% kernel / faults: 53377 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.8% kernel / faults: 1675 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  8% 567/surfaceflinger: 3.9% user + 4% kernel
+  7.4% 533/system_server: 4.8% user + 2.6% kernel / faults: 328 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 29 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1451 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 40 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 3 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+ +0% 12404/sh: 0% user + 0% kernel
+ +0% 12409/ps: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 41 at 17572339 ######################################
+Load: 2.94 / 3.28 / 3.47
+CPU usage from 62225ms to 9141ms ago (2020-03-06 07:42:52.593 to 2020-03-06 07:43:45.677):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.3% kernel / faults: 45774 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1810 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.1% user + 3.7% kernel
+  7.5% 533/system_server: 4.7% user + 2.7% kernel / faults: 489 minor
+  1.3% 8274/com.android.chrome: 0.9% user + 0.3% kernel / faults: 38 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1571 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 1310/com.google.android.gms: 0.1% user + 0% kernel / faults: 138 minor
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 96 minor
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 240 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 42 at 17648033 ######################################
+Load: 3.45 / 3.33 / 3.47
+CPU usage from 61788ms to 8507ms ago (2020-03-06 07:44:08.593 to 2020-03-06 07:45:01.874):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.8% kernel / faults: 58075 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1494 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.6% 567/surfaceflinger: 3.8% user + 3.7% kernel
+  7.4% 533/system_server: 4.8% user + 2.6% kernel / faults: 361 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 80 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1519 minor
+  0.3% 117/redis: 0.2% user + 0% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 32 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 7382/com.android.vending: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 43 at 17723678 ######################################
+Load: 3.18 / 3.33 / 3.47
+CPU usage from 61611ms to 9072ms ago (2020-03-06 07:45:24.477 to 2020-03-06 07:46:17.015):
+  38% 8462/com.android.chrome:sandboxed_process1: 30% user + 8.5% kernel / faults: 62202 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.4% kernel / faults: 1662 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.5% 567/surfaceflinger: 4.2% user + 3.3% kernel
+  7.4% 533/system_server: 4.5% user + 2.9% kernel / faults: 217 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 31 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1511 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 44 at 17799560 ######################################
+Load: 3.54 / 3.43 / 3.49
+CPU usage from 62860ms to 8403ms ago (2020-03-06 07:46:39.237 to 2020-03-06 07:47:33.693):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 9% kernel / faults: 58034 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.5% kernel / faults: 1596 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4.3% user + 3.4% kernel
+  7.5% 533/system_server: 4.7% user + 2.8% kernel / faults: 354 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.1% kernel / faults: 30 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1436 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 45 at 17875384 ######################################
+Load: 3.16 / 3.38 / 3.47
+CPU usage from 62953ms to 8833ms ago (2020-03-06 07:47:54.949 to 2020-03-06 07:48:49.068):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.4% kernel / faults: 59891 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.6% kernel / faults: 1726 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  7.5% 567/surfaceflinger: 3.7% user + 3.7% kernel
+  7.1% 533/system_server: 4.4% user + 2.7% kernel / faults: 191 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 112 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1539 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 44 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 34% kernel + 11% softirq
+
+###################################### Measure 46 at 17951216 ######################################
+Load: 2.81 / 3.23 / 3.41
+CPU usage from 62768ms to 8592ms ago (2020-03-06 07:49:10.950 to 2020-03-06 07:50:05.126):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.7% kernel / faults: 57460 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1566 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.8% 567/surfaceflinger: 4% user + 3.7% kernel
+  7.4% 533/system_server: 4.3% user + 3% kernel / faults: 372 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 34 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1564 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 23 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 14 minor
+  0% 7382/com.android.vending: 0% user + 0% kernel / faults: 1 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 47 at 18027027 ######################################
+Load: 2.99 / 3.23 / 3.4
+CPU usage from 24364ms to 8668ms ago (2020-03-06 07:51:05.141 to 2020-03-06 07:51:20.837):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.4% kernel / faults: 15788 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.5% kernel / faults: 440 minor
+  14% 533/system_server: 8.9% user + 5.6% kernel / faults: 141 minor
+  7.3% 567/surfaceflinger: 4.2% user + 3.1% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.1% kernel / faults: 8 minor
+  0.7% 120/adbd: 0% user + 0.7% kernel / faults: 569 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+99% TOTAL: 53% user + 33% kernel + 11% softirq
+
+###################################### Measure 48 at 18102856 ######################################
+Load: 3.28 / 3.34 / 3.43
+CPU usage from 59546ms to 8347ms ago (2020-03-06 07:51:45.840 to 2020-03-06 07:52:37.039):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 9% kernel / faults: 56749 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1428 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.9% 533/system_server: 4.9% user + 3% kernel / faults: 369 minor
+  7.7% 567/surfaceflinger: 4% user + 3.7% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 181 minor
+  0.8% 120/adbd: 0.1% user + 0.6% kernel / faults: 1604 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 23 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 6 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 48 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 49 at 18178730 ######################################
+Load: 3.7 / 3.43 / 3.45
+CPU usage from 62756ms to 9338ms ago (2020-03-06 07:52:58.472 to 2020-03-06 07:53:51.890):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.2% kernel / faults: 55976 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.8% kernel / faults: 1748 minor
+  19% 247/local_opengl: 0.3% user + 19% kernel
+  7.7% 567/surfaceflinger: 4.1% user + 3.6% kernel
+  7.2% 533/system_server: 4.3% user + 2.8% kernel / faults: 181 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 37 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1473 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10439/kworker/u2:1: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 50 at 18254571 ######################################
+Load: 3.42 / 3.41 / 3.44
+CPU usage from 62206ms to 9066ms ago (2020-03-06 07:54:14.919 to 2020-03-06 07:55:08.060):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.6% kernel / faults: 52386 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1662 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  7.8% 567/surfaceflinger: 4% user + 3.7% kernel
+  7.2% 533/system_server: 4.5% user + 2.7% kernel / faults: 324 minor
+  1.2% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 134 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1455 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 51 at 18330484 ######################################
+Load: 3.34 / 3.41 / 3.44
+CPU usage from 62121ms to 8425ms ago (2020-03-06 07:55:30.946 to 2020-03-06 07:56:24.641):
+  37% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.1% kernel / faults: 48647 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1818 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  8% 567/surfaceflinger: 3.8% user + 4.1% kernel
+  7.5% 533/system_server: 4.4% user + 3% kernel / faults: 208 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 32 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1423 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 15 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 44 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 5 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+ +0% 13360/sh: 0% user + 0% kernel
+ +0% 13365/ps: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 11% softirq
+
+###################################### Measure 52 at 18406368 ######################################
+Load: 4.03 / 3.57 / 3.49
+CPU usage from 62158ms to 9440ms ago (2020-03-06 07:56:46.679 to 2020-03-06 07:57:39.396):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 50255 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.7% kernel / faults: 1309 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  7.7% 567/surfaceflinger: 4.4% user + 3.3% kernel
+  7.2% 533/system_server: 4.7% user + 2.5% kernel / faults: 785 minor
+  0.2% 790/com.google.android.gms.persistent: 0.1% user + 0% kernel / faults: 380 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 31 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1484 minor
+  0.3% 1310/com.google.android.gms: 0.1% user + 0.1% kernel / faults: 180 minor
+  0.3% 117/redis: 0% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 4 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 11 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 53 at 18482118 ######################################
+Load: 3.68 / 3.62 / 3.52
+CPU usage from 63446ms to 8274ms ago (2020-03-06 07:58:01.177 to 2020-03-06 07:58:56.348):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.3% kernel / faults: 56644 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.1% kernel / faults: 1772 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.9% 567/surfaceflinger: 4.2% user + 3.7% kernel
+  7.2% 533/system_server: 4.5% user + 2.7% kernel / faults: 288 minor
+  1.3% 8274/com.android.chrome: 1% user + 0.2% kernel / faults: 88 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1517 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 790/com.google.android.gms.persistent: 0.1% user + 0% kernel / faults: 22 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 12 minor
+97% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 54 at 18557950 ######################################
+Load: 4.27 / 3.84 / 3.61
+CPU usage from 62947ms to 8069ms ago (2020-03-06 07:59:17.573 to 2020-03-06 08:00:12.452):
+  38% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.8% kernel / faults: 59866 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.3% kernel / faults: 1490 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  7.6% 567/surfaceflinger: 4% user + 3.5% kernel
+  7.5% 533/system_server: 4.7% user + 2.8% kernel / faults: 190 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 34 minor
+  0.7% 120/adbd: 0.1% user + 0.6% kernel / faults: 1631 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 55 at 18633808 ######################################
+Load: 4.42 / 3.94 / 3.66
+CPU usage from 62588ms to 9696ms ago (2020-03-06 08:00:33.652 to 2020-03-06 08:01:26.544):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 58180 minor
+  18% 8334/com.android.chrome:privileged_process0: 11% user + 7.7% kernel / faults: 1701 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  7.7% 533/system_server: 5.1% user + 2.6% kernel / faults: 2004 minor
+  7.4% 567/surfaceflinger: 3.7% user + 3.7% kernel
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 79 minor
+  0.6% 3/ksoftirqd/0: 0% user + 0.6% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1637 minor
+  0.2% 790/com.google.android.gms.persistent: 0.1% user + 0% kernel / faults: 468 minor
+  0.3% 1310/com.google.android.gms: 0.2% user + 0% kernel / faults: 491 minor
+  0.3% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 8860/com.google.android.gms.unstable: 0% user + 0% kernel / faults: 192 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 150 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 531 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 10810/kworker/0:0: 0% user + 0% kernel
+ +0% 13713/com.google.android.syncadapters.calendar: 0% user + 0% kernel
+ +0% 13741/com.android.providers.calendar: 0% user + 0% kernel
+ +0% 13763/com.google.android.play.games.ui: 0% user + 0% kernel
+ +0% 13778/com.android.calendar: 0% user + 0% kernel
+97% TOTAL: 52% user + 32% kernel + 12% softirq
+
+###################################### Measure 56 at 18709512 ######################################
+Load: 4.47 / 4.15 / 3.77
+CPU usage from 63336ms to 8293ms ago (2020-03-06 08:01:48.710 to 2020-03-06 08:02:43.753) with 99% awake:
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 8.5% kernel / faults: 71369 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.9% kernel / faults: 1714 minor
+  17% 247/local_opengl: 0.5% user + 17% kernel
+  9.5% 533/system_server: 5.7% user + 3.7% kernel / faults: 1498 minor
+  7.2% 567/surfaceflinger: 3.8% user + 3.3% kernel
+  1.5% 13713/com.google.android.syncadapters.calendar: 1.2% user + 0.3% kernel / faults: 2742 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 83 minor
+  0.7% 120/adbd: 0% user + 0.7% kernel / faults: 1718 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.4% 13741/com.android.providers.calendar: 0.2% user + 0.1% kernel / faults: 437 minor
+  0.4% 1310/com.google.android.gms: 0.2% user + 0.2% kernel / faults: 510 minor
+  0.3% 790/com.google.android.gms.persistent: 0.2% user + 0.1% kernel / faults: 25 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 1075/com.google.process.gapps: 0.1% user + 0% kernel / faults: 156 minor
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 7361/android.process.acore: 0% user + 0% kernel / faults: 431 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 23 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+99% TOTAL: 53% user + 34% kernel + 0% iowait + 12% softirq
+
+###################################### Measure 57 at 18785904 ######################################
+Load: 4.24 / 4.08 / 3.77
+CPU usage from 67700ms to 9296ms ago (2020-03-06 08:03:00.796 to 2020-03-06 08:03:59.200):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.9% kernel / faults: 57316 minor
+  22% 247/local_opengl: 0.5% user + 22% kernel / faults: 255 minor
+  15% 8334/com.android.chrome:privileged_process0: 9.2% user + 6.5% kernel / faults: 1293 minor
+  9.7% 533/system_server: 6% user + 3.6% kernel / faults: 305 minor
+  6.9% 567/surfaceflinger: 3.5% user + 3.4% kernel
+  1.2% 3/ksoftirqd/0: 0% user + 1.2% kernel
+  0.9% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 41 minor
+  0.7% 120/adbd: 0% user + 0.7% kernel / faults: 1505 minor
+  0.5% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 139 minor
+  0.3% 1310/com.google.android.gms: 0.2% user + 0% kernel / faults: 264 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 3 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 35% kernel + 12% softirq
+
+###################################### Measure 58 at 18861917 ######################################
+Load: 3.64 / 3.96 / 3.75
+CPU usage from 62058ms to 9682ms ago (2020-03-06 08:04:22.511 to 2020-03-06 08:05:14.887) with 99% awake:
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.2% kernel / faults: 51690 minor
+  19% 8334/com.android.chrome:privileged_process0: 10% user + 8.6% kernel / faults: 1330 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.2% 567/surfaceflinger: 3.9% user + 4.2% kernel
+  7.6% 533/system_server: 4.7% user + 2.8% kernel / faults: 132 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 104 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1260 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0.1% 790/com.google.android.gms.persistent: 0.1% user + 0% kernel / faults: 53 minor
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 59 at 18937993 ######################################
+Load: 3.23 / 3.81 / 3.72
+CPU usage from 61478ms to 8156ms ago (2020-03-06 08:05:39.039 to 2020-03-06 08:06:32.360):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.4% kernel / faults: 48612 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1617 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  8.4% 533/system_server: 5.2% user + 3.2% kernel / faults: 472 minor
+  8.4% 567/surfaceflinger: 4.3% user + 4% kernel
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 35 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1334 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 13 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 24 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 60 at 19014013 ######################################
+Load: 3.33 / 3.74 / 3.7
+CPU usage from 61093ms to 8172ms ago (2020-03-06 08:06:55.417 to 2020-03-06 08:07:48.339):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.6% kernel / faults: 52048 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1482 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.3% 567/surfaceflinger: 4% user + 4.2% kernel
+  8.1% 533/system_server: 5.1% user + 2.9% kernel / faults: 293 minor
+  1.2% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 28 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1311 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 61 at 19090659 ######################################
+Load: 3.42 / 3.73 / 3.7
+CPU usage from 61666ms to 8931ms ago (2020-03-06 08:08:11.521 to 2020-03-06 08:09:04.255):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.6% kernel / faults: 49315 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1611 minor
+  18% 247/local_opengl: 0.5% user + 18% kernel
+  8.5% 567/surfaceflinger: 4.4% user + 4% kernel
+  7.9% 533/system_server: 5% user + 2.8% kernel / faults: 533 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 90 minor
+  1% 3/ksoftirqd/0: 0% user + 1% kernel
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1368 minor
+  0.4% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 32 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 62 at 19166614 ######################################
+Load: 3.15 / 3.59 / 3.66
+CPU usage from 63216ms to 8847ms ago (2020-03-06 08:09:25.854 to 2020-03-06 08:10:20.222):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.4% kernel / faults: 53924 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1567 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  8.3% 567/surfaceflinger: 4.3% user + 3.9% kernel
+  7.7% 533/system_server: 4.8% user + 2.8% kernel / faults: 191 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 57 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1523 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 8509/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+ +0% 14434/kworker/u2:1: 0% user + 0% kernel
+96% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 63 at 19243209 ######################################
+Load: 3.97 / 3.72 / 3.7
+CPU usage from 62696ms to 9210ms ago (2020-03-06 08:10:43.002 to 2020-03-06 08:11:36.488) with 99% awake:
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.3% kernel / faults: 59215 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 7.9% kernel / faults: 1517 minor
+  19% 247/local_opengl: 0.4% user + 18% kernel
+  8.4% 567/surfaceflinger: 4.4% user + 4% kernel
+  8% 533/system_server: 5.1% user + 2.8% kernel / faults: 402 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 33 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1524 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 1 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+  0% 13713/com.google.android.syncadapters.calendar: 0% user + 0% kernel / faults: 7 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 64 at 19324847 ######################################
+Load: 4.09 / 3.83 / 3.74
+CPU usage from 70152ms to 11390ms ago (2020-03-06 08:11:57.286 to 2020-03-06 08:12:56.048):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.5% kernel / faults: 62180 minor
+  24% 247/local_opengl: 0.4% user + 24% kernel
+  12% 8334/com.android.chrome:privileged_process0: 7.5% user + 5.4% kernel / faults: 1016 minor
+  11% 533/system_server: 7.1% user + 3.9% kernel / faults: 161 minor
+  5.9% 567/surfaceflinger: 2.7% user + 3.2% kernel
+  2% 3/ksoftirqd/0: 0% user + 2% kernel
+  1% 120/adbd: 0.1% user + 0.9% kernel / faults: 1261 minor
+  0.8% 8274/com.android.chrome: 0.6% user + 0.1% kernel / faults: 87 minor
+  0.4% 7/rcu_preempt: 0% user + 0.4% kernel
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.2% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+96% TOTAL: 46% user + 38% kernel + 11% softirq
+
+###################################### Measure 65 at 19401897 ######################################
+Load: 4.41 / 4.02 / 3.82
+CPU usage from 62219ms to 10087ms ago (2020-03-06 08:13:22.213 to 2020-03-06 08:14:14.345):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 7.8% kernel / faults: 61715 minor
+  21% 247/local_opengl: 0.4% user + 20% kernel
+  16% 8334/com.android.chrome:privileged_process0: 9.7% user + 7% kernel / faults: 1111 minor
+  8.2% 533/system_server: 5.2% user + 3% kernel / faults: 273 minor
+  7.3% 567/surfaceflinger: 3.6% user + 3.7% kernel
+  1.5% 3/ksoftirqd/0: 0% user + 1.5% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.1% kernel / faults: 152 minor
+  0.8% 120/adbd: 0% user + 0.8% kernel / faults: 1183 minor
+  0.4% 117/redis: 0.2% user + 0.2% kernel
+  0.2% 250/batteryd: 0% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 24 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 49% user + 35% kernel + 12% softirq
+
+###################################### Measure 66 at 19479752 ######################################
+Load: 4.08 / 4.03 / 3.84
+CPU usage from 63062ms to 10423ms ago (2020-03-06 08:14:39.187 to 2020-03-06 08:15:31.827) with 99% awake:
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.8% kernel / faults: 64134 minor
+  20% 247/local_opengl: 0.4% user + 19% kernel
+  17% 8334/com.android.chrome:privileged_process0: 10% user + 7.3% kernel / faults: 998 minor
+  8.1% 533/system_server: 4.8% user + 3.3% kernel / faults: 293 minor
+  8.1% 567/surfaceflinger: 3.9% user + 4.2% kernel
+  1.4% 3/ksoftirqd/0: 0% user + 1.4% kernel
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 28 minor
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1269 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 24 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 9405/com.android.deskclock: 0% user + 0% kernel / faults: 19 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 48% user + 35% kernel + 13% softirq
+
+###################################### Measure 67 at 19556385 ######################################
+Load: 4.59 / 4.21 / 3.92
+CPU usage from 68235ms to 8718ms ago (2020-03-06 08:15:50.671 to 2020-03-06 08:16:50.189):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 72819 minor
+  19% 247/local_opengl: 0.4% user + 19% kernel
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.6% kernel / faults: 1315 minor
+  9.5% 533/system_server: 6% user + 3.5% kernel / faults: 291 minor
+  7.4% 567/surfaceflinger: 3.9% user + 3.4% kernel
+  1.1% 3/ksoftirqd/0: 0% user + 1.1% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 86 minor
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1476 minor
+  0.4% 117/redis: 0.1% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 68 at 19633435 ######################################
+Load: 3.82 / 4.0 / 3.87
+CPU usage from 62196ms to 9857ms ago (2020-03-06 08:17:13.715 to 2020-03-06 08:18:06.054):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.7% kernel / faults: 55758 minor
+  22% 247/local_opengl: 0.4% user + 21% kernel
+  17% 8334/com.android.chrome:privileged_process0: 9.6% user + 7.4% kernel / faults: 1063 minor
+  8.4% 533/system_server: 5.5% user + 2.8% kernel / faults: 443 minor
+  7.8% 567/surfaceflinger: 3.6% user + 4.2% kernel
+  1.2% 3/ksoftirqd/0: 0% user + 1.2% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 31 minor
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 1133 minor
+  0.4% 117/redis: 0.3% user + 0.1% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13204/kworker/u2:0: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 32 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 49% user + 35% kernel + 12% softirq
+
+###################################### Measure 69 at 19710128 ######################################
+Load: 4.26 / 4.08 / 3.91
+CPU usage from 62976ms to 9579ms ago (2020-03-06 08:18:29.687 to 2020-03-06 08:19:23.084):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.5% kernel / faults: 55661 minor
+  22% 247/local_opengl: 0.3% user + 21% kernel
+  15% 8334/com.android.chrome:privileged_process0: 9.3% user + 6.4% kernel / faults: 1092 minor
+  8.7% 533/system_server: 5.4% user + 3.3% kernel / faults: 168 minor
+  7.1% 567/surfaceflinger: 3.5% user + 3.6% kernel
+  1.6% 3/ksoftirqd/0: 0% user + 1.6% kernel
+  0.9% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 94 minor
+  0.9% 120/adbd: 0% user + 0.8% kernel / faults: 1211 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 665/com.android.systemui: 0.1% user + 0% kernel / faults: 18 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 10 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+ +0% 15015/kworker/u2:2: 0% user + 0% kernel
+95% TOTAL: 48% user + 35% kernel + 12% softirq
+
+###################################### Measure 70 at 19786628 ######################################
+Load: 4.19 / 4.1 / 3.93
+CPU usage from 63132ms to 9068ms ago (2020-03-06 08:19:46.067 to 2020-03-06 08:20:40.130):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.2% kernel / faults: 64817 minor
+  20% 247/local_opengl: 0.4% user + 20% kernel
+  17% 8334/com.android.chrome:privileged_process0: 10% user + 7.1% kernel / faults: 1251 minor
+  7.9% 567/surfaceflinger: 4% user + 3.9% kernel
+  7.3% 533/system_server: 4.5% user + 2.8% kernel / faults: 320 minor
+  1.3% 3/ksoftirqd/0: 0% user + 1.3% kernel
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 80 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1193 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 32 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 49% user + 34% kernel + 12% softirq
+
+###################################### Measure 71 at 19862686 ######################################
+Load: 4.14 / 4.12 / 3.95
+CPU usage from 23930ms to 8522ms ago (2020-03-06 08:21:41.265 to 2020-03-06 08:21:56.673):
+  32% 8462/com.android.chrome:sandboxed_process1: 25% user + 7.2% kernel / faults: 16982 minor
+  18% 247/local_opengl: 0.3% user + 18% kernel
+  17% 8334/com.android.chrome:privileged_process0: 9.9% user + 7.5% kernel / faults: 419 minor
+  16% 533/system_server: 10% user + 5.9% kernel / faults: 42 minor
+  7.5% 567/surfaceflinger: 3.5% user + 3.9% kernel
+  1.1% 3/ksoftirqd/0: 0% user + 1.1% kernel
+  0.9% 8274/com.android.chrome: 0.8% user + 0.1% kernel / faults: 10 minor
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 587 minor
+  0.4% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+98% TOTAL: 51% user + 34% kernel + 12% softirq
+
+###################################### Measure 72 at 19938589 ######################################
+Load: 4.12 / 4.11 / 3.96
+CPU usage from 68936ms to 9395ms ago (2020-03-06 08:22:12.078 to 2020-03-06 08:23:11.620):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.1% kernel / faults: 66778 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1620 minor
+  18% 247/local_opengl: 0.3% user + 17% kernel
+  8.9% 533/system_server: 5.6% user + 3.2% kernel / faults: 401 minor
+  8.2% 567/surfaceflinger: 4% user + 4.1% kernel
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 89 minor
+  0.7% 120/adbd: 0% user + 0.7% kernel / faults: 1728 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.3% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 4 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 73 at 20014963 ######################################
+Load: 3.93 / 4.05 / 3.95
+CPU usage from 62182ms to 9751ms ago (2020-03-06 08:23:35.351 to 2020-03-06 08:24:27.781):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.2% kernel / faults: 53799 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1420 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.4% user + 4% kernel
+  7.5% 533/system_server: 4.8% user + 2.6% kernel / faults: 140 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 32 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1559 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 1 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 74 at 20090978 ######################################
+Load: 4.11 / 4.13 / 3.99
+CPU usage from 62582ms to 9841ms ago (2020-03-06 08:24:50.855 to 2020-03-06 08:25:43.596):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8% kernel / faults: 55495 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1635 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.2% user + 4.2% kernel
+  7.7% 533/system_server: 4.8% user + 2.9% kernel / faults: 850 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 36 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1374 minor
+  0.5% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 177 minor
+  0.4% 1310/com.google.android.gms: 0.2% user + 0.1% kernel / faults: 299 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 259 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 32 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 75 at 20166938 ######################################
+Load: 3.73 / 4.0 / 3.96
+CPU usage from 62238ms to 8440ms ago (2020-03-06 08:26:07.168 to 2020-03-06 08:27:00.967):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.5% kernel / faults: 56126 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1607 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.5% 567/surfaceflinger: 4.2% user + 4.2% kernel
+  7.4% 533/system_server: 4.6% user + 2.7% kernel / faults: 103 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 84 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1092 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 16 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 76 at 20242914 ######################################
+Load: 3.27 / 3.82 / 3.9
+CPU usage from 62020ms to 9515ms ago (2020-03-06 08:27:23.445 to 2020-03-06 08:28:15.950):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8% kernel / faults: 53111 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1157 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.6% user + 3.8% kernel
+  7.4% 533/system_server: 4.6% user + 2.8% kernel / faults: 115 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 30 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1139 minor
+  0.4% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 2 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 5 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 77 at 20319048 ######################################
+Load: 3.17 / 3.68 / 3.85
+CPU usage from 63471ms to 9257ms ago (2020-03-06 08:28:38.106 to 2020-03-06 08:29:32.320):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8% kernel / faults: 52053 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1474 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.6% 567/surfaceflinger: 4% user + 4.5% kernel
+  7% 533/system_server: 4.5% user + 2.5% kernel / faults: 180 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 30 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1302 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 78 at 20395130 ######################################
+Load: 3.22 / 3.62 / 3.82
+CPU usage from 62873ms to 9127ms ago (2020-03-06 08:29:54.825 to 2020-03-06 08:30:48.571):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.2% kernel / faults: 53923 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1464 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.4% user + 4% kernel
+  7.8% 533/system_server: 4.7% user + 3% kernel / faults: 152 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 85 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1381 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 2 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 79 at 20471219 ######################################
+Load: 3.5 / 3.64 / 3.81
+CPU usage from 62765ms to 8458ms ago (2020-03-06 08:31:10.935 to 2020-03-06 08:32:05.241):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.1% kernel / faults: 51024 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1545 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.6% 567/surfaceflinger: 4.4% user + 4.2% kernel
+  7.8% 533/system_server: 4.5% user + 3.2% kernel / faults: 124 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 143 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1382 minor
+  0.4% 117/redis: 0.1% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 97/logd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 80 at 20547181 ######################################
+Load: 3.82 / 3.71 / 3.82
+CPU usage from 62571ms to 8675ms ago (2020-03-06 08:32:27.069 to 2020-03-06 08:33:20.964):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.1% kernel / faults: 53353 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1417 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.5% user + 3.9% kernel
+  7.5% 533/system_server: 4.7% user + 2.7% kernel / faults: 222 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 85 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1428 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 23 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 8 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 10 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 11 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 81 at 20623058 ######################################
+Load: 3.63 / 3.68 / 3.81
+CPU usage from 62025ms to 9119ms ago (2020-03-06 08:33:43.514 to 2020-03-06 08:34:36.420) with 99% awake:
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 56814 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1616 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.7% 567/surfaceflinger: 4.6% user + 4.1% kernel
+  7.5% 533/system_server: 4.5% user + 2.9% kernel / faults: 119 minor
+  1.2% 8274/com.android.chrome: 0.9% user + 0.3% kernel / faults: 144 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0.1% user + 0.5% kernel / faults: 1417 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 16 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 82 at 20698879 ######################################
+Load: 3.33 / 3.58 / 3.76
+CPU usage from 62927ms to 9268ms ago (2020-03-06 08:34:58.458 to 2020-03-06 08:35:52.116):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.5% kernel / faults: 55463 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1380 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.7% user + 3.8% kernel
+  7.3% 533/system_server: 4.5% user + 2.8% kernel / faults: 131 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 32 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1389 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 83 at 20774801 ######################################
+Load: 2.94 / 3.42 / 3.69
+CPU usage from 36046ms to 9320ms ago (2020-03-06 08:36:41.290 to 2020-03-06 08:37:08.016):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.8% kernel / faults: 25684 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 769 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  9.2% 533/system_server: 5.5% user + 3.7% kernel / faults: 81 minor
+  8.1% 567/surfaceflinger: 4% user + 4% kernel
+  1.2% 8274/com.android.chrome: 0.8% user + 0.4% kernel / faults: 15 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.7% 120/adbd: 0% user + 0.6% kernel / faults: 793 minor
+  0.4% 117/redis: 0.2% user + 0.2% kernel
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 250/batteryd: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 11% softirq
+
+###################################### Measure 84 at 20850666 ######################################
+Load: 3.47 / 3.49 / 3.7
+CPU usage from 62881ms to 8987ms ago (2020-03-06 08:37:30.349 to 2020-03-06 08:38:24.242):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.1% kernel / faults: 59856 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1414 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.2% 567/surfaceflinger: 4.3% user + 3.9% kernel
+  7.3% 533/system_server: 4.4% user + 2.9% kernel / faults: 122 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 138 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0.1% user + 0.5% kernel / faults: 1552 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 4 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 12 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 85 at 20926674 ######################################
+Load: 3.45 / 3.5 / 3.69
+CPU usage from 61754ms to 8932ms ago (2020-03-06 08:38:47.400 to 2020-03-06 08:39:40.221):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.2% kernel / faults: 50783 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.9% kernel / faults: 1283 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.7% 567/surfaceflinger: 4.5% user + 4.1% kernel
+  7.4% 533/system_server: 4.7% user + 2.7% kernel / faults: 149 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 33 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1252 minor
+  0.4% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 15 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 16 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 86 at 21003582 ######################################
+Load: 3.4 / 3.52 / 3.69
+CPU usage from 62548ms to 10397ms ago (2020-03-06 08:40:03.500 to 2020-03-06 08:40:55.652):
+  37% 8462/com.android.chrome:sandboxed_process1: 29% user + 7.9% kernel / faults: 56722 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1487 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.8% user + 3.7% kernel
+  7.3% 533/system_server: 4.6% user + 2.7% kernel / faults: 218 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 80 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1201 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 5 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 52% user + 32% kernel + 12% softirq
+
+###################################### Measure 87 at 21079576 ######################################
+Load: 3.52 / 3.55 / 3.68
+CPU usage from 62525ms to 9489ms ago (2020-03-06 08:41:19.544 to 2020-03-06 08:42:12.581):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.2% kernel / faults: 51493 minor
+  20% 8334/com.android.chrome:privileged_process0: 12% user + 8% kernel / faults: 1482 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  8.6% 567/surfaceflinger: 4.2% user + 4.4% kernel
+  7.3% 533/system_server: 4.6% user + 2.7% kernel / faults: 113 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 31 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1207 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+96% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 88 at 21155508 ######################################
+Load: 3.55 / 3.54 / 3.67
+CPU usage from 61975ms to 9683ms ago (2020-03-06 08:42:35.979 to 2020-03-06 08:43:28.271):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.5% kernel / faults: 50061 minor
+  20% 8334/com.android.chrome:privileged_process0: 12% user + 8.3% kernel / faults: 1769 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  8.7% 567/surfaceflinger: 4.6% user + 4% kernel
+  7.4% 533/system_server: 4.6% user + 2.7% kernel / faults: 129 minor
+  1.2% 8274/com.android.chrome: 1% user + 0.2% kernel / faults: 190 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.4% kernel / faults: 1115 minor
+  0.4% 117/redis: 0% user + 0.4% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 6 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 89 at 21231396 ######################################
+Load: 3.26 / 3.49 / 3.65
+CPU usage from 62087ms to 9075ms ago (2020-03-06 08:43:51.819 to 2020-03-06 08:44:44.831):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.4% kernel / faults: 50444 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1506 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.2% user + 4.2% kernel
+  7.7% 533/system_server: 4.6% user + 3% kernel / faults: 244 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 100 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1402 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 19 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 56 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 4 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 50% user + 33% kernel + 13% softirq
+
+###################################### Measure 90 at 21307389 ######################################
+Load: 3.46 / 3.51 / 3.64
+CPU usage from 62441ms to 9681ms ago (2020-03-06 08:45:07.386 to 2020-03-06 08:46:00.146):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.8% kernel / faults: 53649 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1449 minor
+  18% 247/local_opengl: 0.6% user + 17% kernel
+  8.6% 567/surfaceflinger: 4.6% user + 4% kernel
+  7.2% 533/system_server: 4.3% user + 2.8% kernel / faults: 123 minor
+  1.1% 8274/com.android.chrome: 0.9% user + 0.2% kernel / faults: 314 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1443 minor
+  0.3% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 13 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 7 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 3 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+97% TOTAL: 50% user + 33% kernel + 13% softirq
+
+###################################### Measure 91 at 21383180 ######################################
+Load: 3.33 / 3.43 / 3.6
+CPU usage from 63205ms to 9213ms ago (2020-03-06 08:46:22.454 to 2020-03-06 08:47:16.446):
+  35% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.3% kernel / faults: 51504 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1281 minor
+  19% 247/local_opengl: 0.5% user + 18% kernel
+  8.3% 533/system_server: 5.1% user + 3.1% kernel / faults: 176 minor
+  8.3% 567/surfaceflinger: 4.2% user + 4.1% kernel
+  1% 8274/com.android.chrome: 0.7% user + 0.3% kernel / faults: 86 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0.1% user + 0.5% kernel / faults: 1335 minor
+  0.4% 117/redis: 0.2% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 21 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 10 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 28 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+96% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 92 at 21459288 ######################################
+Load: 3.33 / 3.46 / 3.6
+CPU usage from 62273ms to 9969ms ago (2020-03-06 08:47:39.479 to 2020-03-06 08:48:31.782):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.8% kernel / faults: 52212 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.8% kernel / faults: 1156 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.3% 567/surfaceflinger: 4.3% user + 3.9% kernel
+  7.7% 533/system_server: 4.8% user + 2.9% kernel / faults: 123 minor
+  1.2% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 132 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1456 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 9 minor
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 50% user + 34% kernel + 12% softirq
+
+###################################### Measure 93 at 21535208 ######################################
+Load: 3.66 / 3.53 / 3.62
+CPU usage from 61490ms to 8961ms ago (2020-03-06 08:48:56.210 to 2020-03-06 08:49:48.739):
+  36% 8462/com.android.chrome:sandboxed_process1: 27% user + 8.3% kernel / faults: 49779 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.5% kernel / faults: 1398 minor
+  18% 247/local_opengl: 0.4% user + 18% kernel
+  8.5% 567/surfaceflinger: 4.2% user + 4.2% kernel
+  7.4% 533/system_server: 4.6% user + 2.7% kernel / faults: 125 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 38 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.5% 120/adbd: 0% user + 0.5% kernel / faults: 1224 minor
+  0.4% 117/redis: 0.1% user + 0.3% kernel
+  0.1% 1310/com.google.android.gms: 0.1% user + 0% kernel / faults: 322 minor
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 22 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 305 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 790/com.google.android.gms.persistent: 0% user + 0% kernel / faults: 20 minor
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+96% TOTAL: 50% user + 33% kernel + 12% softirq
+
+###################################### Measure 94 at 21611168 ######################################
+Load: 2.96 / 3.4 / 3.57
+CPU usage from 62805ms to 8654ms ago (2020-03-06 08:50:10.856 to 2020-03-06 08:51:05.006):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 7.8% kernel / faults: 53688 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1640 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.6% 567/surfaceflinger: 4.3% user + 4.2% kernel
+  7.6% 533/system_server: 4.7% user + 2.9% kernel / faults: 237 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.3% kernel / faults: 86 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1370 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 14434/kworker/u2:1: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 6 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+ +0% 17157/kworker/u2:0: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 95 at 21687518 ######################################
+Load: 2.96 / 3.35 / 3.54
+CPU usage from 48757ms to 9915ms ago (2020-03-06 08:51:41.322 to 2020-03-06 08:52:20.163):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 38739 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.7% kernel / faults: 1047 minor
+  18% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.4% user + 4% kernel
+  7.2% 533/system_server: 4.4% user + 2.8% kernel / faults: 105 minor
+  1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 25 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 873 minor
+  0.4% 117/redis: 0.1% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 16 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 2 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 1 minor
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 96 at 21764093 ######################################
+Load: 3.88 / 3.61 / 3.62
+CPU usage from 62788ms to 8759ms ago (2020-03-06 08:52:43.921 to 2020-03-06 08:53:37.951):
+  34% 8462/com.android.chrome:sandboxed_process1: 27% user + 7.1% kernel / faults: 61703 minor
+  18% 8334/com.android.chrome:privileged_process0: 10% user + 7.5% kernel / faults: 1435 minor
+  17% 247/local_opengl: 0.5% user + 16% kernel
+  8.2% 533/system_server: 5.1% user + 3% kernel / faults: 1079 minor
+  7.8% 567/surfaceflinger: 4.1% user + 3.6% kernel
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 34 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.8% 120/adbd: 0% user + 0.7% kernel / faults: 1779 minor
+  0.6% 790/com.google.android.gms.persistent: 0.5% user + 0.1% kernel / faults: 544 minor
+  0.3% 117/redis: 0.1% user + 0.2% kernel
+  0.2% 1310/com.google.android.gms: 0.1% user + 0% kernel / faults: 266 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 665/com.android.systemui: 0% user + 0% kernel / faults: 69 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 3 minor
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 423 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 259/zygote: 0% user + 0% kernel / faults: 406 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 81 minor
+  0% 562/logcat: 0% user + 0% kernel
+  0% 17157/kworker/u2:0: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 40 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+ +0% 17310/com.android.vending: 0% user + 0% kernel
+ +0% 17386/android.process.media: 0% user + 0% kernel
+ +0% 17431/com.android.vending:download_service: 0% user + 0% kernel
+ +0% 17450/kworker/0:1: 0% user + 0% kernel
+98% TOTAL: 54% user + 31% kernel + 11% softirq
+
+###################################### Measure 97 at 21840042 ######################################
+Load: 3.39 / 3.54 / 3.6
+CPU usage from 62038ms to 8770ms ago (2020-03-06 08:54:00.487 to 2020-03-06 08:54:53.755):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.3% kernel / faults: 54424 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.2% kernel / faults: 1255 minor
+  18% 247/local_opengl: 0.6% user + 18% kernel
+  8.3% 567/surfaceflinger: 4% user + 4.2% kernel
+  7.5% 533/system_server: 4.7% user + 2.7% kernel / faults: 137 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 87 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1471 minor
+  0.3% 117/redis: 0.1% user + 0.1% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 1 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 1 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 98 at 21915978 ######################################
+Load: 3.4 / 3.51 / 3.58
+CPU usage from 61934ms to 9126ms ago (2020-03-06 08:55:16.491 to 2020-03-06 08:56:09.299):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.4% kernel / faults: 59303 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.4% kernel / faults: 1545 minor
+  17% 247/local_opengl: 0.4% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.3% user + 4.1% kernel
+  7.3% 533/system_server: 4.4% user + 2.9% kernel / faults: 245 minor
+  0.5% 790/com.google.android.gms.persistent: 0.3% user + 0.1% kernel / faults: 257 minor
+  1.1% 8274/com.android.chrome: 0.7% user + 0.3% kernel / faults: 32 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.6% kernel / faults: 1481 minor
+  0.4% 117/redis: 0.1% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 17 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 8 minor
+  0% 1075/com.google.process.gapps: 0% user + 0% kernel / faults: 243 minor
+  0% 278/healthd: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 32% kernel + 12% softirq
+
+###################################### Measure 99 at 21992003 ######################################
+Load: 3.09 / 3.39 / 3.53
+CPU usage from 62470ms to 9265ms ago (2020-03-06 08:56:32.031 to 2020-03-06 08:57:25.237):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8% kernel / faults: 56576 minor
+  19% 8334/com.android.chrome:privileged_process0: 11% user + 8.3% kernel / faults: 1429 minor
+  18% 247/local_opengl: 0.5% user + 17% kernel
+  8.5% 567/surfaceflinger: 4.3% user + 4.1% kernel
+  7.5% 533/system_server: 4.6% user + 2.8% kernel / faults: 121 minor
+  1% 8274/com.android.chrome: 0.7% user + 0.2% kernel / faults: 87 minor
+  0.8% 3/ksoftirqd/0: 0% user + 0.8% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1390 minor
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 25 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 270/rild: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 17157/kworker/u2:0: 0% user + 0% kernel
+96% TOTAL: 51% user + 33% kernel + 12% softirq
+
+###################################### Measure 100 at 22068345 ######################################
+Load: 2.85 / 3.31 / 3.5
+CPU usage from 62597ms to 9951ms ago (2020-03-06 08:57:48.273 to 2020-03-06 08:58:40.919):
+  36% 8462/com.android.chrome:sandboxed_process1: 28% user + 8.1% kernel / faults: 52860 minor
+  20% 8334/com.android.chrome:privileged_process0: 11% user + 8.6% kernel / faults: 1397 minor
+  18% 247/local_opengl: 0.3% user + 17% kernel
+  8.7% 567/surfaceflinger: 4.5% user + 4.2% kernel
+  7.4% 533/system_server: 4.7% user + 2.6% kernel / faults: 173 minor
+  1.1% 8274/com.android.chrome: 0.8% user + 0.2% kernel / faults: 91 minor
+  0.7% 3/ksoftirqd/0: 0% user + 0.7% kernel
+  0.6% 120/adbd: 0% user + 0.5% kernel / faults: 1482 minor
+  0.4% 117/redis: 0% user + 0.3% kernel
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0.1% 250/batteryd: 0% user + 0% kernel
+  0% 278/healthd: 0% user + 0% kernel
+  0% 665/com.android.systemui: 0% user + 0% kernel / faults: 20 minor
+  0% 809/com.android.phone: 0% user + 0% kernel / faults: 3 minor
+  0% 15015/kworker/u2:2: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 271/genybaseband: 0% user + 0% kernel / faults: 24 minor
+  0% 737/wpa_supplicant: 0% user + 0% kernel
+  0% 1310/com.google.android.gms: 0% user + 0% kernel / faults: 2 minor
+  0% 13876/kworker/0:2: 0% user + 0% kernel
+97% TOTAL: 51% user + 33% kernel + 12% softirq
+

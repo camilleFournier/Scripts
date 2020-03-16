@@ -28,7 +28,7 @@ import {
 } from './resources-class.js';
 import { CPUProfileDataModel } from './CPUProfileDataModel.js';
 
-const timeline_model = {
+let timeline_model = {
     //this.reset()
     isGenericTrace: false,
     tracks: [],
@@ -61,8 +61,44 @@ const timeline_model = {
 
 }
 
+function reset() {
+    timeline_model = {
+        //this.reset()
+        isGenericTrace: false,
+        tracks: [],
+        namedTracks: new Map(),
+        inspectedTargetEvents: [],
+        timeMarkerEvents: [],
+        sessionId: null,
+        mainFrameNodeId: null,
+        cpuProfiles: [],
+        workerIdByThread: new WeakMap(),
+        pageFrames: new Map(),
+        mainFrame: null,
+        requestsFromBrowser: new Map(),
+        minimumRecordTime: 0,
+        maximumRecordTime: 0,
+        //this.resetProcessingState()
+        asyncEventTracker: new TimelineAsyncEventTracker(),
+        // invalidationTracker: new InvalidationTracker(),
+        layoutInvalidate: {},
+        lastScheduleStyleRecalculation: {},
+        paintImageEventByPixelRefId: {},
+        lastPaintForLayer: {},
+        lastRecalculateStylesEvent: null,
+        currentScriptEvent: null,
+        eventStack: [],
+        knownInputEvents: new Set(),
+        browserFrameTracking: false,
+        persistentIds: false,
+        legacyCurrentPage: null
+    
+    };
+}
+
   //this._timelineModel.setEvents(tracingModel) called from this_performanceModel.setTracingModel(tracingModel)
   export function setTimelineModel(tracingModel) {
+    reset();
     timeline_model.minimumRecordTime = tracingModel.minimumRecordTime;
     timeline_model.maximumRecordTime = tracingModel.maximumRecordTime;
     //this._processSyncBrowserEvents(tracingmodel)
@@ -80,13 +116,13 @@ const timeline_model = {
         if (metadataEvents) { processMetadataAndThreads(tracingModel, metadataEvents); }
         else {
             // processGenericTrace
-            let browserMainThread = browserMainThread(tracingModel);
-            if (!browserMainThread && sortedProcesses(tracingModel).length) {
-            browserMainThread = sortedProcesses(tracingModel)[0].sortedThreads()[0];
+            let browser_main_thread = browserMainThread(tracingModel);
+            if (!browser_main_thread && sortedProcesses(tracingModel).length) {
+                browser_main_thread = sortedProcesses(tracingModel)[0].sortedThreads()[0];
             }
             for (const process of sortedProcesses(tracingModel)) {
                 for (const thread of process.sortedThreads()) {
-                    processThreadEvents( tracingModel, [{from: 0, to: Infinity}], thread, thread === browserMainThread, false, true, null);
+                    processThreadEvents( tracingModel, [{from: 0, to: Infinity}], thread, thread === browser_main_thread, false, true, null);
                 }
             }
         }
@@ -308,8 +344,10 @@ function processThreadEvents(tracingModel, ranges, thread, isMainThread, isWorke
     for (const range of ranges) {
         // let i = events.lowerBound(range.from, (time, event) => time - event.startTime);
         let i = events.findIndex(e => e.startTime >= range.from);
+        i = i >=0 ? i : events.length;
         for (; i < events.length; i++) {
             const event = events[i];
+            if (!event) { console.log(i, event); continue;}
             if (event.startTime >= range.to) { break; }
             while (eventStack.length && eventStack[eventStack.length-1].endTime <= event.startTime) {
                 eventStack.pop();
@@ -511,7 +549,7 @@ function generateJSFrameEvents(events) {
       }
   
     function extractStackTrace(e) {
-        const recordTypes = RecordType;
+        const recordTypes = RecordTypes;
         /** @type {!Array<!Protocol.Runtime.CallFrame>} */
         const callFrames = e.name === recordTypes.JSSample ? e.args['data']['stackTrace'].slice().reverse() :
                                                              jsFramesStack.map(frameEvent => frameEvent.args['data']);
@@ -847,7 +885,7 @@ function processAsyncEvents(thread, ranges) {
         // let i = asyncEvents.lowerBound(range.from, function(time, asyncEvent) {
         //     return time - asyncEvent.startTime;
         // });
-        let i = asyncEvents.findIndex(e => e.startTime >= range.from);
+        let i = asyncEvents.findIndex(e => e.startTime > range.from);
         i = i>=0 ? i : asyncEvents.length;
         for (; i < asyncEvents.length; ++i) {
             const asyncEvent = asyncEvents[i];

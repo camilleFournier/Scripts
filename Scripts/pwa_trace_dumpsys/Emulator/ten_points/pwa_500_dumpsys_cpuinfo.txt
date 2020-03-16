@@ -1,0 +1,597 @@
+###################################### Measure 1 at 26545835 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1259984ms to 359953ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 2 at 26606470 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1320341ms to 420310ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 3 at 26666824 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1380575ms to 480544ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 4 at 26727067 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1440945ms to 540914ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 5 at 26787443 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1501245ms to 601214ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 6 at 26847745 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1561513ms to 661482ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 7 at 26908000 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1621781ms to 721750ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 8 at 26968276 ######################################
+Load: 1.83 / 1.86 / 2.12
+CPU usage from 1681992ms to 781961ms ago (2020-03-03 10:53:40.803 to 2020-03-03 11:08:40.835):
+  15% 247/local_opengl: 0.2% user + 15% kernel / faults: 3184 minor
+  5.2% 568/surfaceflinger: 2.6% user + 2.6% kernel / faults: 5 minor
+  4.3% 534/system_server: 2.9% user + 1.4% kernel / faults: 44834 minor
+  0.9% 120/adbd: 0% user + 0.9% kernel / faults: 22986 minor
+  0.9% 3/ksoftirqd/0: 0% user + 0.9% kernel
+  0.4% 260/audioserver: 0.1% user + 0.2% kernel / faults: 25 minor
+  0.8% 1164/com.google.android.gms: 0.6% user + 0.1% kernel / faults: 34891 minor
+  0.5% 1256/com.android.launcher3: 0.4% user + 0.1% kernel / faults: 15263 minor
+  0.3% 25465/com.android.vending: 0.2% user + 0.1% kernel / faults: 17746 minor 3 major
+  0.4% 117/redis: 0.1% user + 0.2% kernel
+  0.3% 657/com.android.systemui: 0.2% user + 0% kernel / faults: 3303 minor
+  0.2% 795/com.google.android.gms.persistent: 0.2% user + 0% kernel / faults: 2733 minor
+  0.2% 7/rcu_preempt: 0% user + 0.2% kernel
+  0.1% 95/jbd2/sdb3-8: 0% user + 0.1% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 97/logd: 0% user + 0% kernel / faults: 18 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 1448 minor
+  0% 277/healthd: 0% user + 0% kernel
+  0% 32638/kworker/u2:0: 0% user + 0% kernel
+  0% 561/logcat: 0% user + 0% kernel
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 2025 minor
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 102 minor
+  0% 259/zygote: 0% user + 0% kernel / faults: 3238 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 938 minor
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 256 minor
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 248 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 188 minor
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 327 minor
+  0% 263/installd: 0% user + 0% kernel / faults: 71 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 656/sdcard: 0% user + 0% kernel
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 122 minor
+  0% 80/ueventd: 0% user + 0% kernel
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 67 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 105 minor
+ +0% 697/kworker/u2:1: 0% user + 0% kernel
+ +0% 723/kworker/0:0: 0% user + 0% kernel
+ +0% 1499/kworker/0:1: 0% user + 0% kernel
+ +0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel
+ +0% 1626/kworker/u2:2: 0% user + 0% kernel
+ +0% 1668/com.google.android.partnersetup: 0% user + 0% kernel
+ +0% 1721/com.svox.pico: 0% user + 0% kernel
+ +0% 1755/com.android.chrome: 0% user + 0% kernel
+ +0% 1849/com.android.chrome:privileged_process0: 0% user + 0% kernel
+ +0% 1990/com.android.packageinstaller: 0% user + 0% kernel
+ +0% 2011/com.android.keychain: 0% user + 0% kernel
+ +0% 2049/com.android.documentsui: 0% user + 0% kernel
+ +0% 2069/com.android.printspooler: 0% user + 0% kernel
+ +0% 2310/com.android.chrome:sandboxed_process2: 0% user + 0% kernel
+ +0% 2362/kworker/0:2: 0% user + 0% kernel
+ +0% 2376/com.google.process.gapps: 0% user + 0% kernel
+ +0% 2415/sh: 0% user + 0% kernel
+ +0% 2420/ps: 0% user + 0% kernel
+60% TOTAL: 28% user + 24% kernel + 0% iowait + 7% softirq
+
+###################################### Measure 9 at 27028471 ######################################
+Load: 0.07 / 0.29 / 1.08
+CPU usage from 842240ms to 28701ms ago (2020-03-03 11:08:40.835 to 2020-03-03 11:22:14.373):
+  3% 247/local_opengl: 0% user + 3% kernel / faults: 572 minor
+  2% 534/system_server: 1.4% user + 0.6% kernel / faults: 25261 minor
+  1.8% 1755/com.android.chrome: 1.4% user + 0.3% kernel / faults: 43410 minor
+  1.5% 1849/com.android.chrome:privileged_process0: 0.9% user + 0.6% kernel / faults: 15751 minor
+  1.4% 568/surfaceflinger: 0.7% user + 0.6% kernel / faults: 4 minor
+  0.4% 120/adbd: 0% user + 0.4% kernel / faults: 21716 minor
+  0.3% 1164/com.google.android.gms: 0.3% user + 0% kernel / faults: 24972 minor 1 major
+  0.3% 260/audioserver: 0.1% user + 0.2% kernel / faults: 10 minor
+  0.2% 795/com.google.android.gms.persistent: 0.1% user + 0% kernel / faults: 3650 minor
+  0.2% 117/redis: 0% user + 0.1% kernel
+  0.2% 1256/com.android.launcher3: 0.1% user + 0% kernel / faults: 6069 minor
+  0.2% 657/com.android.systemui: 0.1% user + 0% kernel / faults: 1803 minor
+  0.1% 3/ksoftirqd/0: 0% user + 0.1% kernel
+  0.1% 25465/com.android.vending: 0.1% user + 0% kernel / faults: 11005 minor 1 major
+  0.1% 7/rcu_preempt: 0% user + 0.1% kernel
+  0% 2376/com.google.process.gapps: 0% user + 0% kernel / faults: 2846 minor
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 286 minor
+  0% 97/logd: 0% user + 0% kernel / faults: 20 minor
+  0% 651/com.android.inputmethod.latin: 0% user + 0% kernel / faults: 1685 minor
+  0% 1626/kworker/u2:2: 0% user + 0% kernel
+  0% 277/healthd: 0% user + 0% kernel
+  0% 77/kworker/0:1H: 0% user + 0% kernel
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 156 minor
+  0% 25554/android.process.media: 0% user + 0% kernel / faults: 701 minor
+  0% 561/logcat: 0% user + 0% kernel
+  0% 25439/android.process.acore: 0% user + 0% kernel / faults: 916 minor
+  0% 649/wpa_supplicant: 0% user + 0% kernel
+  0% 1143/com.google.android.ext.services: 0% user + 0% kernel / faults: 190 minor
+  0% 253/lmkd: 0% user + 0% kernel
+  0% 257/vinput: 0% user + 0% kernel
+  0% 1668/com.google.android.partnersetup: 0% user + 0% kernel / faults: 429 minor
+  0% 254/network_profile: 0% user + 0% kernel
+  0% 259/zygote: 0% user + 0% kernel / faults: 679 minor
+  0% 2362/kworker/0:2: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 269/netd: 0% user + 0% kernel / faults: 135 minor
+  0% 270/rild: 0% user + 0% kernel
+  0% 25359/com.android.defcontainer: 0% user + 0% kernel / faults: 214 minor
+  0% 25421/com.android.musicfx: 0% user + 0% kernel / faults: 76 minor
+  0% 273/genybaseband: 0% user + 0% kernel / faults: 164 minor
+  0% 1210/com.genymotion.systempatcher: 0% user + 0% kernel / faults: 130 minor
+  0% 1215/com.genymotion.genyd: 0% user + 0% kernel / faults: 58 minor
+  0% 1990/com.android.packageinstaller: 0% user + 0% kernel / faults: 97 minor
+  0% 2049/com.android.documentsui: 0% user + 0% kernel / faults: 106 minor
+  0% 25374/com.android.gallery3d: 0% user + 0% kernel / faults: 78 minor
+  0% 25535/com.genymotion.superuser: 0% user + 0% kernel / faults: 90 minor
+ +0% 2660/kworker/u2:1: 0% user + 0% kernel
+ +0% 2765/org.chromium.webapk.a5298b83e58487375: 0% user + 0% kernel
+ +0% 2789/com.android.chrome:sandboxed_process5: 0% user + 0% kernel
+ +0% 2863/kworker/0:0: 0% user + 0% kernel
+ +0% 2876/com.android.commands.monkey: 0% user + 0% kernel
+ +0% 3205/com.google.android.gms.unstable: 0% user + 0% kernel
+ +0% 3244/com.google.android.configupdater: 0% user + 0% kernel
+15% TOTAL: 7.8% user + 6.3% kernel + 0% iowait + 1.2% softirq
+
+###################################### Measure 10 at 27088752 ######################################
+Load: 0.64 / 0.41 / 1.06
+CPU usage from 43423ms to 2550ms ago (2020-03-03 11:23:00.000 to 2020-03-03 11:23:40.874):
+  1.2% 2789/com.android.chrome:sandboxed_process5: 0.9% user + 0.3% kernel / faults: 6656 minor
+  1.1% 247/local_opengl: 0% user + 1.1% kernel
+  1.1% 1849/com.android.chrome:privileged_process0: 0.6% user + 0.4% kernel / faults: 392 minor
+  0.5% 534/system_server: 0.3% user + 0.1% kernel / faults: 98 minor
+  0.5% 568/surfaceflinger: 0.3% user + 0.2% kernel
+  0.2% 120/adbd: 0% user + 0.2% kernel / faults: 753 minor
+  0.1% 117/redis: 0% user + 0% kernel
+  0.1% 1755/com.android.chrome: 0% user + 0% kernel / faults: 25 minor
+  0% 7/rcu_preempt: 0% user + 0% kernel
+  0% 657/com.android.systemui: 0% user + 0% kernel / faults: 18 minor
+  0% 3/ksoftirqd/0: 0% user + 0% kernel
+  0% 1580/com.android.vending:instant_app_installer: 0% user + 0% kernel / faults: 1 minor
+  0% 2863/kworker/0:0: 0% user + 0% kernel
+  0% 95/jbd2/sdb3-8: 0% user + 0% kernel
+  0% 250/batteryd: 0% user + 0% kernel
+  0% 255/servicemanager: 0% user + 0% kernel
+  0% 277/healthd: 0% user + 0% kernel
+  0% 814/com.android.phone: 0% user + 0% kernel / faults: 12 minor
+  0% 1164/com.google.android.gms: 0% user + 0% kernel / faults: 8 minor
+  0% 1626/kworker/u2:2: 0% user + 0% kernel
+5.6% TOTAL: 2.4% user + 2.5% kernel + 0.6% softirq
+

@@ -1,0 +1,10 @@
+Exp; Number of frames; Number of BeginFrame; Number of RequestMainThreadFrame; Number of BeginMainThreadFrame; Number of ActivateLayerTree; Number of DrawFrame; nb of SwapBuffers
+1; 532; 568; 468; 468; 271; 538; 538
+2; 161; 322; 161; 161; 162; 162; 162
+3; 459; 540; 272; 272; 202; 467; 467
+4; 166; 336; 168; 168; 167; 167; 167
+5; 532; 576; 520; 523; 293; 556; 552
+6; 510; 546; 365; 365; 225; 521; 520
+7; 464; 549; 296; 296; 212; 469; 469
+8; 476; 535; 384; 384; 245; 485; 485
+9; 483; 539; 477; 477; 283; 507; 505
