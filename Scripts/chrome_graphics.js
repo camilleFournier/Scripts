@@ -15,27 +15,31 @@ const GPU = 'CrGpuMain';
 
 class Frame {
     constructor(start, id) {
-        // Graphics.Pipeline steps
+        // Timestamps
         this._issueBeginFrame = start;
         this._receiveBeginFrame = null;
-        this._receiveBeginFrameDiscard = null;
+        this._scheduled = null;
+        this._beginFrame = null;
         this._generateRenderPass = null;
         this._generateCompositorFrame = null;
         this._submitCompositorFrame = null;
         this._receiveCompositorFrame = null;
         this._surfaceAggregation = null;
-        this._bind_id = id;
-
-        this._beginFrame = null;
-        this._last_put_offset = null;
-        this._sequence_number = null;
         this._swapBuffers = null;
         this._frameCompleted = null;
+
+        //Ids making solid links between events
+        this._bind_id = id;
+        this._sequence_number = null;
         this._mainFrameId = null;
-        this._isMainFrame = false;
+        this._last_put_offset = null;
+
+        //Drop timestamps
+        this._receiveBeginFrameDiscard = null;
         this._dropped = null;
-        this._scheduled = null;
         this._useless = null;
+
+        this._isMainFrame = false;
 
         // if main frame
         this._sendRequestMainFrame = null;
@@ -205,6 +209,9 @@ class FramesList {
             this.addError('No Frame with same id', event);
             return;
         }
+        if (!this._pending[index].waitingGenerateCompositorFrame()) {
+            this.addError('Frame not waiting GenerateCompositorFrame');
+        }
         this._dropped.push(this._pending.splice(index, 0));
     }
 
@@ -270,6 +277,9 @@ class FramesList {
         const frames_matching = this._pending.filter(f => f.withSequenceNumber(event.args.args.sequence_number));
         if (frames_matching.length) {
             const index = this._pending.findIndex(f => f.withSequenceNumber(event.args.args.sequence_number));
+            if (!this._pending[index].waitingScheduling()) {
+                this.addError('Frame not waiting');
+            }
             this._pending[ index ]._scheduled = event.timestamp;
             return true;
         }
@@ -280,6 +290,9 @@ class FramesList {
         const frames_matching = this._dropped.filter(f => f.withSequenceNumber(event.args.args.sequence_number));
         if (frames_matching.length) {
             const index = this._dropped.findIndex(f => f.withSequenceNumber(event.args.args.sequence_number));
+            if (!this._dropped[ index ].waitingScheduling()) {
+                this.addError('Frame not waiting');
+            }
             this._dropped[ index ]._scheduled = event.timestamp;
             this._pending.push(this._dropped.splice(index, 1)[0]);
             return true;
@@ -296,6 +309,9 @@ class FramesList {
 
         if (this.oneAndOnly(frames_matching, 'frame with same sequence number')) {
             const index = this._pending.findIndex(f => f.withSequenceNumber(sequence_number));
+            if (!this._pending[ index ].waitingBeginFrame()) {
+                this.addError('Frame not waiting');
+            }
             this._pending[ index ]._beginFrame = timestamp;
         }
     }
@@ -433,6 +449,9 @@ class FramesList {
         if (frames.length) {
             this.oneAndOnly(frames, 'Pending Frames with same put_offset');
             const index = this._pending.findIndex(f => f.withPutOffset(put_offset));
+            if (!this._pending[ index ].waitingSwap()) {
+                this.addError('Frame not waiting');
+            }
             this._pending[index]._swapBuffers = event.timestamp;
             this._pending[index]._frameCompleted = event.timestamp + event.dur;
             this._completed.push(this._pending.splice(index, 1)[0]);
@@ -498,6 +517,7 @@ class MainFramesList extends FramesList {
                 this.addError('MainFrame not waiting');
                 return;
             }
+            this._pending[index]._beginMainFrame = beginFrame.timestamp;
 
             const child_events = this.childEvents();
             let commits = child_events.filter(e => e.name == 'ProxyMain::BeginMainFrame::commit');
@@ -516,13 +536,16 @@ class MainFramesList extends FramesList {
     }
 
     abortFrame(event) {
+        if (!this._completed.length && !this._pending.find(f => f.waitingAbort() || f.waitingCommitReceived())) {
+            return;
+        }
         const frames = this._pending.filter(f => f.waitingAbort());
         if (frames.length) {
             this.oneAndOnly(frames, 'Main frames waiting', event)
             const index = this._pending.findIndex(f => f.waitingAbort());
             this._pending[index]._mainFrameAborted = event.timestamp;
             this._dropped.push(this._pending.splice(index, 1)[0]);
-        } else if (!this._pending.filter( f => f._defer) && this._completed.length){
+        } else if (!this._pending.filter( f => f._defer)){
             this.addError('No MainFrame to abort', event);
         }
     }
@@ -559,7 +582,6 @@ class MainFramesList extends FramesList {
         if (index < 0) {
             if (!this._completed.length && !this._pending.find(f => f.waitingActivation())) {
                 const frame = new MainFrame(0, event.args.frameId);
-                //will not count at the end so okay to put wrong timestamp
                 frame._activateLayerTree = event.timestamp;
                 this._pending.push(frame);
                 return;
@@ -682,7 +704,7 @@ class FrameModel {
             }
         });
 
-        //event placed at 0ms on chrome://tracing though not always this one
+        //event placed at 0ms on chrome://tracing
         this._minimumRecordTime = events.find(e => e.ts > 0).ts;
         //sort events chronologically
         this._events = events.sort((a, b) => a.ts - b.ts);
@@ -693,6 +715,7 @@ class FrameModel {
     }
 
     handleReceiveBeginFrame() {
+        /* Start of the trace : the beginning of the pipeline was not recorded */
         if (!this._frames[ Compositor ]._completed.length && !this._frames[ Compositor ]._pending.length) {
             this._frames[ Compositor ]._pending.push(new Frame(0, this._event.bind_id));
         }
@@ -710,6 +733,7 @@ class FrameModel {
     }
 
     handleReceiveBeginFrameDiscard(thread) {
+        /* Start of the trace : the beginning of the pipeline was not recorded */
         if (!this._frames[ Compositor ]._completed.length && !this._frames[ Compositor ]._pending.length) {
             this._frames[ Compositor ]._pending.push(new Frame(0, this._event.bind_id));
         }
@@ -724,6 +748,7 @@ class FrameModel {
 
     handleBeginImplFrame(thread) {
         if (!this._frames[ thread ]._completed.length && !this._frames[ thread ]._pending.find(f => f.waitingScheduling())) {
+            /*We wouldn't be able to link the frame to a bind id, so we just drop the event and return*/
             return;
         }
         if (!this._frames[ thread ].beginImplFrame(this._event) &&
@@ -740,6 +765,8 @@ class FrameModel {
 
     handleOnBeginImplFrame(thread) {
         if (!this._frames[ thread ]._completed.length && !this._frames[ thread ]._pending.find(f => f.waitingDrawing())) {
+            /*If a frame is drawn, it will be handled better inside the draw event.
+                If it is not drawn, no need to add it */
             return;
         }
         const draw_event = thread == Compositor ? 'ProxyImpl::ScheduledActionDraw' : 'SingleThreadProxy::DoComposite';
@@ -762,8 +789,6 @@ class FrameModel {
         let renderPass;
         let beginning = {};
 
-        console.log(`Expected timestamp of first IssueBeginFrame: ${this._events[ start_index ].timestamp}`);
-
         process_event:
         for (let i = start_index; i < this._events.length; i++) {
             beginning[Compositor] = !this._frames[Compositor]._completed.length;
@@ -782,6 +807,8 @@ class FrameModel {
                                     this._frames[Compositor].createFrame(this._event);
                                     break;
                                 case 'ReceiveCompositorFrame':
+                                /* Start of the trace handled here.
+                                   Adds a new frame with just ReceiveCompositorFrame and an IssueBeginFrame of 0 */
                                     let thread;
                                     switch (this._event.bind_id.length) {
                                         case 15:
@@ -810,9 +837,10 @@ class FrameModel {
                             }
                             break;
                         case 'Display::DrawAndSwap':
+                        /* Start of the trace handled in the thread in surfaceAggregation()
+                          Adds a new frame with just SurfaceAggregation and an IssueBeginFrame of 0 */
                             if (end) { break process_event }
                             child_events = this.childEvents();
-                            //Extract put_offset which links frames to swap buffers
                             let gl_renderer = child_events.filter(e => e.name == 'GLRenderer::SwapBuffers');
                             if (this.oneAndOnly(gl_renderer, 'GLRenderer:SwapBuffers')) {
                                 let grand_children = this.childEvents(gl_renderer[ 0 ]);
@@ -839,6 +867,8 @@ class FrameModel {
                 case this._threads[Compositor]:
                     switch(this._event.name) {
                         case 'Graphics.Pipeline':
+                        /* Start of the trace handled inside the function
+                           Adds the frame as it is with an IssueBeginFrame of 0 */
                             if (end) { break process_event };
                             switch (this._event.args.step) {
                                 case 'ReceiveBeginFrame':
@@ -851,21 +881,32 @@ class FrameModel {
                             }
                             break;
                         case 'Scheduler::BeginFrameDropped':
-                            if (beginning[Compositor]) { break; }
+                        /*Start of the trace handled here.
+                          No need to add the frame as it would be dropped anyway*/
+                            if (beginning[ Compositor ] && !this._frames[ Compositor ]._pending.find(f => f.waitingScheduling())) { break; }
                             this._frames[Compositor].beginFrameDropped(this._event);
                             break;
                         case 'Scheduler::BeginImplFrame':
+                        /* Start of the trace handled in the function.
+                           Drops the event as we don't have a bind_id here*/
                             if (end) { break process_event };
                             this.handleBeginImplFrame(Compositor);
                             break;
                         case 'Scheduler::MissedBeginFrameDropped':
+                        /*Start of the trace handled here.
+                          No need to add the frame as it would be dropped anyway*/
+                            if (beginning[ Compositor ] && !this._frames[Compositor]._pending.find(f => f.waitingDrawing())) { break; }
                             this._frames[Compositor].missedBeginFrameDropped(this._event);
                             break;
                         case 'Scheduler::OnBeginImplFrameDeadline':
+                        /*Start of the trace handled in the draw event handled after.
+                          Just returns immediatly if start of the trace.*/
                             if (end) { break process_event };
                             this.handleOnBeginImplFrame(Compositor);
                             break;
                         case 'ProxyImpl::ScheduledActionDraw':
+                        /*Start of the trace handled in the thread in generateRenderPass()
+                          Adds a frame with just a generateRenderPass, it is then handled just as every other frame */
                             if (end) { break process_event };
                             child_events = this.childEvents();
                             renderPass = child_events.find(e => e.name == 'Graphics.Pipeline' && e.args.step == 'GenerateRenderPass');
@@ -894,10 +935,14 @@ class FrameModel {
                             } else { this.addError('No RequestMainThreadFrame'); }
                             break;
                         case 'ProxyImpl::BeginMainFrameAbortedOnImplThread':
+                        /*Start of the trace handled inside abortFrame().
+                          No need to add the frame as it would be dropped anyway*/
                             if (end) { break process_event };
                             this._frames[Renderer].abortFrame(this._event);
                             break;
                         case 'ProxyImpl::ScheduledActionCommit':
+                        /*Start of the trace handled inside commitFrame().
+                          Adds the frame with _beginCommit and a sendRequestMainFrame at 0*/
                             if (end) { break process_event };
                             this._frames[Renderer].commitFrame(this._event);
                             break;
@@ -910,12 +955,13 @@ class FrameModel {
                 case this._threads[Renderer]:
                     switch (this._event.name) {
                         case 'ThreadProxy::BeginMainFrame':
+                        /*Several error cases possible at the beginning :
+                            - No Request && ThreadProxy in sync with its children (ie same id) ==> handled here
+                            - Request for ThreadProxy, but not its children's id ==> handled in Renderer's MainFramesList
+                            - No Request && ThreadProxy not in sync with its children ==> handled here && in Renderer's MainFramesList
+                          Adds the frame with the SourceFrameNumber ie Mainframe id
+                        */
                             if (end) { break process_event };
-                            /*Several cases possible for errors at the beginning : 
-                                - No Request && ThreadProxy in sync with its children (ie same id) ==> handled here
-                                - Request for ThreadProxy, but not its children's id ==> handled in Renderer's MainFramesList
-                                - No Request && ThreadProxy not in sync with its children ==> handled here && in Renderer's MainFramesList
-                            */
                             if (beginning[Renderer] && !this._frames[Renderer]._pending.find(f => f.waitingBeginMainFrame())) {
                                 let frame = new MainFrame(0, this._event.args.begin_frame_id);
                                 //Wrong timestamp but doesn't matter, can filter it afterwards if necessary
@@ -937,6 +983,8 @@ class FrameModel {
                 case this._threads[Browser]:
                     switch (this._event.name) {
                         case 'Graphics.Pipeline':
+                        /* Start of the trace handled inside the function
+                            Adds the frame as it is with an IssueBeginFrame of 0 */
                             if (end) { break process_event };
                             switch (this._event.args.step) {
                                 case 'ReceiveBeginFrame':
@@ -949,31 +997,45 @@ class FrameModel {
                             }
                             break;
                         case 'Scheduler::BeginFrameDropped':
-                            if (beginning[Compositor]) { break; }
+                        /*Start of the trace handled here.
+                          No need to add the frame as it would be dropped anyway*/
+                            if (beginning[ Browser ] && this._frames[ Browser ]._pending.find(f => f.waitingScheduling())) { break; }
                             this._frames[ Browser ].beginFrameDropped(this._event);
                             break;
                         case 'Scheduler::BeginImplFrame':
+                        /* Start of the trace handled in the function.
+                            Drops the event as we don't have a bind_id here*/
                             if (end) { break process_event };
                             this.handleBeginImplFrame(Browser);
                             break;
                         case 'Scheduler::MissedBeginFrameDropped':
-                            if (beginning[Compositor]) { break; }
+                        /*Start of the trace handled here.
+                          No need to add the frame as it would be dropped anyway*/
+                            if (beginning[ Browser ] && this._frames[ Browser ]._pending.find(f => f.waitingDrawing())) { break; }
                             this._frames[ Browser ].missedBeginFrameDropped(this._event);
                             break;
                         case 'SingleThreadProxy::ScheduledActionSendBeginMainFrame':
+                        /*Start of the trace handled here.
+                          Drops the event as we don't have ay id for the frame*/
                             if (end) { break process_event };
                             if (beginning[Browser] && !this._frames[Browser]._pending.find(f => f.waitingDrawing())) { break; }
                             this._frames[Browser].sendBeginMainFrame(this._event);
                             break;
                         case 'BeginMainThreadFrame':
+                        /*Start of the trace handled here.
+                          Drops the event as we don't have a bind_id for the frame*/
                             if (beginning[ Browser ] && !this._frames[ Browser ]._pending.find(f => f.waitingBeginMainFrame())) { break; }
                             this._frames[Browser].beginMainFrame(this._event);
                             break;
                         case 'Scheduler::OnBeginImplFrameDeadline':
+                        /*Start of the trace handled in the draw event handled after.
+                          Just returns immediatly if start of the trace.*/
                             if (end) { break process_event };
                             this.handleOnBeginImplFrame(Browser);
                             break;
                         case 'SingleThreadProxy::DoComposite':
+                        /*Start of the trace handled in the thread in generateRenderPass()
+                          Adds a frame with just a generateRenderPass, it is then handled just as every other frame */
                             if (end) { break process_event };
                             child_events = this.childEvents();
                             renderPass = child_events.find(e => e.name == 'Graphics.Pipeline' && e.args.step == 'GenerateRenderPass');
@@ -990,6 +1052,11 @@ class FrameModel {
                             this._frames[Browser].checkConsistency(renderPass.bind_id, prepareToDraw.args.SourceFrameNumber);
                             break;
                         case 'ActivateLayerTree':
+                        /*Start of the trace handled here.
+                          Drops the event as we don't have a bind_id for the frame*/
+                            if (beginning[Browser] && !this._frames[Browser]._pending.find(f => f.waitingActivation())) {
+                                break;
+                            }
                             this._frames[Browser].activateLayerTree(this._event);
                             break;
 
@@ -998,8 +1065,9 @@ class FrameModel {
                 case this._threads[GPU]:
                     switch(this._event.name) {
                         case 'InProcessCommandBuffer::FlushOnGpuThread':
+                        /*Start of the trace handled in the thread in swapBuffer()
+                          Adds a frame already completed, though with just swapBuffer and frameCompleted*/
                             if (end) { break process_event };
-                            // if (beginning[Compositor]) { break; }
                             child_events = this.childEvents();
                             let swap = child_events.filter(e => e.name == 'NativeViewGLSurfaceEGL:RealSwapBuffers');
                             if (swap.length) {
