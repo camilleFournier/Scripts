@@ -132,7 +132,7 @@ class MainFrame {
     }
 
     waitingBeginMainFrame() {
-        return this._sendRequestMainFrame && !this._beginMainFrame;
+        return !this._beginMainFrame;
     }
 
     waitingCommit() {
@@ -166,6 +166,7 @@ class FramesList {
         this._pending = [];
         this._dropped = [];
         this._completed = [];
+        this._completed_video = [];
         this.childEvents = childEvents;
         this.addError = addError;
         this.oneAndOnly = oneAndOnly;
@@ -243,7 +244,11 @@ class FramesList {
     receiveCompositorFrame(event) {
         const index = this._pending.findIndex(f => f.withBindId(event.bind_id));
         if (!this._pending[ index ].waitingCompositorFrameReception()) {
-            this.addError(`Frame not waiting ReceiveCompositorFrame`, event);
+            if (this._pending[ index ].waitingReceiveBeginFrame()) {
+                this._pending[ index ]._video = true;
+            } else {
+                this.addError(`Frame not waiting ReceiveCompositorFrame`, event);
+            }
         }
         this._pending[ index ]._receiveCompositorFrame = event.timestamp;
     }
@@ -321,6 +326,8 @@ class FramesList {
         if (this.oneAndOnly(frames_matching, 'frame pending SendBeginMainFrame')) {
             const index = this._pending.findIndex(f => f.waitingDrawing());
             this._pending[ index ]._sendRequestMainFrame = event.timestamp;
+        } else {
+            console.log(frames_matching);
         }
 
     }
@@ -362,7 +369,7 @@ class FramesList {
     generateRenderPass(event) {
         const index = this._pending.findIndex(f => f.withBindId(event.bind_id));
         if (index < 0) {
-            if (!this._completed.length && (!this._pending.length || !this._pending.find(f => f.waitingDrawing()))) {
+            if (!this._completed.find(f => f._issueBeginFrame) &&  !this._pending.find(f => f.waitingDrawing())) {
                 const frame = new Frame(0, event.bind_id);
                 frame._generateRenderPass = event.timestamp;
                 this._pending.push(frame);
@@ -411,7 +418,9 @@ class FramesList {
     surfaceAggregation(event, put_offset) {
         let frames = this._pending.filter(f => f.withBindId(event.bind_id));
         if (frames.length) {
-            this.oneAndOnly(frames, 'Pending frame with same id');
+            if (!this.oneAndOnly(frames, 'Pending frame with same id')) {
+                console.log(frames);
+            }
             if (!frames[0].waitingAggregation()) {
                 // console.log(frames);
                 this.addError('Frame was not pending SurfaceAggregation', event);
@@ -433,30 +442,69 @@ class FramesList {
             this._completed[ index ]._last_put_offset = put_offset;
             return
         }
-        if (!this._completed.length && (!this._pending.length || !this._pending.find(f => f.waitingAggregation()))) {
+        frames = this._completed_video.filter(f => f.withBindId(event.bind_id));
+        if (frames.length) {
+            this.oneAndOnly(frames, 'Completed frame with same id');
+            const index = this._completed_video.findIndex(f => f.withBindId(event.bind_id));
+            if (index < this._completed_video.length - 1) {
+                this.addError(`Frames are going backwards, expected ${this._completed.length - 1}, instead ${index}`, event);
+            }
+            this._completed_video[ index ]._last_put_offset = put_offset;
+            return
+        }
+        //We can have a compositor and a video frame waiting at the same time
+        if (!this._completed.find(f => f._issueBeginFrame) && this._pending.filter(f => f.waitingAggregation()).length <= 1) {
             const frame = new Frame(0, event.bind_id);
             frame._surfaceAggregation = event.timestamp;
             frame._last_put_offset = put_offset;
             this._pending.push(frame);
             return
         }
-        this.addError(`Unknow bind_id ${event.bind_id}`, event);
+        this.addError(`Unknown bind_id ${event.bind_id}`, event);
+
     }
 
     swapBuffer(event, put_offset) {
+        let frames_to_process = this._pending.concat(this._completed).concat(this._completed_video).filter( f => f._last_put_offset == put_offset);
+
+        if (!frames_to_process.length && !this._completed.find(f => f._issueBeginFrame) && !this._completed_video.find(f => f._issueBeginFrame) && !this._pending.find(f => f.waitingSwap())) {
+            const frame = new Frame(0, 0);
+            frame._swap = event.timestamp;
+            frame._frameCompleted = event.timestamp + event.dur;
+            frame._last_put_offset = put_offset;
+            this._completed.push(frame);
+            return
+        }
 
         let frames = this._pending.filter(f => f.withPutOffset(put_offset));
-        if (frames.length) {
-            this.oneAndOnly(frames, 'Pending Frames with same put_offset');
-            const index = this._pending.findIndex(f => f.withPutOffset(put_offset));
+        for (const frame in frames) {
+            const index = this._pending.findIndex(f => f.withBindId(frames[frame]._bind_id));
             if (!this._pending[ index ].waitingSwap()) {
                 this.addError('Frame not waiting');
+                continue;
             }
-            this._pending[index]._swapBuffers = event.timestamp;
-            this._pending[index]._frameCompleted = event.timestamp + event.dur;
-            this._completed.push(this._pending.splice(index, 1)[0]);
-            return;
+            this._pending[ index ]._swapBuffers = event.timestamp;
+            this._pending[ index ]._frameCompleted = event.timestamp + event.dur;
+            if (this._pending[index]._video) {
+                this._completed_video.push(this._pending.splice(index, 1)[ 0 ]);
+            } else {
+                this._completed.push(this._pending.splice(index, 1)[ 0 ]);
+            }
+            frames_to_process--;
         }
+        // if (frames.length) {
+        //     // this.oneAndOnly(frames, 'Pending Frames with same put_offset');
+        //     const index = this._pending.findIndex(f => f.withPutOffset(put_offset));
+        //     if (!this._pending[ index ].waitingSwap()) {
+        //         this.addError('Frame not waiting');
+        //     }
+        //     this._pending[index]._swapBuffers = event.timestamp;
+        //     this._pending[index]._frameCompleted = event.timestamp + event.dur;
+        //     this._completed.push(this._pending.splice(index, 1)[0]);
+        //     return;
+        // }
+        
+
         frames = this._completed.filter(f => f.withPutOffset(put_offset));
         if (frames.length) {
             /* Same offset can be used several times so there might be several completed frames matching the offset.
@@ -466,17 +514,25 @@ class FramesList {
             if (index < this._completed.length - 1) {
                 this.addError(`Last completed frame with same put_offset expected index : ${this._completed.length-1}, instead ${index}`);
             }
+            frames_to_process--;
             return;
         }
-        if ( !this._completed.length && ( !this._pending.length || !this._pending.find(f => f.waitingSwap()) ) ) {
-            const frame = new Frame(0, 0);
-            frame._swap = event.timestamp;
-            frame._frameCompleted = event.timestamp + event.dur;
-            frame._last_put_offset = put_offset;
-            this._completed.push(frame);
-            return
+        frames = this._completed_video.filter(f => f.withPutOffset(put_offset));
+        if (frames.length) {
+            /* Same offset can be used several times so there might be several completed frames matching the offset.
+               We just need to make sure the last completed one is the one also have the same put_offset.
+            */
+            const index = this._completed_video.findIndex(f => f.withBindId(frames[ frames.length - 1 ]._bind_id));
+            if (index < this._completed_video.length - 1) {
+                this.addError(`Last completed frame with same put_offset expected index : ${this._completed_video.length - 1}, instead ${index}`);
+            }
+            frames_to_process--;
+            return;
         }
-        this.addError('No Frames matching', event);
+
+        if (frames_to_process) {
+            this.addError('No Frames matching', event);
+        }
     }
 }
 
@@ -488,7 +544,7 @@ class MainFramesList extends FramesList {
     createMainFrame(event) {
         if ( (this._pending.concat(this._completed)).find(f => f.withFrameId(event.args.begin_frame_id)) ) {
             this.addError('MainFrame id already exist', event);
-            return
+            returndd
         }
         this._pending.push(new MainFrame(event.timestamp, event.args.begin_frame_id));
     }
@@ -504,13 +560,22 @@ class MainFramesList extends FramesList {
 
     beginMainFrame(threadProxy, beginFrame) {
         //Start cases
-        if (!this._pending.find(f => f.withFrameId(beginFrame.args.data.frameId))) {
-            if (this._pending.length <= 1 && beginFrame.args.data.frameId == threadProxy.args.begin_frame_id - 1) {
-                const frame = new MainFrame(0, beginFrame.args.data.frameId);
-                frame._sendRequestMainFrame = true;
+        if (!this._pending.find(f => f.withFrameId(threadProxy.args.begin_frame_id))) {
+            if (!this._completed.find(f => f._sendRequestMainFrame)) {
+                const frame = new MainFrame(0, threadProxy.args.begin_frame_id);
+                // frame._sendRequestMainFrame = true;
                 this._pending.push(frame);
             }
         }
+
+        if (!this._pending.find(f => f.withFrameId(beginFrame.args.data.frameId))) {
+            if (!this._completed.find(f => f._sendRequestMainFrame) && (beginFrame.args.data.frameId < threadProxy.args.begin_frame_id)) {
+                const frame = new MainFrame(0, beginFrame.args.data.frameId);
+                // frame._sendRequestMainFrame = true;
+                this._pending.push(frame);
+            }
+        }
+
         if (this.oneAndOnly(this._pending.filter(f => f.withFrameId(beginFrame.args.data.frameId)), 'MainFrame with same id')) {
             const index = this._pending.findIndex(f => f.withFrameId(beginFrame.args.data.frameId));
             if (!this._pending[index].waitingBeginMainFrame()) {
@@ -532,7 +597,9 @@ class MainFramesList extends FramesList {
             } else if (aborted.length && this.oneAndOnly(aborted, 'EarlyOut_NoUpdates')) {
                 this._pending[ index ]._aborted = true;
             }
+            return
         }
+        console.log(this._completed);
     }
 
     abortFrame(event) {
@@ -556,13 +623,14 @@ class MainFramesList extends FramesList {
         if (this.oneAndOnly(updateDraw, 'CalculateDrawProperties')) {
             const index = this._pending.findIndex(f => f.withFrameId(updateDraw[0].args.SourceFrameNumber));
             if (index < 0) {
-                if (!this._completed.length && !this._pending.filter(f => f.waitingCommitReceived())) {
+                if (!this._completed.filter(f => f._sendRequestMainFrame).length && !this._pending.find(f => f.waitingCommitReceived())) {
                     const frame = new MainFrame(0, updateDraw[ 0 ].args.SourceFrameNumber);
                     //will not count at the end so okay to put wrong timestamp
                     frame._beginCommit = event.timestamp;
                     this._pending.push(frame);
                     return;
                 }
+                console.log(this._pending);
                 this.addError('No MainFrame with same id', event);
                 return;
             }
@@ -584,6 +652,11 @@ class MainFramesList extends FramesList {
                 const frame = new MainFrame(0, event.args.frameId);
                 frame._activateLayerTree = event.timestamp;
                 this._pending.push(frame);
+                return;
+            }
+            if (this._completed.find(f => f.withFrameId(event.args.frameId))) {
+                this.addError('2nd ActivateLayerTree for this MainFrame', event);
+
                 return;
             }
             this.addError('No MainFrame with same id', event);
@@ -678,42 +751,6 @@ class FrameModel {
         return this._event.tid == this._threads[ thread ];
     }
 
-
-    initialize(events) {
-        //reset model
-        this._events = [];
-        this._minimumRecordTime = 0;
-        this._errors = [];
-        this._frames[ Compositor ] = new FramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
-        this._frames[ Renderer ] = new MainFramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
-        this._frames[ Browser ] = new FramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
-        this._threads = {};
-        this._processes = {};
-
-        //find threads and processes
-        const metadata_events = events.filter(e => e.name == 'thread_name');
-        metadata_events.forEach(e => {
-            switch (e.name) {
-                case 'process_name':
-                    this._processes[ e.args.name ] = e.pid;
-                    break;
-                case 'thread_name':
-                    this._threads[ e.args.name ] = e.tid;
-                    break;
-                default: break;
-            }
-        });
-
-        //event placed at 0ms on chrome://tracing
-        this._minimumRecordTime = events.find(e => e.ts > 0).ts;
-        //sort events chronologically
-        this._events = events.sort((a, b) => a.ts - b.ts);
-        this._events.forEach(e => Object.assign(e, { timestamp: e.ts - this._minimumRecordTime }));
-
-        //return index of first IssueBeginFrame ie start of pipeline
-        return this._events.findIndex(e => e.name == 'Graphics.Pipeline' && e.args.step == 'IssueBeginFrame');
-    }
-
     handleReceiveBeginFrame() {
         /* Start of the trace : the beginning of the pipeline was not recorded */
         if (!this._frames[ Compositor ]._completed.length && !this._frames[ Compositor ]._pending.length) {
@@ -777,15 +814,49 @@ class FrameModel {
                 this._frames[thread].dropNoDrawing(this._event);
             }
         }
-
     }
+
+
+    initialize(events) {
+            //reset model
+            this._events = [];
+            this._minimumRecordTime = 0;
+            this._errors = [];
+            this._frames[ Compositor ] = new FramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
+            this._frames[ Renderer ] = new MainFramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
+            this._frames[ Browser ] = new FramesList(this.childEvents.bind(this), this.addError.bind(this), this.oneAndOnly.bind(this));
+            this._threads = {};
+            this._processes = {};
+
+            //find threads and processes
+            const metadata_events = events.filter(e => e.name == 'thread_name');
+            metadata_events.forEach(e => {
+                switch (e.name) {
+                    case 'process_name':
+                        this._processes[ e.args.name ] = e.pid;
+                        break;
+                    case 'thread_name':
+                        this._threads[ e.args.name ] = e.tid;
+                        break;
+                    default: break;
+                }
+            });
+
+            //event placed at 0ms on chrome://tracing
+            this._minimumRecordTime = events.find(e => e.ts > 0).ts;
+            //sort events chronologically
+            this._events = events.sort((a, b) => a.ts - b.ts);
+            this._events.forEach(e => Object.assign(e, { timestamp: e.ts - this._minimumRecordTime }));
+
+            const first_compositor_event = this._events.find(e => e.tid == this._threads[Compositor] && e.ts > 0);
+
+            //return index of first IssueBeginFrame ie start of pipeline
+            return this._events.findIndex(e => e.name == 'Graphics.Pipeline' && e.args.step == 'IssueBeginFrame' && e.timestamp >= first_compositor_event.timestamp);
+    }
+
     processEvents(events) {
         let start_index = this.initialize(events);
-
-        let frames_matching;
-        let main_frames_matching;
         let child_events;
-        let index;
         let renderPass;
         let beginning = {};
 
@@ -796,6 +867,11 @@ class FrameModel {
             beginning[Browser] = !this._frames[Browser]._completed.length;
 
             this._event = this._events[i];
+            if (!this._event) {
+                console.log(`Event at index ${i}`);
+                console.log(this._event);
+                continue;
+            }
             const end = !this._event.dur;
             switch(this._event.tid) {
                 case this._threads[VizCompositor]:
@@ -811,29 +887,34 @@ class FrameModel {
                                    Adds a new frame with just ReceiveCompositorFrame and an IssueBeginFrame of 0 */
                                     let thread;
                                     switch (this._event.bind_id.length) {
+                                        case 16:
                                         case 15:
                                             thread = Compositor;
                                             break;
+                                        case 12:
                                         case 11:
                                             thread = Browser;
                                             break;
                                     }
-                                    if (beginning[thread] && !this._frames[thread]._pending.find(f => f.waitingCompositorFrameReception())) {
-                                        const frame = new Frame(0, this._event.bind_id);
-                                        frame._receiveCompositorFrame = this._event.timestamp;
-                                        this._frames[thread]._pending.push(frame);
-                                        break;
-                                    }
                                     const compositor_frames = this._frames[Compositor].pendingWithBindId(this._event.bind_id);
                                     let browser_frames = this._frames[ Browser ].pendingWithBindId(this._event.bind_id);
-                                    if (this.oneAndOnly(compositor_frames.concat(browser_frames), 'frames with same bind id')) {
+                                    if (compositor_frames.concat(browser_frames).length) {
+                                        this.oneAndOnly(compositor_frames.concat(browser_frames), 'frames with same bind id');
                                         if (compositor_frames.length) {
                                             this._frames[ Compositor ].receiveCompositorFrame(this._event);
-                                        } else if (browser_frames.length > 0) {
+                                        } else if (browser_frames.length) {
                                             this._frames[ Browser ].receiveCompositorFrame(this._event);
                                         }
+                                        break;
                                     }
-                                    break;
+                                    //Compositor tracking can be late and we don't have events in between)
+                                    if (beginning[ thread ] && !this._frames[ thread ]._pending.find(f => f.waitingCompositorFrameReception())) {
+                                        const frame = new Frame(0, this._event.bind_id);
+                                        frame._receiveCompositorFrame = this._event.timestamp;
+                                        this._frames[ thread ]._pending.push(frame);
+                                        break;
+                                    }
+                                    
                             }
                             break;
                         case 'Display::DrawAndSwap':
@@ -849,9 +930,11 @@ class FrameModel {
                                     let surfaces = child_events.filter(e => e.name == 'Graphics.Pipeline' && e.args.step == 'SurfaceAggregation');
                                     surfaces.forEach(e => {
                                         switch(e.bind_id.length) {
+                                            case 16:
                                             case 15:
                                                 this._frames[Compositor].surfaceAggregation(e, buffer_flush[0].args.put_offset);
                                                 break;
+                                            case 12:
                                             case 11:
                                                 this._frames[Browser].surfaceAggregation(e, buffer_flush[0].args.put_offset);
                                                 break;
@@ -962,13 +1045,13 @@ class FrameModel {
                           Adds the frame with the SourceFrameNumber ie Mainframe id
                         */
                             if (end) { break process_event };
-                            if (beginning[Renderer] && !this._frames[Renderer]._pending.find(f => f.waitingBeginMainFrame())) {
-                                let frame = new MainFrame(0, this._event.args.begin_frame_id);
-                                //Wrong timestamp but doesn't matter, can filter it afterwards if necessary
-                                //set _sendRequestMainFrame so that it is handled correctly afterwards by Renderer's MainFramesList
-                                frame._sendRequestMainFrame = this._event.timestamp;
-                                this._frames[ Renderer ]._pending.push(frame);
-                            }
+                            // if (beginning[Renderer] && !this._frames[Renderer]._pending.find(f => f.waitingBeginMainFrame())) {
+                            //     let frame = new MainFrame(0, this._event.args.begin_frame_id);
+                            //     //Wrong timestamp but doesn't matter, can filter it afterwards if necessary
+                            //     //set _sendRequestMainFrame so that it is handled correctly afterwards by Renderer's MainFramesList
+                            //     frame._sendRequestMainFrame = this._event.timestamp;
+                            //     this._frames[ Renderer ]._pending.push(frame);
+                            // }
                             child_events = this.childEvents();
                             let beginMain = child_events.filter(e => e.name == 'BeginMainThreadFrame');
                             if (beginMain.length) {
@@ -1011,7 +1094,7 @@ class FrameModel {
                         case 'Scheduler::MissedBeginFrameDropped':
                         /*Start of the trace handled here.
                           No need to add the frame as it would be dropped anyway*/
-                            if (beginning[ Browser ] && this._frames[ Browser ]._pending.find(f => f.waitingDrawing())) { break; }
+                            if (beginning[ Browser ] && !this._frames[ Browser ]._pending.find(f => f.waitingDrawing())) { break; }
                             this._frames[ Browser ].missedBeginFrameDropped(this._event);
                             break;
                         case 'SingleThreadProxy::ScheduledActionSendBeginMainFrame':
